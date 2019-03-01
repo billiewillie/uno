@@ -67,6 +67,10 @@ main.main{
     background-position: 50% 50%;
 }
 
+main.footer{
+    background-color: transparent;
+}
+
 .main__index{
     flex: auto;
 }
