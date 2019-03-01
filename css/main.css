@@ -61,18 +61,56 @@ header.header {
     background-color: #252525;
 }
 
+.logo{
+    text-align: center;
+}
+
 main.main{
     background-image: url('../img/index_bg.jpg');
     background-size: cover;
     background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
 }
 
-main.footer{
+.main__content{
+    align-items: center;
+    display: flex;
+    flex-grow: 2;
+}
+
+.button__list{
+    text-align: center;
+}
+
+main .main__footer{
     background-color: transparent;
+    text-align: center;
+    flex-grow: 1;
 }
 
 .main__index{
     flex: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+h1.title{
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 8vw;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+p.subtitle{
+    letter-spacing: 1px;
+    font-size: 3.3vw;
+    line-height: 1;
+    margin-bottom: 20px;
 }
 
 footer.footer {
