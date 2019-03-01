@@ -1,0 +1,76 @@
+@import url('../css/fonts.css');
+@import url('../css/media.css');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+    font-family: 'Roboto regular', sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #BDC3C7;
+    background-color: #191919;
+}
+
+.wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+}
+
+.container{
+    padding: 0 10px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+header.header {
+    background-color: #252525;
+}
+
+main.main{
+    background-image: url('../img/index_bg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.main__index{
+    flex: auto;
+}
+
+footer.footer {
+    background-color: #252525;
+}
