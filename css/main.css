@@ -89,13 +89,19 @@ header.header {
     width: 100%;
 }
 
-.input{
+form.form__search{
+    max-width: 50%;
+    margin: auto;
+}
+
+.form__search .input{
     background-color: transparent;
     border: none;
     color: #737373;
     line-height: 1;
     outline: none;
     font-size: 12px;
+    width: 100%;
 }
 
 .input[type="search"]::-webkit-search-cancel-button {
