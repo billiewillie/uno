@@ -62,6 +62,26 @@ header.header {
     background-color: #252525;
 }
 
+.header__content--top{
+    margin-bottom: 30px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+}
+
+.contacts__item--link{
+    display: block;
+    padding: 0 15px;
+}
+
+.contacts__item--link{
+    outline: none;
+}
+
 .logo{
     text-align: center;
     padding: 30px 0;
@@ -86,6 +106,7 @@ main.main{
     display: flex;
     padding: 15px 0;
     border-top: 2px solid #303030;
+    font-size: 0;
 }
 
 .menu__item{
