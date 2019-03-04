@@ -111,6 +111,7 @@ form.form__search{
 .logo{
     text-align: center;
     padding: 30px 0;
+    font-size: 0;
 }
 
 .logo img{
@@ -156,6 +157,7 @@ form.form__search{
     display: block;
     cursor: pointer;
     border-radius: 7px;
+    transition: .1s;
 }
 
 .menu__item--link:hover{

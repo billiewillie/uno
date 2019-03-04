@@ -19,11 +19,6 @@
   .menu__item{
     font-size: 24px;
   }
-
-  /* .header__content--bottom{
-    margin-top: -60px;
-  } */
-
 }
 
 @media (max-width: 991px){
@@ -36,10 +31,6 @@
 
   .desktop__hidden{
     display: none;
-  }
-  
-  header.header{
-    
   }
 
   .header .container{
