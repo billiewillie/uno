@@ -27,6 +27,11 @@
   .main__footer .container{
     display: flex;
     justify-content: center;
+    align-items: flex-start
+  }
+
+  .main__footer--part{
+    padding-top: 10px;
   }
 
   .main__footer--part:nth-child(1),
@@ -38,8 +43,8 @@
   .main__footer--part:nth-child(1)::after,
   .main__footer--part:nth-child(2)::after{
       width: 2px;
-      height: 100%;
-      bottom: 0;
+      height: 52px;
+      bottom: inherit;
       top: 0;
       right: 15px;
       left: auto;
@@ -176,10 +181,22 @@
   .main__footer--link::before{
     width: 16px;
     height: 16px;
+    top: 0;
   }
 
   main .main__footer{
     font-size: 14px;
+  }
+
+  .main__footer--part:nth-child(1), 
+  .main__footer--part:nth-child(2){
+    padding-right: 40px;
+  }
+
+  .main__footer--part:nth-child(1)::after, 
+  .main__footer--part:nth-child(2)::after{
+    right: 20px;
+    height: 58px;
   }
 
 }
