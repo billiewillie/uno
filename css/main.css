@@ -188,7 +188,7 @@ main .main__footer {
     flex-grow: 1;
     border-top: 2px solid #737373;
     padding: 15px 0 0;
-    font-size: 14px;
+    font-size: 11px;
     font-family: 'Roboto medium', sans-serif;
 }
 
@@ -222,23 +222,30 @@ footer.footer {
 
 .main__footer--link {
     display: block;
-    width: 160px;
+    width: 135px;
     text-align: left;
     margin: auto;
     position: relative;
     padding-left: 26px;
 }
 
+.main__footer--link.footer__map{
+    width: auto;
+    padding-left: 0;
+    text-align: center;
+    display: inline-block;
+}
+
 .main__footer--link::before {
     display: block;
     position: absolute;
     content: '';
-    top: 0;
-    bottom: 0;
+    top: 2px;
     left: 0px;
+    bottom: 0;
     margin: auto;
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     background-image: url(../img/icons/icon_call-light.svg);
     background-position: 50% 50%;
     background-size: contain;
@@ -247,6 +254,12 @@ footer.footer {
 
 .main__footer--link:nth-child(2)::before{
     background-image: url(../img/icons/icon_email-light.svg);
+}
+
+.main__footer--link.footer__map::before{
+    background-image: url(../img/icons/icon_adress.svg);
+    left: -20px;
+    bottom: inherit;
 }
 
 .main__footer--part:nth-child(1),
