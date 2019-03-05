@@ -179,7 +179,24 @@ main.main {
 }
 
 .button__list {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.button__list button{
+    background-color: #000;
+    border: none;
+    color: #bfbfbf;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    text-transform: uppercase;
+}
+
+.btn__keys{
+    margin-right: 10px;
 }
 
 main .main__footer {

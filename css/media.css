@@ -103,7 +103,7 @@
   }
 
   .header__content--top{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
