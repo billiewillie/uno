@@ -19,6 +19,35 @@
   .menu__item{
     font-size: 24px;
   }
+
+  main .main__footer{
+    font-size: 12px;
+  }
+
+  .main__footer .container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__footer--part:nth-child(1),
+  .main__footer--part:nth-child(2){
+      margin-bottom: 0px;
+      padding-right: 20px;
+  }
+
+  .main__footer--part:nth-child(1)::after,
+  .main__footer--part:nth-child(2)::after{
+      width: 2px;
+      height: 100%;
+      bottom: 0;
+      top: 0;
+      right: 10px;
+      left: auto;
+  }
+
+  .main__footer--link{
+    width: 140px;
+  }
 }
 
 @media (max-width: 991px){

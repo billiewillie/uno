@@ -26,7 +26,7 @@ img {
 
 html,
 body {
-  height: 100%;
+    height: 100%;
 }
 
 body {
@@ -51,7 +51,7 @@ body {
     height: 100%;
 }
 
-.container{
+.container {
     padding: 0 10px;
     max-width: 1440px;
     margin: auto;
@@ -61,11 +61,11 @@ header.header {
     background-color: #252525;
 }
 
-.header__content--top{
+.header__content--top {
     text-align: center;
 }
 
-.contacts{
+.contacts {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,28 +73,28 @@ header.header {
     margin-bottom: 25px;
 }
 
-.contacts__item{
+.contacts__item {
     width: 15%;
 }
 
-.contacts__item--link{
+.contacts__item--link {
     display: block;
     padding: 0 15px;
     outline: none;
     text-align: center;
 }
 
-.contacts__item--link img{
+.contacts__item--link img {
     display: inline-block;
     width: 100%;
 }
 
-form.form__search{
+form.form__search {
     max-width: 50%;
     margin: auto;
 }
 
-.form__search .input{
+.form__search .input {
     background-color: transparent;
     border: none;
     color: #737373;
@@ -108,28 +108,28 @@ form.form__search{
     -webkit-appearance: none;
 }
 
-.logo{
+.logo {
     text-align: center;
     padding: 30px 0;
     font-size: 0;
 }
 
-.logo img{
+.logo img {
     width: 50%;
 }
 
-.header__content--bottom{
+.header__content--bottom {
     margin-top: -20px;
     background-color: #252525;
     position: relative;
     transition: .2s;
 }
 
-.header__content--bottom.show{
+.header__content--bottom.show {
     margin-top: 0;
 }
 
-.menu{
+.menu {
     justify-content: space-around;
     position: relative;
     display: flex;
@@ -137,7 +137,7 @@ form.form__search{
     font-size: 0;
 }
 
-.menu::before{
+.menu::before {
     position: absolute;
     display: block;
     content: '';
@@ -148,11 +148,11 @@ form.form__search{
     left: 0;
 }
 
-.menu__item{
+.menu__item {
     font-size: 4vw;
 }
 
-.menu__item--link{
+.menu__item--link {
     padding: 7px 10px;
     display: block;
     cursor: pointer;
@@ -160,11 +160,11 @@ form.form__search{
     transition: .1s;
 }
 
-.menu__item--link:hover{
+.menu__item--link:hover {
     background-color: #000;
 }
 
-main.main{
+main.main {
     background-image: url('../img/index_bg.jpg');
     background-size: cover;
     background-position: 50% 50%;
@@ -172,31 +172,34 @@ main.main{
     flex-direction: column;
 }
 
-.main__content{
+.main__content {
     align-items: center;
     display: flex;
     flex-grow: 6;
 }
 
-.button__list{
+.button__list {
     text-align: center;
 }
 
-main .main__footer{
+main .main__footer {
     background-color: transparent;
     text-align: center;
     flex-grow: 1;
     border-top: 2px solid #737373;
+    padding: 15px 0 0;
+    font-size: 14px;
+    font-family: 'Roboto medium', sans-serif;
 }
 
-.main__index{
+.main__index {
     flex: auto;
     display: flex;
     justify-content: center;
 
 }
 
-h1.title{
+h1.title {
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -206,7 +209,7 @@ h1.title{
     margin-bottom: 15px;
 }
 
-p.subtitle{
+p.subtitle {
     letter-spacing: 1px;
     font-size: 3.3vw;
     line-height: 1;
@@ -215,4 +218,54 @@ p.subtitle{
 
 footer.footer {
     background-color: #252525;
+}
+
+.main__footer--link {
+    display: block;
+    width: 160px;
+    text-align: left;
+    margin: auto;
+    position: relative;
+    padding-left: 26px;
+}
+
+.main__footer--link::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/icons/icon_call-light.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.main__footer--link:nth-child(2)::before{
+    background-image: url(../img/icons/icon_email-light.svg);
+}
+
+.main__footer--part:nth-child(1),
+.main__footer--part:nth-child(2) {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.main__footer--part:nth-child(1)::after,
+.main__footer--part:nth-child(2)::after {
+    position: absolute;
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #737373;
+    width: 200px;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
