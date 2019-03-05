@@ -165,46 +165,68 @@ form.form__search {
 }
 
 main.main {
+    position: relative;
     background-image: url('../img/index_bg.jpg');
     background-size: cover;
     background-position: 50% 50%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
 }
 
 .main__content {
     align-items: center;
     display: flex;
-    flex-grow: 6;
+    flex: auto;
 }
 
 .button__list {
     display: flex;
     justify-content: center;
-    
+
 }
 
-.button__list button{
+.button__list a {
     background-color: #000;
     border: none;
     color: #bfbfbf;
-    padding: 10px;
+    padding: 10px 10px 10px 35px;
     border-radius: 5px;
     font-size: 12px;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
+    position: relative;
 }
 
-.btn__keys{
+.button__list a::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    margin: auto;
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/icons/icon_case.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.btn__keys {
     margin-right: 10px;
+}
+
+a.btn__coop::before{
+    background-image: url(../img/icons/icon_order.svg);
 }
 
 main .main__footer {
     background-color: transparent;
     text-align: center;
-    flex-grow: 1;
     border-top: 2px solid #737373;
-    padding: 15px 0 0;
+    padding: 15px 0;
     font-size: 11px;
     font-family: 'Roboto medium', sans-serif;
 }
@@ -228,9 +250,10 @@ h1.title {
 
 p.subtitle {
     letter-spacing: 1px;
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
 footer.footer {
@@ -246,7 +269,7 @@ footer.footer {
     padding-left: 26px;
 }
 
-.main__footer--link.footer__map{
+.main__footer--link.footer__map {
     width: auto;
     padding-left: 0;
     text-align: center;
@@ -269,11 +292,11 @@ footer.footer {
     background-repeat: no-repeat;
 }
 
-.main__footer--link:nth-child(2)::before{
+.main__footer--link:nth-child(2)::before {
     background-image: url(../img/icons/icon_email-light.svg);
 }
 
-.main__footer--link.footer__map::before{
+.main__footer--link.footer__map::before {
     background-image: url(../img/icons/icon_adress.svg);
     left: -20px;
     bottom: inherit;
@@ -298,4 +321,10 @@ footer.footer {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.svg{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
