@@ -25,20 +25,24 @@
 
   let x = 0.1;
   function func(){
-    if(x <= 1){
+    if(x <= 1.1){
       coords = getPolygon();
       coords = polygon.setAttribute('points', '0,0 '+svgWidth+',0 '+svgWidth+','+svgHeight+' '+(0+svgWidth*x)+','+(svgHeight-svgHeight*x));
-      x += 0.001;
+      x += 0.002;
     }
     return coords;
   }
 
-  let svgFadeOut = setInterval(func, 1);
-  // console.log(func());
-    
-  // document.addEventListener('click', svgFadeOut);
-
-  // console.log(coords);
+  document.addEventListener('mousewheel touchmove', function(){
   
+    setInterval(func, 1);
+
+  });
+
+  // document.addEventListener('touchmove', function(){
+  
+  //   setInterval(func, 1);
+
+  // });
 
 })();
