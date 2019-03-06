@@ -7,6 +7,7 @@
   let year = document.querySelector('.year');
   year.innerHTML = getYear;
 
+  // varibles
   const search = document.querySelector('.item__search');
   const inputSearch = document.querySelector('.form__search .input');
   const headerContentBottom = document.querySelector('.header__content--bottom');
@@ -24,7 +25,7 @@
     inputSearch.focus();
   });
 
-  // curtain
+  // first screen effect
   function getPolygon(){
     svg.setAttribute('viewBox', '0 0 '+svgWidth+' '+svgHeight);
     polygon.setAttribute('points', '0,0 '+svgWidth+',0 '+svgWidth+','+svgHeight+' 0,'+svgHeight);
@@ -50,27 +51,22 @@
   }
 
   scrollBtn.addEventListener('click', function(){
-  
     showScreen();
-
   });
 
   document.addEventListener('mousewheel', function(){
-  
     showScreen();
-
   });
 
   document.addEventListener('touchmove', function(){
-  
     showScreen();
-
   });
 
-  if(window.innerWidth > window.innerHeight){
-
-
-
-  }
+  // Rotate protection
+  // window.addEventListener("orientationchange", function() {
+  //   if((window.orientation > 0) && (window.innerWidth < 768)) {
+      
+  //   }
+  // }, false);
 
 })();

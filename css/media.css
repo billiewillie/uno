@@ -1,4 +1,4 @@
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   
   .logo{
     padding: 40px 0;
@@ -225,4 +225,10 @@
     height: 58px;
   }
 
+}
+
+@media (orientation:landscape) and (max-width:767px){
+   body{
+      display: none;
+   }
 }
