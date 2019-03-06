@@ -168,6 +168,7 @@
 
   .menu{
     justify-content: flex-start;
+    padding: 15px 0;
   }
 
   .menu::before{
@@ -176,6 +177,10 @@
 
   .menu__item{
     font-size: 14px;
+  }
+
+  .menu__item--link{
+    padding: 7px 10px;
   }
 
   .main__footer--link{

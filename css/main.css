@@ -70,7 +70,7 @@ header.header {
     justify-content: center;
     align-items: center;
     font-size: 0;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .contacts__item {
@@ -110,7 +110,7 @@ form.form__search {
 
 .logo {
     text-align: center;
-    padding: 30px 0;
+    padding: 20px 0;
     font-size: 0;
 }
 
@@ -133,7 +133,7 @@ form.form__search {
     justify-content: space-around;
     position: relative;
     display: flex;
-    padding: 15px 0;
+    padding: 10px 0;
     font-size: 0;
 }
 
@@ -153,7 +153,7 @@ form.form__search {
 }
 
 .menu__item--link {
-    padding: 7px 10px;
+    padding: 0 10px;
     display: block;
     cursor: pointer;
     border-radius: 7px;
@@ -224,10 +224,12 @@ a.btn__coop::before{
 
 main .main__footer {
     background-color: transparent;
+    position: relative;
     text-align: center;
     border-top: 2px solid #737373;
     padding: 15px 0;
     font-size: 11px;
+    bottom: -100%;
     font-family: 'Roboto medium', sans-serif;
 }
 
@@ -241,15 +243,17 @@ main .main__footer {
 h1.title {
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
+    position: relative;
     letter-spacing: 5px;
     text-align: center;
-    font-size: 8vw;
+    font-size: 11vw;
     line-height: 1;
     margin-bottom: 15px;
 }
 
 p.subtitle {
     letter-spacing: 1px;
+    position: relative;
     font-size: 3.5vw;
     line-height: 1;
     margin-bottom: 40px;
