@@ -38,7 +38,7 @@
   .main__footer--part:nth-child(1),
   .main__footer--part:nth-child(2){
       margin-bottom: 0px;
-      padding-right: 30px;
+      padding-right: 25px;
   }
 
   .main__footer--part:nth-child(1)::after,

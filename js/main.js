@@ -1,14 +1,20 @@
 (function(){
   'use strict';
 
+  // year
+  const currentTime = new Date();
+  let getYear = currentTime.getFullYear();
+  let year = document.querySelector('.year');
+  year.innerHTML = getYear;
+
   const search = document.querySelector('.item__search');
   const inputSearch = document.querySelector('.form__search .input');
   const headerContentBottom = document.querySelector('.header__content--bottom');
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
-  let svgHeight = parseInt(getComputedStyle(svg).height+300);
-  let svgWidth = parseInt(getComputedStyle(svg).width+300);
+  let svgHeight = parseInt(getComputedStyle(svg).height);
+  let svgWidth = parseInt(getComputedStyle(svg).width);
 
   search.addEventListener('click', function(e){
     e.preventDefault();

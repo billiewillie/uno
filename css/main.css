@@ -184,15 +184,14 @@ main.main {
 .button__list {
     display: flex;
     justify-content: center;
-
 }
 
 .button__list a {
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .6);
     border: none;
     color: #bfbfbf;
     padding: 10px 10px 10px 35px;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 12px;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
@@ -343,4 +342,5 @@ footer.footer {
     margin: auto;
     width: 120%;
     height: 120%;
+    fill: #191919;
 }
