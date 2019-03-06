@@ -45,10 +45,9 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: scroll;
+    overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    height: 100%;
+    height: 100vh;
 }
 
 .container {
@@ -336,6 +335,10 @@ footer.footer {
 
 .svg{
     position: absolute;
-    top: -100px;
-    right: -100px;
+    top: -1%;
+    right: -1%;
+    left: 0;
+    margin: auto;
+    width: 120%;
+    height: 120%;
 }
