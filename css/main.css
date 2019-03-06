@@ -58,6 +58,8 @@ body {
 
 header.header {
     background-color: #252525;
+    position: relative;
+    z-index: 1;
 }
 
 .header__content--top {
@@ -335,8 +337,8 @@ footer.footer {
 
 .svg{
     position: absolute;
-    top: -1%;
-    right: -1%;
+    top: -5%;
+    right: -5%;
     left: 0;
     margin: auto;
     width: 120%;
