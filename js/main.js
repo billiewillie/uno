@@ -33,16 +33,16 @@
     return coords;
   }
 
-  document.addEventListener('mousewheel touchmove', function(){
+  document.addEventListener('mousewheel', function(){
   
     setInterval(func, 1);
 
   });
 
-  // document.addEventListener('touchmove', function(){
+  document.addEventListener('touchmove', function(){
   
-  //   setInterval(func, 1);
+    setInterval(func, 1);
 
-  // });
+  });
 
 })();
