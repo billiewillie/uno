@@ -13,15 +13,18 @@
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
+  const scrollBtn = document.querySelector('.scroll');
   let svgHeight = parseInt(getComputedStyle(svg).height);
   let svgWidth = parseInt(getComputedStyle(svg).width);
 
+  // search on mobile
   search.addEventListener('click', function(e){
     e.preventDefault();
     headerContentBottom.classList.toggle('show');
     inputSearch.focus();
   });
 
+  // curtain
   function getPolygon(){
     svg.setAttribute('viewBox', '0 0 '+svgWidth+' '+svgHeight);
     polygon.setAttribute('points', '0,0 '+svgWidth+',0 '+svgWidth+','+svgHeight+' 0,'+svgHeight);
@@ -43,7 +46,14 @@
   function showScreen () {
     setInterval(func, 1);
     mainFooter.classList.add('show');
+    scrollBtn.classList.add('hide');
   }
+
+  scrollBtn.addEventListener('click', function(){
+  
+    showScreen();
+
+  });
 
   document.addEventListener('mousewheel', function(){
   

@@ -73,6 +73,14 @@
   .btn__keys{
     margin-right: 55px;
   }
+
+  .button__list a{
+    padding: 25px 25px 25px 52px;
+  }
+
+  .button__list a::before{
+    left: 25px;
+  }
 }
 
 @media (max-width: 991px){

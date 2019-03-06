@@ -179,11 +179,14 @@ main.main {
     align-items: center;
     display: flex;
     flex: auto;
+    text-align: center;
+    position: relative;
 }
 
 .button__list {
     display: flex;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .button__list a {
@@ -263,9 +266,72 @@ p.subtitle {
     position: relative;
     font-size: 3.5vw;
     line-height: 1;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-family: 'SFUIDisplay-Thin', sans-serif;
 }
+
+.scroll{
+    position: absolute;
+    background-color: transparent;
+    width: 25px;
+    height: 40px;
+    border: 2px solid #BDC3C7;
+    border-radius: 50px;
+    top: 100%;
+    cursor: pointer;
+}
+
+.scroll::before{
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 4px;
+    height: 4px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-animation: scroll 2s infinite;
+    animation: scroll 2s infinite;
+}
+
+.scroll.hide{
+    display: none;
+}
+
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    80% {
+      transform: translate(0, 20px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 footer.footer {
     background-color: #252525;
