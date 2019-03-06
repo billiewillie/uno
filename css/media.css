@@ -148,6 +148,14 @@
     margin-right: 10px;
   }
 
+  h1.title{
+    font-size: 100px;
+  }
+
+  p.subtitle{
+    font-size: 36px;
+  }
+
   form.form__search{
     max-width: inherit;
     margin: inherit;

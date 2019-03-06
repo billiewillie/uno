@@ -7,8 +7,8 @@
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
-  let svgHeight = parseInt(getComputedStyle(svg).height+100);
-  let svgWidth = parseInt(getComputedStyle(svg).width+100);
+  let svgHeight = parseInt(getComputedStyle(svg).height+300);
+  let svgWidth = parseInt(getComputedStyle(svg).width+300);
 
   search.addEventListener('click', function(e){
     e.preventDefault();
@@ -53,7 +53,7 @@
 
   if(window.innerWidth > window.innerHeight){
 
-    
+
 
   }
 
