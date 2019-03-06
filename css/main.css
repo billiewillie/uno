@@ -225,12 +225,19 @@ a.btn__coop::before{
 main .main__footer {
     background-color: transparent;
     position: relative;
+    width: 100%;
     text-align: center;
     border-top: 2px solid #737373;
     padding: 15px 0;
     font-size: 11px;
-    bottom: -100%;
+    right: 100%;
     font-family: 'Roboto medium', sans-serif;
+    transition: 1s;
+    opacity: .7;
+}
+
+main .main__footer.show{
+    right: 0;
 }
 
 .main__index {
