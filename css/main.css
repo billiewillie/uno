@@ -410,3 +410,7 @@ footer.footer {
     height: 120%;
     fill: #191919;
 }
+
+.rotate{
+    display: none;
+}
