@@ -228,7 +228,14 @@
 }
 
 @media (orientation:landscape) and (max-width:767px){
-   body{
-      display: none;
-   }
+  .wrapper{
+    display: none;
+  }
+  .rotate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
 }
