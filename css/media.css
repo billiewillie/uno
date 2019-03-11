@@ -213,8 +213,9 @@
 
   main .main__footer{
     font-size: 14px;
+    transition: 1.5s;
   }
-
+ 
   .main__footer--part:nth-child(1), 
   .main__footer--part:nth-child(2){
     padding-right: 40px;

@@ -14,8 +14,13 @@
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
-  let svgHeight = parseInt(getComputedStyle(svg).height);
-  let svgWidth = parseInt(getComputedStyle(svg).width);
+  const svgHeight = parseInt(getComputedStyle(svg).height);
+  const svgWidth = parseInt(getComputedStyle(svg).width);
+  const popup = document.querySelector('.popup');
+  const btnCoop = document.querySelector('.btn__coop');
+  const popupClose = document.querySelector('.popup__close');
+  const popupInner = document.querySelector('.popup__inner');
+  const popupBg = document.querySelector('.popup__bg');
 
   // search on mobile
   search.addEventListener('click', function(e){
@@ -49,5 +54,45 @@
   }
 
   showScreen();
+
+
+  //popup
+  function getPopup(el1, el2) {
+    el1.addEventListener('click', function(e){
+      e.preventDefault();
+      el2.classList.toggle('show');
+    });
+  } 
+
+  function getBg(el1, el2, el3) {
+    el1.addEventListener('click', function(e){
+      e.preventDefault();
+      el2.classList.toggle('show');
+      setTimeout(function(){
+        el3.classList.toggle('turn');
+      }, 1000);
+    });
+  }
+
+  getPopup(btnCoop, popup);
+  getPopup(popupClose, popup);
+  getBg(btnCoop, popupInner, popupBg);
+
+  //E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "e.levina@uno-agency.ru", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 500);
+		});
+		return false;
+	});
 
 })();
