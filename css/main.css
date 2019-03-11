@@ -441,7 +441,7 @@ footer.footer {
     content: '';
     display: block;
     background-color: #252525;
-    width: 120%;
+    width: 130%;
     height: 120%;
     top: 50%;
     left: 50%;
@@ -496,6 +496,7 @@ footer.footer {
     width: 100%;
     border: 1px solid #313D4F;
     box-shadow: none;
+    font-size: 14px;
     border-radius: 5px;
     padding: 10px 10px 10px 50px;
     background-color: transparent;
