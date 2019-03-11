@@ -587,9 +587,9 @@ footer.footer {
 
 .popup.show{
     z-index: 1;
-    background-color: rgba(137,137,137,.6);
-    -webkit-animation: popup .5s;
-    animation: popup .5s;
+    background-color: rgba(137,137,137,.8);
+    -webkit-animation: popup 1s;
+    animation: popup 1s;
 }
 
 .rotate{
