@@ -38,7 +38,7 @@
     if(x <= 1.1){
       coords = getPolygon();
       coords = polygon.setAttribute('points', '0,0 '+svgWidth+',0 '+svgWidth+','+svgHeight+' '+(0+svgWidth*x)+','+(svgHeight-svgHeight*x));
-      x += 0.002;
+      x += 0.003;
     }
     return coords;
   }

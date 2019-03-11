@@ -311,8 +311,8 @@ p.subtitle {
     100% {
       opacity: 0;
     }
-  }
-  @keyframes scroll {
+}
+@keyframes scroll {
     0% {
       transform: translate(0, 0);
       opacity: 0;
@@ -327,7 +327,7 @@ p.subtitle {
     100% {
       opacity: 0;
     }
-  }
+}
 
 footer.footer {
     background-color: #252525;
@@ -409,4 +409,9 @@ footer.footer {
 
 .rotate{
     display: none;
+}
+
+.rotate img{
+    max-height: 80%;
+    transform: rotate(-90deg);
 }
