@@ -21,13 +21,14 @@
   const popupClose = document.querySelector('.popup__close');
   const popupInner = document.querySelector('.popup__inner');
   const popupBg = document.querySelector('.popup__bg');
-  const formInput = document.querySelector('.form__field .input');
+  const formInput = document.querySelector('.input');
   const formField = document.querySelector('.form__field');
 
   // search on mobile
-  // formInput.addEventListener('focus', function(){
-  //   this.closest('div').classList.add('active');
-  // });
+  formInput.addEventListener('focus', function(){
+    console.log('1');
+    // this.closest('div').classList.add('active');
+  });
 
   // search on mobile
   search.addEventListener('click', function(e){

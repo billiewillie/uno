@@ -236,7 +236,7 @@ main .main__footer {
     right: 100%;
     font-family: 'Roboto medium', sans-serif;
     transition: 1s;
-    opacity: .7;
+    color: rgba(255,255,255,.7);
 }
 
 main .main__footer.show{
@@ -340,6 +340,7 @@ footer.footer {
     margin: auto;
     position: relative;
     padding-left: 26px;
+    color: rgba(255,255,255,.7);
 }
 
 .main__footer--link.footer__map {
@@ -512,9 +513,11 @@ footer.footer {
     content: '';
     display: block;
     width: 30px;
-    left: 0;
+    left: 1px;
     top: 0;
-    height: 100%;
+    bottom: 0;
+    margin: auto;
+    height: 98%;
     z-index: 1;
     background-image: url('../img/icons/icon_user.svg');
     background-repeat: no-repeat;

@@ -212,6 +212,11 @@
     padding-left: 26px;
   }
 
+  .main__footer--part p:hover,
+  .main__footer--link:hover{
+    color: rgba(255,255,255,1);
+  }
+
   .main__footer--link::before{
     width: 16px;
     height: 16px;
