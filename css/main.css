@@ -296,10 +296,6 @@ p.subtitle {
     animation: scroll 2s infinite;
 }
 
-.scroll.hide{
-    display: none;
-}
-
 @-webkit-keyframes scroll {
     0% {
       -webkit-transform: translate(0, 0);

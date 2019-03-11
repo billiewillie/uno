@@ -14,7 +14,6 @@
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
-  const scrollBtn = document.querySelector('.scroll');
   let svgHeight = parseInt(getComputedStyle(svg).height);
   let svgWidth = parseInt(getComputedStyle(svg).width);
 
@@ -47,26 +46,8 @@
   function showScreen () {
     setInterval(func, 1);
     mainFooter.classList.add('show');
-    scrollBtn.classList.add('hide');
   }
 
-  scrollBtn.addEventListener('click', function(){
-    showScreen();
-  });
-
-  document.addEventListener('mousewheel', function(){
-    showScreen();
-  });
-
-  document.addEventListener('touchmove', function(){
-    showScreen();
-  });
-
-  // Rotate protection
-  // window.addEventListener("orientationchange", function() {
-  //   if((window.orientation > 0) && (window.innerWidth < 768)) {
-      
-  //   }
-  // }, false);
+  showScreen();
 
 })();
