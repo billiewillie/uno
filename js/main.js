@@ -57,26 +57,29 @@
 
 
   //popup
-  function getPopup(el1, el2) {
+  function getPopup(el1, el2, el3, el4) {
     el1.addEventListener('click', function(e){
       e.preventDefault();
       el2.classList.toggle('show');
+      el3.classList.toggle('show');
+      setTimeout(function(){
+        el4.classList.toggle('turn');
+      }, 1000);
     });
   } 
 
-  function getBg(el1, el2, el3) {
-    el1.addEventListener('click', function(e){
-      e.preventDefault();
-      el2.classList.toggle('show');
-      setTimeout(function(){
-        el3.classList.toggle('turn');
-      }, 1000);
-    });
-  }
+  // function getBg(el1, el2, el3) {
+  //   el1.addEventListener('click', function(e){
+  //     e.preventDefault();
+  //     el2.classList.toggle('show');
+  //     setTimeout(function(){
+  //       el3.classList.add('turn');
+  //     }, 1000);
+  //   });
+  // }
 
-  getPopup(btnCoop, popup);
-  getPopup(popupClose, popup);
-  getBg(btnCoop, popupInner, popupBg);
+  getPopup(btnCoop, popup, popupInner, popupBg);
+  getPopup(popupClose, popup, popupInner, popupBg);
 
   //E-mail Ajax Send
 	$("form").submit(function() { //Change
