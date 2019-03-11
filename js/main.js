@@ -21,6 +21,13 @@
   const popupClose = document.querySelector('.popup__close');
   const popupInner = document.querySelector('.popup__inner');
   const popupBg = document.querySelector('.popup__bg');
+  const formInput = document.querySelector('.form__field .input');
+  const formField = document.querySelector('.form__field');
+
+  // search on mobile
+  // formInput.addEventListener('focus', function(){
+  //   this.closest('div').classList.add('active');
+  // });
 
   // search on mobile
   search.addEventListener('click', function(e){
@@ -57,45 +64,35 @@
 
 
   //popup
-  function getPopup(el1, el2, el3, el4) {
-    el1.addEventListener('click', function(e){
+  function getPopup(el) {
+    el.addEventListener('click', function(e){
       e.preventDefault();
-      el2.classList.toggle('show');
-      el3.classList.toggle('show');
+      popup.classList.toggle('show');
+      popupInner.classList.toggle('show');
       setTimeout(function(){
-        el4.classList.toggle('turn');
+        popupBg.classList.toggle('turn');
       }, 1000);
     });
-  } 
+  }
 
-  // function getBg(el1, el2, el3) {
-  //   el1.addEventListener('click', function(e){
-  //     e.preventDefault();
-  //     el2.classList.toggle('show');
-  //     setTimeout(function(){
-  //       el3.classList.add('turn');
-  //     }, 1000);
-  //   });
-  // }
-
-  getPopup(btnCoop, popup, popupInner, popupBg);
-  getPopup(popupClose, popup, popupInner, popupBg);
+  getPopup(btnCoop);
+  getPopup(popupClose);
 
   //E-mail Ajax Send
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "e.levina@uno-agency.ru", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Спасибо");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 500);
-		});
-		return false;
-	});
+	// $("form").submit(function() { //Change
+	// 	var th = $(this);
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "e.levina@uno-agency.ru", //Change
+	// 		data: th.serialize()
+	// 	}).done(function() {
+	// 		alert("Спасибо");
+	// 		setTimeout(function() {
+	// 			// Done Functions
+	// 			th.trigger("reset");
+	// 		}, 500);
+	// 	});
+	// 	return false;
+	// });
 
 })();

@@ -81,6 +81,19 @@
   .button__list a::before{
     left: 25px;
   }
+
+  .form__field .input{
+    padding: 20px 20px 20px 75px;
+  }
+
+  .submit{
+    padding: 20px 45px;
+  }
+
+  .form__field::before{
+    width: 50px;
+    background-size: 40%;
+  }
 }
 
 @media (min-width: 992px) {
