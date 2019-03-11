@@ -93,6 +93,7 @@
   .form__field::before{
     width: 50px;
     background-size: 40%;
+    height: 57px;
   }
 }
 
