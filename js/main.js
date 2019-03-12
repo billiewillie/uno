@@ -27,14 +27,6 @@
 
 
   // search on mobile
-
-  // searchLink.addEventListener('click', function(e){
-  //   e.preventDefault();
-  //   menuForm.classList.toggle('show');
-  //   inputMenuSearch.focus();
-  //   console.log("111");
-  // });
-
   search.addEventListener('click', function(e){
     e.preventDefault();
     headerContentBottom.classList.toggle('show');
