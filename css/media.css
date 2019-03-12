@@ -33,6 +33,7 @@
 
   .main__footer--part{
     padding-top: 10px;
+    text-align: left;
   }
 
   .main__footer--part:nth-child(1),
@@ -75,7 +76,8 @@
   }
 
   .button__list a{
-    padding: 20px 25px 20px 52px;
+    padding: 20px 25px;
+    min-width: 182px;
   }
 
   .button__list a::before{
@@ -148,6 +150,10 @@
     width: 100%;
   }
 
+  .contacts__item:nth-child(1){
+    display: none;
+  }
+
   .contacts__item--link{
     padding: 0;
     text-align: left;
@@ -174,8 +180,7 @@
   }
 
   form.form__search{
-    max-width: inherit;
-    margin: inherit;
+    display: none;
   }
 
   .form__search .input {
@@ -191,9 +196,29 @@
     background-position: 95% 50%;
   }
 
+  .form__search--menu .input {
+    font-size: 12px;
+    border: 2px solid #303030;
+    height: 38px;
+    width: 380px;
+    line-height: 50px;
+    padding: 0 35px 0 15px;
+    background-image: url(../img/icons/icon_search.svg);
+    background-repeat: no-repeat;
+    background-size: 5% auto;
+    background-position: 95% 50%;
+    background-color: transparent;
+    outline: none;
+    color: #BDC3C7;
+  }
+
+  .form__search--menu{
+    padding-left: 20px;
+  }
+
   .menu{
-    justify-content: flex-start;
-    padding: 15px 0;
+    justify-content: space-between;
+    padding: 10px 0;
   }
 
   .menu::before{
@@ -201,11 +226,11 @@
 }
 
   .menu__item{
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .menu__item--link{
-    padding: 7px 10px;
+    padding: 10px 20px;
   }
 
   .main__footer--link{
@@ -237,6 +262,25 @@
   .main__footer--part:nth-child(1)::after, 
   .main__footer--part:nth-child(2)::after{
     right: 20px;
+    height: 58px;
+  }
+
+  .main__footer--part:nth-child(3){
+    max-width: 19%;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .main__footer--part:nth-child(1), 
+  .main__footer--part:nth-child(2){
+    padding-right: 100px;
+  }
+
+  .main__footer--part:nth-child(1)::after, 
+  .main__footer--part:nth-child(2)::after{
+    right: 50px;
     height: 58px;
   }
 

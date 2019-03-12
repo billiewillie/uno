@@ -24,11 +24,6 @@
   const formInput = document.querySelector('.input');
   const formField = document.querySelector('.form__field');
 
-  // search on mobile
-  formInput.addEventListener('focus', function(){
-    console.log('1');
-    // this.closest('div').classList.add('active');
-  });
 
   // search on mobile
   search.addEventListener('click', function(e){

@@ -72,6 +72,7 @@ header.header {
     align-items: center;
     font-size: 0;
     margin-bottom: 20px;
+    position: relative;
 }
 
 .contacts__item {
@@ -159,6 +160,7 @@ form.form__search {
     cursor: pointer;
     border-radius: 7px;
     transition: .1s;
+    line-height: 1;
 }
 
 .menu__item--link:hover {
@@ -193,36 +195,28 @@ main.main {
     background-color: rgba(0, 0, 0, .6);
     border: none;
     color: #bfbfbf;
-    padding: 10px 10px 10px 35px;
+    padding: 10px;
     border-radius: 6px;
     font-size: 12px;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
     position: relative;
+    line-height: 1;
+    min-width: 150px;
 }
 
-.button__list a::before {
-    display: block;
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    left: 10px;
-    margin: auto;
-    width: 17px;
-    height: 17px;
-    background-image: url(../img/icons/icon_case.svg);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
+.button__list a>*{
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.button__list a img{
+    margin-right: 10px;
+    width: 18px;
 }
 
 .btn__keys {
-    margin-right: 10px;
-}
-
-a.btn__coop::before{
-    background-image: url(../img/icons/icon_order.svg);
+    margin-right: 5px;
 }
 
 main .main__footer {
