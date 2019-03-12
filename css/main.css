@@ -348,7 +348,7 @@ footer.footer {
     display: block;
     position: absolute;
     content: '';
-    top: 2px;
+    top: 0px;
     left: 0px;
     bottom: 0;
     margin: auto;

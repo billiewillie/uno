@@ -9,8 +9,11 @@
 
   // varibles
   const search = document.querySelector('.item__search');
+  // const searchLink = document.querySelector('.contacts__item--link');
   const inputSearch = document.querySelector('.form__search .input');
+  // const inputMenuSearch = document.querySelector('.form__search--menu .input');
   const headerContentBottom = document.querySelector('.header__content--bottom');
+  // const menuForm = document.querySelector('.form__search--menu');
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
@@ -21,17 +24,25 @@
   const popupClose = document.querySelector('.popup__close');
   const popupInner = document.querySelector('.popup__inner');
   const popupBg = document.querySelector('.popup__bg');
-  const formInput = document.querySelector('.input');
-  const formField = document.querySelector('.form__field');
 
 
   // search on mobile
+
+  // searchLink.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   menuForm.classList.toggle('show');
+  //   inputMenuSearch.focus();
+  //   console.log("111");
+  // });
+
   search.addEventListener('click', function(e){
     e.preventDefault();
     headerContentBottom.classList.toggle('show');
     inputSearch.focus();
   });
 
+  
+  
   // first screen effect
   function getPolygon(){
     svg.setAttribute('viewBox', '0 0 '+svgWidth+' '+svgHeight);
