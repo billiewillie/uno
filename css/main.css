@@ -47,13 +47,15 @@ body {
     position: relative;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    height: 100vh;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .container {
     padding: 0 10px;
     max-width: 1440px;
     margin: auto;
+    display: flex;
 }
 
 header.header {
@@ -175,6 +177,12 @@ main.main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+main.main.main__services{
+    background-image: url('../img/services_bg.jpg');
+    flex: auto;
+
 }
 
 .main__content {

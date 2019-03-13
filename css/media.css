@@ -113,7 +113,7 @@
     display: none;
   }
 
-  .header .container{
+  .container{
     display: flex;
     padding: 0 30px;
   }
@@ -181,6 +181,10 @@
     width: inherit;
     width: 20px;
     margin-right: 10px;
+  }
+
+  .main__content .container{
+    flex-direction: column;
   }
 
   h1.title{
