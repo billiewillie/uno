@@ -9,11 +9,11 @@
 
   // varibles
   const search = document.querySelector('.item__search');
-  // const searchLink = document.querySelector('.contacts__item--link');
+  const searchLink = document.querySelector('.contacts__item--link');
   const inputSearch = document.querySelector('.form__search .input');
-  // const inputMenuSearch = document.querySelector('.form__search--menu .input');
+  const inputMenuSearch = document.querySelector('.form__search--menu .input');
   const headerContentBottom = document.querySelector('.header__content--bottom');
-  // const menuForm = document.querySelector('.form__search--menu');
+  const menuForm = document.querySelector('.form__search--menu');
   const svg = document.querySelector('.svg');
   const polygon = document.querySelector('.polygon');
   const mainFooter = document.querySelector('.main__footer');
@@ -27,13 +27,21 @@
 
 
   // search on mobile
-  search.addEventListener('click', function(e){
-    e.preventDefault();
-    headerContentBottom.classList.toggle('show');
-    inputSearch.focus();
+  // search.addEventListener('click', function(e){
+  //   e.preventDefault();
+  //   headerContentBottom.classList.toggle('show');
+  //   inputSearch.focus();
+  // });
+
+  // console.log(search);
+
+  searchLink.addEventListener('hover', function(e){
+    // e.preventDefault();
+    // headerContentBottom.classList.toggle('show');
+    // inputSearch.focus();
+    console.log('111');
   });
 
-  
   
   // first screen effect
   function getPolygon(){
