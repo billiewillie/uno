@@ -5,7 +5,10 @@
   const currentTime = new Date();
   let getYear = currentTime.getFullYear();
   let year = document.querySelector('.year');
-  year.innerHTML = getYear;
+  if(year){
+    year.innerHTML = getYear;
+  }
+  
 
   // varibles
   const search = document.querySelector('.item__search');

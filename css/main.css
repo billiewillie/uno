@@ -257,6 +257,21 @@ main .main__footer.show {
     right: 0;
 }
 
+footer.footer {
+    background-color: #252525;
+    padding: 25px 0;
+}
+
+.footer__bottom{
+    text-align: center;
+    font-size: 11px;
+}
+
+.footer__bottom .main__footer--link,
+.footer__bottom .main__footer--part{
+    color: rgba(255, 255, 255, 1);
+}
+
 .main__index {
     flex: auto;
     display: flex;
@@ -277,15 +292,6 @@ h1.title {
 
 .main__services h1.title {
     color: #303030;
-}
-
-p.subtitle {
-    letter-spacing: 1px;
-    position: relative;
-    font-size: 3.5vw;
-    line-height: 1;
-    margin-bottom: 30px;
-    font-family: 'SFUIDisplay-Thin', sans-serif;
 }
 
 .scroll {
@@ -352,10 +358,6 @@ p.subtitle {
     100% {
         opacity: 0;
     }
-}
-
-footer.footer {
-    background-color: #252525;
 }
 
 .main__footer--link {
@@ -762,7 +764,7 @@ footer.footer {
 }
 
 .service__item--list-item {
-    display: inline;
+    display: inline-block;
     text-align: left;
     position: relative;
     font-size: 14px;
@@ -773,7 +775,7 @@ footer.footer {
 
 .service__slash {
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 0;
     padding-left: 5px;
 }
@@ -781,6 +783,25 @@ footer.footer {
 .service__item--list-item:last-child .service__slash {
     display: none;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 @-webkit-keyframes popup {
     0% {

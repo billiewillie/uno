@@ -24,12 +24,3 @@
   url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff") format("woff"),
   url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.ttf") format("truetype")
 }
-
-@font-face {
-  font-family: "SFUIDisplay-Thin";
-  font-display: auto;
-  src: url("../fonts/SFUIDisplay/SFUIDisplay-Thin.eot");
-  src: 
-  url("../fonts/SFUIDisplay/SFUIDisplay-Thin.woff") format("woff"),
-  url("../fonts/SFUIDisplay/SFUIDisplay-Thin.ttf") format("truetype")
-}
