@@ -12,8 +12,8 @@
 
   //circle
   const triangle = document.querySelector('.circle');
-  let triangleWidth = getComputedStyle(triangle).width;
   if(triangle){
+    let triangleWidth = getComputedStyle(triangle).width;
     triangle.style.height = triangleWidth;
   }
   
