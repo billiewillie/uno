@@ -13,10 +13,11 @@
   //circle
   const triangle = document.querySelector('.circle');
   let triangleWidth = getComputedStyle(triangle).width;
-  triangle.style.height = triangleWidth;
-
+  if(triangle){
+    triangle.style.height = triangleWidth;
+  }
   
-
+  
   // varibles
   const search = document.querySelector('.item__search');
   // const searchLink = document.querySelector('.contacts__item--link');
