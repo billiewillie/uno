@@ -8,6 +8,13 @@
   if(year){
     year.innerHTML = getYear;
   }
+
+
+  //circle
+  const triangle = document.querySelector('.circle');
+  let triangleWidth = getComputedStyle(triangle).width;
+  triangle.style.height = triangleWidth;
+
   
 
   // varibles

@@ -263,6 +263,10 @@
     margin-bottom: 65px;
   }
 
+  .contacts__content h1.title{
+    font-size: 100px;
+  }
+
   p.subtitle{
     font-size: 36px;
   }
@@ -432,6 +436,28 @@
     color: rgba(255, 255, 255, 1);
   }
 
+  .contact__inner{
+    display: flex;
+  }
+
+  .contact__block--left{
+    width: 40%;
+    display: flex;
+    padding-right: 100px;
+  }
+
+  .contact__block--right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+  }
+
+  .contact__block--right .circle{
+    width: 100%;
+    filter: grayscale(1);
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -461,6 +487,10 @@
 
   .main__services .main__content{
     padding-top: 135px;
+  }
+
+  .contacts__content .container{
+    padding: 0 130px;
   }
 
 }

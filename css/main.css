@@ -54,6 +54,7 @@ body {
 .container {
     padding: 0 10px;
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -198,6 +199,10 @@ main.main.main__services {
     padding-top: 50px;
 }
 
+.main__content.contacts__content{
+    padding: 50px 0;
+}
+
 .button__list {
     display: flex;
     justify-content: center;
@@ -288,6 +293,10 @@ h1.title {
     font-size: 11vw;
     line-height: 1;
     margin-bottom: 35px;
+}
+
+.contacts__content h1.title{
+    font-size: 9vw;
 }
 
 .main__services h1.title {
@@ -409,6 +418,10 @@ h1.title {
     position: relative;
 }
 
+.main__footer--part.contact__footer{
+    margin-bottom: 0;
+    color: #737373;
+}
 
 .main__footer--part:nth-child(1)::after,
 .main__footer--part:nth-child(2)::after {
@@ -422,6 +435,10 @@ h1.title {
     left: 0;
     right: 0;
     margin: auto;
+}
+
+.main__footer--part.contact__footer::after{
+    display: none;
 }
 
 .svg {
@@ -784,24 +801,121 @@ h1.title {
     display: none;
 }
 
+.contact__block--left{
+    text-align: left;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact__block--right{
+    display: flex;
+    position: relative;
+}
+
+.contact__block--right::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 5%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/triangle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.contacts__content .container{
+    padding: 0 40px;
+}
+
+.contact__block--left .title{
+    font-family: 'Roboto medium', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact__block--adress{
+    margin-bottom: 30px;
+}
+
+.contact__block--connect{
+    margin-bottom: 50px;
+}
+
+.contact__block--text{
+    color: #a6a6a6;
+    font-family: 'Roboto medium', sans-serif;
+    position: relative;
+}
+
+.contact__block--text::before{
+    display: block;
+    position: absolute;
+    content: '';
+    left: -25px;
+    width: 15px;
+    height: 15px;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact__block--text.contact__direction::before{
+    background-image: url(../img/icons/icon_adress.svg);
+    top: 2px;
+}
+
+.contact__block--text.contact__phone::before{
+    background-image: url(../img/icons/icon_call-light.svg);
+    top: 2px;
+}
+
+.contact__block--text.contact__email::before{
+    background-image: url(../img/icons/icon_email-light.svg);
+    top: 2px;
+}
+
+.contact__block--right .circle{
+    background-size: cover;
+    -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mobile__map{
+    background-image: url(../img/map.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 ::-webkit-scrollbar {
-    width: 5px;
-  }
+    width: 10px;
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
+/* Track */
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+}
 
 @-webkit-keyframes popup {
     0% {
