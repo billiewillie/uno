@@ -168,6 +168,11 @@
   .footer__bottom .main__footer--part:nth-child(2)::after{
     display: none;
   }
+
+  .mobile__map{
+    width: 500px;
+    height: 500px;
+  }
 }
 
 @media (max-width: 991px){
@@ -441,20 +446,20 @@
   }
 
   .contact__block--left{
-    width: 40%;
+    width: 45%;
     display: flex;
     padding-right: 100px;
   }
 
   .contact__block--right{
-    width: 60%;
+    width: 55%;
     display: flex;
     align-items: center;
-    padding-left: 100px;
   }
 
   .contact__block--right .circle{
-    width: 100%;
+    width: 500px;
+    height: 500px;
     filter: grayscale(1);
   }
 
@@ -491,6 +496,15 @@
 
   .contacts__content .container{
     padding: 0 130px;
+  }
+
+  .contact__block--right{
+    padding-left: 100px;
+  }
+
+  .contact__block--right .circle{
+    width: 540px;
+    height: 540px;
   }
 
 }

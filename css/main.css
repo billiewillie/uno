@@ -835,6 +835,7 @@ h1.title {
     font-family: 'Roboto medium', sans-serif;
     font-size: 24px;
     margin-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .contact__block--adress{
@@ -889,13 +890,12 @@ h1.title {
 }
 
 .mobile__map{
-    background-image: url(../img/map.jpg);
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 320px;
     display: block;
+    margin: 0 auto;
+    z-index: 1;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
