@@ -80,8 +80,11 @@
       setInterval(func, 1);
       mainFooter.classList.add('show');
     }
-  
-    showScreen();
+    
+    setTimeout(function(){
+      showScreen();
+    }, 1000);
+    
   }
 
   //popup
