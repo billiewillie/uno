@@ -159,7 +159,7 @@ form.form__search {
     content: '';
     height: 2px;
     width: 100%;
-    background-color: #bfbfbf;
+    background-color: #303030;
     top: 0;
     left: 0;
 }
@@ -175,6 +175,7 @@ form.form__search {
     border-radius: 50px;
     transition: .1s;
     line-height: 1;
+    color: #bfbfbf;
 }
 
 .menu__item--link:hover,
