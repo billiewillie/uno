@@ -172,6 +172,51 @@
   .mobile__map{
     width: 500px;
     height: 500px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ppoj__list--item{
+    font-size: 24px;
+  }
+
+  .ppoj__top.ppoj__block--opinion .container::after{
+    left: 60%;
+  }
+
+  .ppoj__top.ppoj__block--consult .container::after{
+    left: 50%;
+  }
+
+  .ppoj__result--content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ppoj__result--youtube{
+    margin-bottom: 0;
+  }
+
+  .ppoj__result--content>div{
+    width: 48%;
+  }
+  .ppoj__block--link, 
+  .ppoj__block--link:hover{
+    margin-right: 20px;
+    font-size: 16px;
+  }
+
+  .case__slider--item {
+    padding: 0 45px;
+  }
+
+  .case__slider .slick-prev, 
+  .case__slider .slick-next,
+  .case__slider .slick-prev:before, 
+  .case__slider .slick-next:before{
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -336,7 +381,7 @@
 
   .menu::before{
     width: 300%;
-}
+  }
 
   .menu__item{
     font-size: 18px;
@@ -473,7 +518,7 @@
   }
 
   .ppoj__top{
-    padding: 150px 0;
+    padding: 100px 0;
   }
 
   .ppoj__top .container{
@@ -481,8 +526,25 @@
     padding-right: 45%;
   }
 
+  .ppoj__top.ppoj__block--right .container{
+    padding-right: 10px;
+    padding-left: 50%;
+  }
+
+  .ppoj__list--item{
+    padding: 20px 35px;
+  }
+
+  .ppoj__text p{
+    margin-bottom: 40px;
+  }
+
   .ppoj__top .container::after{
     opacity: 1;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: inherit;
   }
 
   .breadcrumbs{
@@ -496,10 +558,93 @@
 
   .ppoj__link{
     font-size: 24px;
-    width: 75%;
   }
   .ppoj__top--text{
     font-size: 24px;
+  }
+
+  .ppoj__top.ppoj__block--right .container::after,
+  .ppoj__top.ppoj__block--consult .container::after{
+    opacity: 1;
+  }
+
+  .ppoj__block--consult .ppoj__top--text{
+    margin-bottom: 45px;
+  }
+
+  .ppoj__top.ppoj__block--consult .container::after{
+    left: 50%;
+    background-position: 0% 100%;
+  }
+
+  .ppoj__top.ppoj__block--opinion .container::after{
+    bottom: -100px;
+    left: 55%;
+    background-position: 0% 100%;
+  }
+
+  .slider__item {
+    padding: 0 20px;
+  }
+
+  .slick-slider{
+    margin-left: 35%;
+  }
+
+  .ppoj__flashmob .ppoj__text{
+    text-align: right;
+  }
+
+  .cases .container{
+    padding-right: 30px;
+  }
+
+  .ppoj__result--content{
+    margin-bottom: 100px;
+  }
+
+  .case__slider.slick-slider {
+    margin-left: 0%;
+  }
+
+  .case__slider.slick-slider {
+    margin-left: 0%;
+    width: 100%;
+  }
+
+  .case__slider .slick-next {
+    right: -15px;
+  }
+
+  .case__slider .slick-prev {
+    left: -15px;
+  }
+
+  .case__slider--item {
+    padding: 0 30px;
+  }
+
+  .slick-prev, 
+  .slick-next,
+  .slick-prev:before, 
+  .slick-next:before{
+    width: 30px;
+    height: 30px;
+  }
+
+  .case__top::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    transition: .2s;
   }
 
 }
@@ -551,16 +696,59 @@
   }
 
   .ppoj__top{
-    padding: 220px 0;
+    padding: 150px 0;
   }
 
   .ppoj__top .container::after{
     background-size: contain;
-    height: 165%;
+    height: 150%;
   }
 
-  .ppoj__link{
-    width: 60%;
+  .ppoj__top.ppoj__block--right .container{
+    padding-left: 40%;
+  }
+
+  .ppoj__top.ppoj__block--right .container::after{
+    right: 50%;
+  }
+
+  .ppoj__top.ppoj__block--opinion .container::after{
+    height: 175%;
+    bottom: -150px;
+    left: 50%;
+  }
+
+  .slide{
+    padding: 30px 20px;
+    min-height: 310px;
+    width: 250px;
+  }
+
+  .flashmob__city{
+    font-size: 28px;
+  }
+
+  .slick-slider{
+    bottom: 0;
+  }
+
+  .ppoj__top.ppoj__result .container{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
+
+  .ppoj__result h1.title.ppoj__top--title{
+    margin-right: 20px;
+  }
+
+  .ppoj__result--youtube .ppoj__block--soc{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ppoj__result--content{
+    width: 70%;
   }
 
 }

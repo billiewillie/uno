@@ -1,22 +1,4 @@
 @font-face {
-  font-family: "Roboto light";
-  font-display: auto;
-  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto regular";
-  font-display: auto;
-  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Roboto medium";
-  font-display: auto;
-  src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
-}
-
-@font-face {
   font-family: "SFUIDisplay-Heavy";
   font-display: auto;
   src: url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.eot");

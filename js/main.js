@@ -1,6 +1,78 @@
 (function(){
   'use strict';
 
+  // slider
+  if($('.slider')){
+    $('.slider').slick({
+      dots: true,
+      infinite: false,
+      speed: 300,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 3000,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            variableWidth: true
+          }
+        },
+      ]
+    });
+  }
+  
+  if($('.case__slider')){
+    $('.case__slider').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1440,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 3000,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1,
+          }
+        },
+      ]
+    });
+  }
+  
+
   // year
   const currentTime = new Date();
   let getYear = currentTime.getFullYear();
