@@ -1,8 +1,13 @@
 (function(){
   'use strict';
 
+  //wow
+  if($('.wow')){
+    new WOW().init();
+  }
+
   // slider
-  if($('.slider')){
+  if($('.slider').length){
     $('.slider').slick({
       dots: true,
       infinite: false,
