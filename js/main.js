@@ -1,13 +1,14 @@
 (function(){
   'use strict';
 
-  //wow
+  // wow
   if($('.wow')){
     new WOW().init();
   }
 
+
   // slider
-  if($('.slider').length){
+  if($('.slider')){
     $('.slider').slick({
       dots: true,
       infinite: false,
@@ -126,6 +127,7 @@
   search.addEventListener('click', function(e){
     e.preventDefault();
     headerContentBottom.classList.toggle('show');
+    inputSearch.classList.toggle('show');
     inputSearch.focus();
   });
 
