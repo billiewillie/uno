@@ -35,6 +35,11 @@ body {
     font-size: 14px;
     color: #BDC3C7;
     background-color: #191919;
+    background-image: url(../img/body_bg.jpg);
+    background-position: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 body.body__ppoj{
@@ -237,11 +242,17 @@ main.main {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    flex: auto;
 }
 
 main.main.ppoj__main{
     background-image: none;
     color: #5F4A4A;
+}
+
+main.main.main__cases{
+    background-image: none;
+    justify-content: flex-start;
 }
 
 main.main.main__azbuka{
@@ -254,6 +265,7 @@ main.main.main__azbuka{
 
 .breadcrumbs{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     font-family: 'SFUIDisplay-Medium', sans-serif;
     margin-bottom: 25px;
@@ -270,6 +282,7 @@ main.main.main__azbuka{
     padding: 7px 20px;
     line-height: 1;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .azbuka__breadcrumbs .breadcrumb__item{
@@ -1580,6 +1593,10 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/case-pills.jpg);
 }
 
+.case__top.case__supergeroi{
+    background-image: url(../img/case-supergeroi.jpg);
+}
+
 .case__category{
     position: relative;
     font-family: "SFUIDisplay-Heavy", sans-serif;
@@ -1798,6 +1815,295 @@ p.subtitle.azbuka__subtitle{
     width: 70px;
     height: 70px;
     overflow: hidden;
+}
+
+.breadcrumbs.breadcrumbs__cases{
+    padding: 40px 0;
+    color: #737373;
+}
+
+.breadcrumbs__cases .breadcrumb__item{
+    border: 1px solid #737373;
+}
+
+.case__big{
+    background-image: url(../img/case_rshf.jpg);
+    background-size: cover;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    padding: 50px 0 5px;
+    position: relative;   
+    margin-bottom: 100px;
+    color: #ECF0F1;
+}
+
+.case__big::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #212121;
+    background: -moz-linear-gradient(top, rgba(33,33,33,.6) 0%, #0a63af 100%); 
+    background: -webkit-linear-gradient(top, rgba(33,33,33,.6) 0%,#0a63af 100%); 
+    background: linear-gradient(to bottom, rgba(33,33,33,.6) 0%,#0a63af 100%);
+}
+
+.case__big .container{
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.case__big--svg{
+    position: absolute;
+    top: 99.999%;
+    left: 0;
+}
+
+.case__big--title{
+    padding-left: 30%;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.title.case__big--top{
+    font-size: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.title.case__big--top::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    margin: auto;
+    width: 100%;
+    height: 130%;
+    background-image: url(../img/logo-rshf.png);
+    background-position: 95% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.subtitle.case__big--bottom{
+    font-size: 10px;
+    margin-bottom: 100px;
+}
+
+.case__big--stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.stat__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.stat__item:last-child{
+    margin-bottom: 0;
+}
+
+.stat__title{
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.stat__number{
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.stat__feature{
+    font-size: 20px;
+    color: #EBD047;
+    text-shadow: 0px 5px 15px #EBD047;
+}
+
+.case__big--school::after,
+.case__big--members::after{
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-position: 50% 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.stat__item.case__big--members{
+    margin-bottom: 30px;
+}
+
+.case__big--school::after{
+    background-image: url(../img/icons/icon_partner.svg);
+}
+
+.case__big--members::after{
+    background-image: url(../img/icons/icon_user-rshf.svg);
+}
+
+.stat__support--list{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.stat__support--item{
+    border-radius: 50%;
+    background-color: #fff;
+    width: 68px;
+    height: 68px;
+    background-size: 70%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.stat__support--item:nth-child(1){
+    margin-right: 20px;
+    background-image: url(../img/minobrzdrav.png);
+}
+
+.stat__support--item:nth-child(2){
+    background-image: url(../img/minobrnauki.png);
+}
+
+.stat__support--text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.case__big--button{
+    text-align: center;
+}
+
+.case__big--button a{
+    display: inline-block;
+    border-radius: 50px;
+    background-color: #094B84;
+    box-shadow: 0px 10px 20px rgba(17, 102, 175, 0.75);
+    padding: 15px 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.case__table{
+    margin-bottom: 50px;
+}
+
+.case__table .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.case__table .case__slider--item{
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.case__table .case__card{
+    min-height: 358px;
+}
+
+.case__slider--item.case__item--big .case__card{
+    display: flex;
+}
+
+.case__slider--item.case__item--jjop .case__top{
+    background-image: url(../img/city-7.jpg);
+}
+
+.case__slider--item.case__item--vystavka .case__top{
+    background-image: url(../img/case_vystavka.jpg);
+}
+
+.case__slider--item.case__item--pill .case__top{
+    background-image: url(../img/case_pill.jpg);
+}
+
+.case__slider--item.case__item--prostatilen .case__top{
+    background-image: url(../img/case_prostatilen.jpg);
+    background-position: 100% 0%;
+}
+
+.case__slider--item.case__item--big .case__top::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+}
+
+.case__slider--item.case__item--big:hover .case__top::before{
+    background-color: rgba(0,0,0,0);
+}
+
+.case__slider--item.case__item--big .case__top{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.case__slider--item.case__item--big .case__members{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.case__slider--item.case__item--big .case__content{
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.case__slider--item.case__item--big .case__members{
+    background-color: rgba(37,37,37,.8);
+}
+
+.case__content--title{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.case__content--text{
+    font-size: 14px;
 }
 
 ::-webkit-scrollbar {

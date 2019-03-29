@@ -391,8 +391,8 @@
   .body.body__azbuka::after{
     background: #ec6408 url(../img/azbuka_bg.jpg);;
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 16%,#ec6408 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 16%, #ec6408 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%,#ec6408 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%, #ec6408 100%);
   }
 
   .challenge__pic{
@@ -408,6 +408,99 @@
     width: 70px;
     height: 70px;
     bottom: -35px;
+  }
+
+  .case__big{
+    padding: 150px 0 10px;
+  }
+
+  .title.case__big--top{
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .subtitle.case__big--bottom{
+    font-size: 16px;
+    margin-bottom: 200px;
+  }
+
+  .case__big--stat{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .stat__item{
+    width: 30%;
+    margin-bottom: 0;
+  }
+
+  .stat__item.case__big--members{
+    padding-top: 86px;
+  }
+
+  .stat__item.case__big--school{
+    padding-top: 86px;
+  }
+
+  .case__big--school::after, 
+  .case__big--members::after{
+    bottom: 65%;
+    width: 65px;
+    height: 65px;
+  }
+
+  .case__row--top{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(1),
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(3){
+    width: 48%;
+    order: 1;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(1){
+    margin-right: 4%;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(3){
+    order: 2;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(2){
+    order: 3;
+    width: 100%;
+  }
+
+  .case__row--top:nth-child(2) .case__slider--item{
+    width: 49%;
+  }
+
+  .case__row--top:nth-child(2) .case__slider--item:nth-child(1){
+    margin-right: 2%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(1){
+    width: 100%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(2),
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(3){
+    width: 48%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(2){
+    margin-right: 4%;
+  }
+
+  .case__slider--item.case__item--prostatilen .case__content{
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    padding-left: 30%;
   }
 
 }
@@ -686,11 +779,13 @@
     filter: grayscale(1);
   }
 
-  .header__case .header__content--top{
+  .header__case .header__content--top,
+  .header__azbuka .header__content--top{
     display: none;
   }
 
-  .header__case .header__content{
+  .header__case .header__content,
+  .header__azbuka .header__content{
     padding-top: 115px;
   }
 
@@ -905,6 +1000,57 @@
     font-size: 18px;
   }
 
+  .subtitle.case__big--bottom{
+    font-size: 24px;
+  }
+
+  .stat__title{
+    font-size: 36px;
+  }
+
+  .stat__number{
+    font-size: 48px;
+  }
+
+  .stat__feature,
+  .stat__support--text{
+    font-size: 24px;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(1),
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(3){
+    width: 23%;
+    order: 1;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(1){
+    margin-right: 3%;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(3){
+    order: 3;
+  }
+
+  .case__row--top:nth-child(1) .case__slider--item:nth-child(2){
+    order: 2;
+    width: 48%;
+    margin-right: 3%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(1){
+    width: 49%;
+    margin-right: 2%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(2),
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(3){
+    width: 23.5%;
+  }
+
+  .case__row--top:nth-child(3) .case__slider--item:nth-child(2){
+    margin-right: 2%;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1020,8 +1166,24 @@
   .body.body__azbuka::after{
     background: #ec6408 url(../img/azbuka_bg.jpg);;
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 28%,#ec6408 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 28%, #ec6408 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%,#ec6408 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%, #ec6408 100%);
+  }
+
+  .case__big--title{
+    padding-left: 20%;
+  }
+
+  .case__big{
+    margin-bottom: 170px;
+  }
+
+  .title.case__big--top::after{
+    height: 250%;
+  }
+
+  .subtitle.case__big--bottom{
+    padding-right: 25%;
   }
 
 }

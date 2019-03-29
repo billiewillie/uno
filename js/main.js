@@ -2,13 +2,13 @@
   'use strict';
 
   // wow
-  if($('.wow')){
+  if($('.wow').length){
     new WOW().init();
   }
 
 
   // slider
-  if($('.slider')){
+  if($('.slider').length){
     $('.slider').slick({
       dots: true,
       infinite: false,
@@ -40,7 +40,7 @@
     });
   }
   
-  if($('.case__slider')){
+  if($('.case__slider').length){
     $('.case__slider').slick({
       dots: false,
       infinite: true,
