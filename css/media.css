@@ -148,7 +148,7 @@
   .form__field::before{
     width: 50px;
     background-size: 40%;
-    height: 57px;
+    height: 56px;
   }
 
   .service__item {
@@ -501,6 +501,15 @@
     align-items: flex-end;
     text-align: right;
     padding-left: 30%;
+  }
+
+  .team__one{
+    width: 50%;
+  }
+
+  .main__content .subtitle{
+    width: 70%;
+    margin: 0 auto 70px;
   }
 
 }
@@ -1051,6 +1060,19 @@
     margin-right: 2%;
   }
 
+  .team__box{
+    width: 250px;
+  }
+
+  .team__pic{
+    height: 300px;
+  }
+
+  .partner__item{
+    width: 25%;
+    padding: 20px 0;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1186,6 +1208,31 @@
     padding-right: 25%;
   }
 
+  .team__one{
+    width: 33.333%;
+  }
+
+  .team__name{
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .team__position{
+    font-size: 16px;
+  }
+
+  .main__content .subtitle{
+    font-size: 24px;
+  }
+
+  .team__box{
+    width: 300px;
+  }
+
+  .team__pic{
+    height: 350px;
+  }
+
 }
 
 @media (orientation:landscape) and (max-width:767px){
@@ -1198,5 +1245,8 @@
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-color: #191919;
+    position: relative;
+    z-index: 1;
   }
 }

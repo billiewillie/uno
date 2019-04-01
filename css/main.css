@@ -36,7 +36,7 @@ body {
     color: #BDC3C7;
     background-color: #191919;
     background-image: url(../img/body_bg.jpg);
-    background-position: 50%;
+    background-position: 50% 0;
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -391,6 +391,14 @@ h1.title.ppoj__top--title{
     text-transform: uppercase;
 }
 
+.main__content .subtitle{
+    font-family: 'SFUIDisplay-Light', sans-serif; 
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: inherit;
+}
+
 .ppoj__link{
     font-family: 'SFUIDisplay-Medium', sans-serif;
     color: #5F4A4A;
@@ -434,7 +442,7 @@ h1.title.ppoj__top--title{
 }
 
 main.main.main__services {
-    background-image: url('../img/services_bg.jpg');
+    background-image: none;
     flex: auto;
 }
 
@@ -1028,11 +1036,11 @@ p.subtitle.azbuka__subtitle{
 }
 
 .icon__design{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_design.svg);
 }
 
 .icon__marketing{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_marketing.svg);
 }
 
 .icon__video{
@@ -1040,23 +1048,23 @@ p.subtitle.azbuka__subtitle{
 }
 
 .icon__pr{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_pr.svg);
 }
 
 .icon__web{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_webdesign.svg);
 }
 
 .icon__event{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_event.svg);
 }
 
 .icon__promo{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_ad.svg);
 }
 
 .icon__digital{
-    background-image: url(../img/icons/icon_video.svg);
+    background-image: url(../img/icons/icon_digital.svg);
 }
 
 .service__item--title {
@@ -2104,6 +2112,210 @@ p.subtitle.azbuka__subtitle{
 
 .case__content--text{
     font-size: 14px;
+}
+
+.team__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team__one{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.team__box{
+    width: 250px;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+
+.team__box::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    width: 50%;
+    height: 1px;
+    background-color: #BDC3C7;
+}
+
+.team__pic{
+    position: relative;
+    height: 320px;
+    width: 100%;
+    display: flex;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.team__pic span{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    transition: .2s;
+}
+
+.team__pic span:hover{
+    opacity: 0;
+}
+
+.team__pic::before{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    filter: blur(10px);
+    background: linear-gradient(235deg, #fff, transparent, #fff);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team__pic::after{
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+    filter: blur(10px);
+    background: linear-gradient(235deg, #fff, transparent, #fff);
+    transition: .5s;
+    opacity: 0;
+}
+
+.team__pic:hover::before,
+.team__pic:hover::after{
+    opacity: 1;
+}
+
+.team__name{
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.team__position{
+    font-size: 15px;
+    font-family: "SFUIDisplay-Light", sans-serif;
+}
+
+.team__ilona .team__pic span{
+    background-image: url(../img/team/ilona-1.jpg);
+}
+
+.team__ilona .team__pic{
+    background-image: url(../img/team/ilona-2.jpg);
+}
+
+.team__kate .team__pic span{
+    background-image: url(../img/team/kate-1.jpg);
+}
+
+.team__kate .team__pic{
+    background-image: url(../img/team/kate-2.jpg);
+}
+
+.team__vika .team__pic span{
+    background-image: url(../img/team/vika-1.jpg);
+}
+
+.team__vika .team__pic{
+    background-image: url(../img/team/vika-2.jpg);
+}
+
+.team__varya .team__pic span{
+    background-image: url(../img/team/varya-1.jpg);
+}
+
+.team__varya .team__pic{
+    background-image: url(../img/team/varya-2.jpg);
+}
+
+/* .team__zhenya .team__pic{
+    background-image: url(../img/team/zhenya-1.jpg);
+}
+
+.team__zhenya .team__pic:hover{
+    background-image: url(../img/team/zhenya-2.jpg);
+} */
+
+.team__vadim .team__pic{
+    background-image: url(../img/team/vadim-1.jpg);
+}
+
+.team__vadim .team__pic:hover{
+    background-image: url(../img/team/vadim-2.jpg);
+}
+
+.partners {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partners .title{
+    color: #191919;
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.partner__item {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    transition: .2s;
+    padding: 15px 30px;
+    align-self: center;
+    font-size: 0;
+}
+
+.partner__colored{
+    display: none;
+    margin: auto;
+}
+
+.partner__item:hover .partner__colored{
+    display: block;
+}
+
+.partner__item:hover .partner__black{
+    display: none;
+}
+
+.partners .container{
+    flex-direction: column;
 }
 
 ::-webkit-scrollbar {
