@@ -638,9 +638,9 @@
     width: 100%;
   }
 
-  .contacts__item:nth-child(1){
+  /* .contacts__item:nth-child(1){
     display: none;
-  }
+  } */
 
   .contacts__item--link{
     padding: 0;
