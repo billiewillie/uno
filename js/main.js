@@ -105,6 +105,24 @@
   const popupBg = document.querySelector('.popup__bg');
   const serviceItemTitle = Array.from(document.querySelectorAll('.service__item--title'));
   const serviceItemListItem = Array.from(document.querySelectorAll('.service__item--list-item'));
+  const aboutTitles = Array.from(document.querySelectorAll('.about__title--item'));
+  const aboutText = Array.from(document.querySelectorAll('.about__text--item'));
+
+  // about selection
+  $('.about__title--item').on('click', function (e) {
+  
+    e.preventDefault();
+    
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    
+    let target = $(this).attr('href');
+  
+    $('.about__text--item').not(target).hide();
+    
+    $(target).fadeIn(600);
+    
+  });
 
   // service page decorations
   function service(el1, name, content) {
@@ -124,13 +142,14 @@
   }
   
   // search on mobile
-  search.addEventListener('click', function(e){
-    e.preventDefault();
-    headerContentBottom.classList.toggle('show');
-    inputSearch.classList.toggle('show');
-    inputSearch.focus();
-  });
-
+  if(search){
+    search.addEventListener('click', function(e){
+      e.preventDefault();
+      headerContentBottom.classList.toggle('show');
+      inputSearch.classList.toggle('show');
+      inputSearch.focus();
+    });
+  }
   
   // first screen effect
   
