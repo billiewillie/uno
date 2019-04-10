@@ -924,12 +924,12 @@ p.subtitle.azbuka__subtitle{
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 37px;
+    height: 100%;
     z-index: 1;
     background-image: url('../img/icons/icon_user.svg');
     background-repeat: no-repeat;
     background-position: 50%;
-    background-color: #273142;
+    border-right: 1px solid #313D4F;
     background-size: 50%;
     border-radius: 5px 0 0 5px;
 }
