@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "SFUIDisplay-Heavy";
+  font-display: auto;
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.eot");
+  src: 
+  url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.woff") format("woff"),
+  url("../fonts/SFUIDisplay/SFUIDisplay-Heavy.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Medium";
+  font-display: auto;
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.eot");
+  src: 
+  url("../fonts/SFUIDisplay/SFUIDisplay-Medium.woff") format("woff"),
+  url("../fonts/SFUIDisplay/SFUIDisplay-Medium.ttf") format("truetype")
+}
+
+@font-face {
+  font-family: "SFUIDisplay-Light";
+  font-display: auto;
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.eot");
+  src: 
+  url("../fonts/SFUIDisplay/SFUIDisplay-Light.woff") format("woff"),
+  url("../fonts/SFUIDisplay/SFUIDisplay-Light.ttf") format("truetype")
+}
