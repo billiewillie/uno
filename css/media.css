@@ -846,6 +846,11 @@
     align-items: center;
   }
 
+  ymaps{
+    left: -20px;
+    top: -20px;
+  }
+
   .contact__block--right .circle{
     width: 500px;
     height: 500px;
