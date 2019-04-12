@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  // wow
+  // // wow
   if($('.wow').length){
     new WOW().init();
   }
@@ -197,24 +197,38 @@
         }, 1000);
       });
     }
+
+    // //email
+    $('.form__popup').on('submit', function(e){
+      e.preventDefault();
+      var fd = new FormData(this);
+      var th = $(this);
+      $.ajax({
+        url: 'mail.php',
+        type: 'POST',
+        contentType: false, 
+        processData: false, 
+        data: fd,
+        success: function(msg){
+          if(msg == 'ok') {
+            th.trigger('reset');
+            $('.popup__title').text('cпасибо! Мы скоро c вами свяжемся');
+            setTimeout(function(){
+              popupBg.classList.toggle('turn');
+              popup.classList.toggle('show');
+              popupInner.classList.toggle('show');
+              $('.popup__title').text('напишите нам');
+            }, 2000);
+          } else {
+            alert('не отправлено');
+          }
+        }
+      })
+    });
   
     getPopup(btnCoop);
     getPopup(popupClose);
   }
   
-
-  //email
-  $(".form__popup").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-			$(".form__popup").trigger("reset");
-		});
-		return false;
-	});
 
 })();

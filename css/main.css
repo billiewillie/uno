@@ -2911,6 +2911,25 @@ p.subtitle.azbuka__subtitle{
 .geroi__how--item:last-child{
     margin-bottom: 0;
 }
+
+.popup__thank{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    top: 0;
+    left: 200%;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+.popup__thank.active{
+    left: 0;
+    opacity: 1;
+}
   
 /* Track */
 ::-webkit-scrollbar-track {
