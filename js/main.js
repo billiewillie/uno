@@ -203,21 +203,18 @@
   }
   
 
-  //E-mail Ajax Send
-	// $("form").submit(function() { //Change
-	// 	var th = $(this);
-	// 	$.ajax({
-	// 		type: "POST",
-	// 		url: "e.levina@uno-agency.ru", //Change
-	// 		data: th.serialize()
-	// 	}).done(function() {
-	// 		alert("Спасибо");
-	// 		setTimeout(function() {
-	// 			// Done Functions
-	// 			th.trigger("reset");
-	// 		}, 500);
-	// 	});
-	// 	return false;
-	// });
+  //email
+  $(".form__popup").submit(function() {
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$(this).find("input").val("");
+			alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+			$(".form__popup").trigger("reset");
+		});
+		return false;
+	});
 
 })();

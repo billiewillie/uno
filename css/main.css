@@ -182,6 +182,10 @@ form.form__search {
     opacity: 1;
 }
 
+.antispam{
+    display: none;
+}
+
 .input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none;
 }
