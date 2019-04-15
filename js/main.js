@@ -212,7 +212,7 @@
         success: function(msg){
           if(msg == 'ok') {
             th.trigger('reset');
-            $('.popup__title').text('cпасибо! Мы скоро c вами свяжемся');
+            $('.popup__title').text('Cпасибо! Мы скоро c вами свяжемся');
             setTimeout(function(){
               popupBg.classList.toggle('turn');
               popup.classList.toggle('show');

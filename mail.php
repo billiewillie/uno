@@ -31,7 +31,12 @@ $mail->addAddress('v.belinovich@uno-agency.ru');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта';
-$mail->Body    = 'Имя ' .$name. '<br>телефон ' .$phone. '<br>Почта ' .$email;
+// $mail->Body    = 'Имя ' .$name. '<br>телефон ' .$phone. '<br>Почта ' .$email;
+
+$mail->Body    =  "<table><tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Имя</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $name . "</td></tr>
+<tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Телефон</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $phone . "</td></tr>
+<tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Почта</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $email . "</td></tr></table>";
+
 $mail->AltBody = '';
 
 if(!$mail->send()) {
