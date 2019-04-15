@@ -6,7 +6,6 @@
     new WOW().init();
   }
 
-
   // slider
   if($('.slider').length){
     $('.slider').slick({
@@ -107,6 +106,10 @@
   const serviceItemListItem = Array.from(document.querySelectorAll('.service__item--list-item'));
   const aboutTitles = Array.from(document.querySelectorAll('.about__title--item'));
   const aboutText = Array.from(document.querySelectorAll('.about__text--item'));
+  const inputName = document.querySelector('.input__name');
+  const inputPhone = document.querySelector('.input__phone');
+  const inputEmail = document.querySelector('.input__email');
+  const userUrl = document.querySelector('.user_url');
 
   // about selection
   $('.about__title--item').on('click', function (e) {
@@ -198,11 +201,11 @@
       });
     }
 
-    // //email
+    // email
     $('.form__popup').on('submit', function(e){
       e.preventDefault();
-      var fd = new FormData(this);
-      var th = $(this);
+      let fd = new FormData(this);
+      let th = $(this);
       $.ajax({
         url: 'mail.php',
         type: 'POST',
@@ -226,9 +229,32 @@
       })
     });
   
+    
     getPopup(btnCoop);
     getPopup(popupClose);
   }
-  
 
+  $('.contacts__form').on('submit', function(e){
+    e.preventDefault();
+    let fd = new FormData(this);
+    let th = $(this);
+    $.ajax({
+      url: 'mail.php',
+      type: 'POST',
+      contentType: false, 
+      processData: false, 
+      data: fd,
+      success: function(msg){
+        if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '') {
+          if(msg === 'ok') {
+            th.trigger('reset');
+            $('.contact__block--form .title').text('Cпасибо! Мы скоро c вами свяжемся');
+          }
+        } else {
+          alert('Заполните все поля пожалуйста!');
+        }
+      }
+    })
+  });
+  
 })();

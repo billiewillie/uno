@@ -844,8 +844,8 @@ p.subtitle.azbuka__subtitle{
 }
 
 .popup__inner.show {
-    -webkit-animation: popupInner 1s;
-    animation: popupInner 1s;
+    -webkit-animation: popupInner .8s ease-in;
+    animation: popupInner .8s ease-in;
 }
 
 .popup__bg {

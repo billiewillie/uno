@@ -17,7 +17,7 @@
     <header class="header header__services">
       <div class="container">
         <div class="logo">
-          <a href="https://vadimbelinovich.github.io/uno/">
+          <a href="https://uno-agency.ru/new/">
             <img src="img/logo.svg" alt="logo">
           </a>
         </div>
@@ -75,7 +75,7 @@
             <div class="contact__block--left">
               <div class="contact__block--adress">
                 <p class="title">Адрес</p>
-                <p class="contact__block--text contact__direction">г. Санкт-Петербург, ул. Галерная, д. 73<br>Бизнес-центр Галерная 73», офис 505</p>
+                <p class="contact__block--text contact__direction">г. Санкт-Петербург, ул. Галерная, д. 73<br>Бизнес-центр «Галерная 73», офис 505</p>
               </div>
               <div class="contact__block--connect">
                 <p class="contact__block--text contact__phone">+7 (812) 248 08 99</p>
@@ -83,15 +83,18 @@
               </div>
               <div class="contact__block--form">
                 <p class="title">Напишите нам</p>
-                <form action="" class="form__popup">
+                <form action="mail.php" class="contacts__form" method="POST">
                   <div class="form__field">
-                    <input type="text" class="input" placeholder="Ваше имя">
+                    <input type="text" class="input input__name" name='user_name' placeholder="Ваше имя">
                   </div>
                   <div class="form__field">
-                    <input type="text" class="input" placeholder="Ваш телефон">
+                    <input type="text" class="input input__phone" name='user_phone' placeholder="Ваш телефон">
+                  </div>
+                  <div class="form__field antispam">
+                    <input type="text" name="url" class="user_url" placeholder="Leave this empty">
                   </div>
                   <div class="form__field">
-                    <input type="text" class="input" placeholder="Ваш email">
+                    <input type="text" class="input input__email" name='user_email' placeholder="Ваш email">
                   </div>
                   <div class="form__field">
                     <button class='submit' type="submit">Отправить</button>

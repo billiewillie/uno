@@ -9,6 +9,7 @@ $mail->CharSet = 'utf-8';
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
+$url = $_POST['user_url'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -31,7 +32,6 @@ $mail->addAddress('v.belinovich@uno-agency.ru');     // Кому будет ух
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с сайта';
-// $mail->Body    = 'Имя ' .$name. '<br>телефон ' .$phone. '<br>Почта ' .$email;
 
 $mail->Body    =  "<table><tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Имя</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $name . "</td></tr>
 <tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Телефон</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $phone . "</td></tr>
@@ -39,9 +39,10 @@ $mail->Body    =  "<table><tr style='background-color: #f8f8f8;'><td style='padd
 
 $mail->AltBody = '';
 
-if(!$mail->send()) {
+if($name === '' || $phone === '' || $email === '' || $url != '') {
     echo 'Error';
-} else {
+} elseif($mail->send()) {
     echo 'ok';
 }
+
 ?>
