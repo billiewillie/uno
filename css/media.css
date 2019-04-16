@@ -423,8 +423,11 @@
     bottom: -35px;
   }
 
+  main.main.main__cases{
+    padding: 80px 0;
+  }
+
   .case__big{
-    padding: 80px 0 0;
     margin-bottom: 80px;
   }
 
@@ -467,6 +470,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
   }
 
   .case__row--top:nth-child(1) .case__slider--item:nth-child(1),
@@ -579,6 +583,54 @@
 
   .case__big--title{
     padding-left: 20px;
+    padding-right: 50%;
+  }
+
+  .case__item.case__item--small{
+    width: 32%;
+  }
+
+  .case__item.case__item--big{
+    width: 66%;
+  }
+
+  .case__item.case__item--big .case__content{
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 15px;
+    left: 25px;
+    width: 50%;
+    align-items: flex-start
+  }
+
+  .case__content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15px 25px;
+    flex-direction: column;
+  }
+
+  .case__top{
+    min-height: 230px;
+  }
+
+  .case__item.case__item--azbuka .case__content{
+    padding-bottom: 0px;
+  }
+
+  .case__row--top:nth-child(2)>div{
+    width: 49%;
+  }
+
+  .case__row--top:nth-child(4)>div:nth-child(1){
+    width: 66%;
+  }
+
+  .case__row--top:nth-child(4)>div:nth-child(2){
+    width: 32%;
   }
 
 }
@@ -994,21 +1046,6 @@
     height: 30px;
   }
 
-  .case__top::before{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,.5);
-    transition: .2s;
-  }
-
   .azbuka__top {
     padding-top: 250px;
   }
@@ -1347,12 +1384,23 @@
   }
 
   .case__big {
-    padding: 150px 0 0;
     margin-bottom: 100px;
   }
 
   .case__big--top {
-    min-height: 700px;
+    min-height: 350px;
+  }
+
+  main.main.main__cases{
+    padding: 100px 0;
+  }
+
+  .main__cases .container{
+    flex-direction: column;
+  }
+
+  .case__big--title{
+    padding-right: 60%;
   }
 
 }
@@ -1472,10 +1520,6 @@
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%,#ec6408 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%, #ec6408 100%);
-  }
-
-  .case__big{
-    margin-bottom: 170px;
   }
 
   .title.case__big--top::after{

@@ -289,6 +289,7 @@ main.main__geroi{
 main.main.main__cases{
     background-image: none;
     justify-content: flex-start;
+    padding: 50px 0;
 }
 
 main.main.main__azbuka{
@@ -1581,40 +1582,51 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__card{
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
     overflow: hidden;
     display: block;
     position: relative;
-    background-color: #252525;
     outline: none;
+    border-radius: 6px;
+}
+
+.case__card:hover .case__content{
+    color: #C4A16B;
 }
 
 .case__top{
-    padding: 25px 20px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: cover;
     position: relative;
-    min-height: 180px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    min-height: 170px;
+    border-radius: 6px;
+    overflow: hidden;
 }
 
-
-
-.case__top::after{
+.case__top::after {
     display: block;
     position: absolute;
     content: '';
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-image: url(../img/icons/icon_link-white.svg);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-color: rgba(0,0,0,.3);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #212121;
+    transition: .2s;
+    background: -moz-linear-gradient(top, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%);
+    background: -webkit-linear-gradient(top, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%);
+    background: linear-gradient(to bottom, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%);
+}
+
+.case__item{
+    margin-bottom: 28px;
 }
 
 .case__card:hover .case__top::before{
@@ -1625,8 +1637,8 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/case-cytomed.jpg);
 }
 
-.case__top.case__azbuka{
-    background-image: url(../img/case-azbuka.jpg);
+.case__item--azbuka .case__top{
+    background-image: url(../img/azbuka_bg.jpg);
 }
 
 .case__top.case__novoorl{
@@ -1646,21 +1658,12 @@ p.subtitle.azbuka__subtitle{
     background-position: 0 50%;
 }
 
-.case__category{
-    position: relative;
-    font-family: "SFUIDisplay-Heavy", sans-serif;
-    color: #fff;
-    padding: 10px;
-    background-color: rgba(0,0,0,.3);
-    border-radius: 6px;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
+.case__item--azbuka .case__content--title{
+    margin-bottom: 0;
 }
 
 .case__content{
     padding: 25px 20px;
-    border-bottom: 2px solid #303030;
     color: #fff;
     min-height: 128px;
 }
@@ -1877,8 +1880,8 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__big{
-    padding: 50px 0 0;
     margin-bottom: 50px;
+    display: block;
 }
 
 .case__big--top{
@@ -1896,6 +1899,7 @@ p.subtitle.azbuka__subtitle{
     align-items: flex-end;
     padding: 20px;
     min-height: 200px;
+    transition: .2s;
 }
 
 .case__big--top::after{
@@ -1910,6 +1914,7 @@ p.subtitle.azbuka__subtitle{
     width: 100%;
     height: 100%;
     background: #212121;
+    transition: .2s;
     background: -moz-linear-gradient(top, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%); 
     background: -webkit-linear-gradient(top, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%); 
     background: linear-gradient(to bottom, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%);
@@ -2093,30 +2098,58 @@ p.subtitle.azbuka__subtitle{
     min-height: 358px;
 }
 
-.case__slider--item.case__item--big .case__card{
+.case__item.case__item--big .case__card{
     display: flex;
+    background-position: 50%;
+    background-size: cover;
 }
 
-.case__slider--item.case__item--jjop .case__top{
-    background-image: url(../img/city-7.jpg);
+.case__item.case__item--big .case__content{
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
 }
 
-.case__slider--item.case__item--vystavka .case__top{
+.case__item.case__item--big .case__top{
+    width: 100%;
+}
+
+.case__item.case__item--big .case__content{
+    padding: 0;
+    width: 70%;
+}
+
+.case__item.case__item--azbuka .case__content{
+    min-height: inherit;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.case__item.case__item--jjop .case__card{
+    background-image: url(../img/city-8.jpg);
+}
+
+.case__item.case__item--vystavka .case__top{
     background-image: url(../img/case_vystavka.jpg);
 }
 
-.case__slider--item.case__item--pill .case__top{
+.case__item.case__item--pill .case__top{
     background-image: url(../img/case_pill.jpg);
 }
 
-.case__slider--item.case__item--prostatilen .case__top{
+.case__item.case__item--prostatilen .case__top{
     background-image: url(../img/case_prostatilen.jpg);
     background-position: 100% 0%;
 }
 
-.case__slider--item .case__geroi--web{
-    background-image: url(../img/super-geroi-4.jpg);
+.case__item .case__geroi--web{
+    background-image: url(../img/case-supergeroi.jpg);
     background-position: 50% 50%;
+}
+
+.case__item.case__item--big .case__card{
+    position: relative;
 }
 
 .case__slider--item.case__item--big .case__top::before{
@@ -2142,12 +2175,6 @@ p.subtitle.azbuka__subtitle{
     min-width: 100%;
 }
 
-.case__slider--item.case__item--big .case__members{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 .case__slider--item.case__item--big .case__content{
     display: flex;
     position: absolute;
@@ -2161,15 +2188,14 @@ p.subtitle.azbuka__subtitle{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}
-
-.case__slider--item.case__item--big .case__members{
+}__slider--item.case__item--big .case__members{
     background-color: rgba(37,37,37,.8);
 }
 
 .case__content--title{
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .case__content--text{
