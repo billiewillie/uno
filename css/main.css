@@ -256,6 +256,10 @@ form.form__search {
     color: #bfbfbf;
 }
 
+.menu__item--link.active{
+    color: #C4A16B;
+}
+
 .menu__item--link:hover,
 .menu__item--link.active {
     background-color: #000;
