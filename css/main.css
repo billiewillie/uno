@@ -263,7 +263,7 @@ form.form__search {
 
 main.main {
     position: relative;
-    background-image: url('../img/index_bg.jpg');
+    background-image: url('../img/index_bg-mobile.jpg');
     background-size: cover;
     background-position: 50% 80%;
     display: flex;
@@ -507,7 +507,7 @@ main.main.main__services {
     padding: 10px;
     border-radius: 6px;
     border: 1px solid #bfbfbf;
-    font-size: 12px;
+    font-size: 10px;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
     position: relative;
