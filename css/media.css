@@ -617,7 +617,8 @@
     min-height: 230px;
   }
 
-  .case__item.case__item--azbuka .case__content{
+  .case__item.case__item--azbuka .case__content,
+  .case__item.case__item--vystavka .case__content{
     padding-bottom: 0px;
   }
 
