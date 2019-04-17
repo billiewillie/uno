@@ -507,24 +507,26 @@ main.main.main__services {
 }
 
 .button__list a {
-    border: none;
     color: #bfbfbf;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #bfbfbf;
-    font-size: 10px;
-    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    padding: 14px 25px;
+    border-radius: 50px;
+    border: 1px solid #BDC3C7;
+    font-size: 9px;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
     text-transform: uppercase;
     position: relative;
     line-height: 1;
     min-width: 150px;
     transition: .2s;
-    text-align: left;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1.125px;
+    font-weight: 600;
 }
 
 .button__list a:hover {
-    background-color: rgba(0, 0, 0, .6);
-    border: 1px solid rgba(0, 0, 0, .6);
+    background-color: #BDC3C7;
+    color: #252525;
 }
 
 .button__list a>* {
@@ -546,13 +548,13 @@ main .main__footer {
     position: relative;
     width: 100%;
     text-align: center;
-    border-top: 2px solid #737373;
     padding: 15px 0;
     font-size: 11px;
     right: 100%;
-    font-family: 'SFUIDisplay-Medium', sans-serif;
+    font-family: 'SFUIDisplay-Light', sans-serif;
     transition: 1s;
     color: rgba(255, 255, 255, .7);
+    background: rgba(37, 37, 37, 0.7);
 }
 
 main .main__footer.show {
@@ -595,6 +597,19 @@ h1.title {
     font-size: 11vw;
     line-height: 1;
     margin-bottom: 35px;
+}
+
+.main__index .title{
+    font-family: 'SFUIDisplay-Light', sans-serif;
+    font-weight: 300;
+    text-align: left;
+    font-size: 6vw;
+    letter-spacing: 3px;
+    line-height: 1.4;
+}
+
+.main__index .title--gold{
+    color: #C4A16B;
 }
 
 p.title{
@@ -2081,10 +2096,6 @@ p.subtitle.azbuka__subtitle{
     font-size: 20px;
 }
 
-.case__table{
-    margin-bottom: 50px;
-}
-
 .case__table .container{
     display: flex;
     flex-direction: column;
@@ -2098,6 +2109,10 @@ p.subtitle.azbuka__subtitle{
 
 .case__table .case__card{
     min-height: 358px;
+}
+
+.case__item--small .case__card{
+    min-height: inherit;
 }
 
 .case__item.case__item--big .case__card{
