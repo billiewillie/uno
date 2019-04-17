@@ -354,7 +354,7 @@ main.main.main__azbuka{
 }
 
 .ppoj__top{
-    padding: 50px 0;
+    padding: 60px 0;
     position: relative;
     margin-bottom: 50px;
     text-align: center;
@@ -401,11 +401,25 @@ main.main.main__azbuka{
 
 .ppoj__top.ppoj__block--right .container::after{
     top: 0;
-    right: 50%;
+    left: 50%;
+    right: auto;
+    width: 100%;
+    height: 120%;
+    background-image: url(../img/ppoj_top-2.png);
+    background-position: 0% 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 0;
+    opacity: .2;
+}
+
+.ppoj__top.ppoj__flashmob .container::after{
+    top: 0;
+    right: 35%;
     left: auto;
     width: 100%;
-    height: 100%;
-    background-image: url(../img/ppoj_top-2.png);
+    height: 120%;
+    background-image: url(../img/ppoj_top-5.png);
     background-position: 100% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -413,24 +427,25 @@ main.main.main__azbuka{
     opacity: .2;
 }
 
-.ppoj__top.ppoj__block--right.ppoj__flashmob .container::after{
-    background-image: url(../img/ppoj_top-5.png);
-}
-
 .ppoj__top.ppoj__block--consult .container::after{
     top: 0;
     bottom: 0;
-    right: auto;
-    left: 30%;
+    left: auto;
+    right: 30%;
     margin: auto;
     width: 100%;
     height: 130%;
     background-image: url(../img/ppoj_top-3.png);
-    background-position: 0% 50%;
+    background-position: 100% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
     opacity: .2;
+}
+
+.ppoj__top.ppoj__block--consult{
+    text-align: right;
+    background-color: #F8F2E9;
 }
 
 .ppoj__top.ppoj__block--opinion .container::after{
@@ -1338,7 +1353,6 @@ p.subtitle.azbuka__subtitle{
 
 .ppoj__list{
     position: relative;
-    border-bottom: 1px solid #a6a6a6;
     margin-bottom: 65px;
     padding-bottom: 10px;
 }
@@ -1349,12 +1363,13 @@ p.subtitle.azbuka__subtitle{
     cursor: pointer;
     border-radius: 15px;
     transition: .2s;
-    color: rgba(95, 74, 74, .7);
-    border: 1px solid transparent;
+    text-align: left;
+    color: rgba(95, 74, 74, 1);
 }
 
 .ppoj__text{
-    padding: 0 10px 0 35px;
+    padding: 0 10px 0 0;
+    text-align: left;
 }
 
 .ppoj__text p{
@@ -1368,14 +1383,12 @@ p.subtitle.azbuka__subtitle{
 }
 
 .ppoj__list--item:hover{
-    background-color: #E0C297;
-    color: #4D4D4D;
-    box-shadow: 0px 12px 24px rgba(95, 74, 74, 0.32);
-    border: 1px solid #EED9BB;
+    background-color: #5F4A4A;
+    color: #F8F2E9;
+    
 }
 
 .ppoj__block--soc{
-    border-top: 1px solid #4c4c4c;
     padding: 20px 0;
     margin-top: 20px;
 }
@@ -1384,10 +1397,28 @@ p.subtitle.azbuka__subtitle{
 .ppoj__block--link:hover{
     display: inline-block;
     vertical-align: middle;
-    margin-right: 40px;
     font-size: 14px;
-    font-weight: 600;
-    color: #5F4A4A;
+    color: #252525;
+    padding-right: 30px;
+    margin-right: 8px;
+    position: relative;
+    z-index: 1;
+}
+
+.ppoj__block--link::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/icons/icon_link-dark.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .ppoj__block--link:last-child,
@@ -1402,6 +1433,7 @@ p.subtitle.azbuka__subtitle{
 
 .ppoj__block--opinion{
     background-color: #DEC294;
+    margin-bottom: 0;
 }
 
 .ppoj__block--opinion .ppoj__top--text{
@@ -3107,6 +3139,10 @@ p.subtitle.azbuka__subtitle{
 
 .ppoj__stats .breadcrumb__item{
     opacity: .5;
+}
+
+.ppoj__top.ppoj__flashmob{
+    background-color: #F8F2E9;
 }
   
 /* Track */

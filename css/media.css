@@ -181,7 +181,7 @@
   }
 
   .ppoj__top.ppoj__block--consult .container::after{
-    left: 50%;
+    right: 60%;
   }
 
   .ppoj__result--content{
@@ -199,8 +199,9 @@
   }
   .ppoj__block--link, 
   .ppoj__block--link:hover{
-    margin-right: 20px;
+    margin-right: 30px;
     font-size: 16px;
+    padding-right: 45px;
   }
 
   .case__slider--item {
@@ -642,6 +643,10 @@
     font-size: 18px;
   }
 
+  .ppoj__top.ppoj__flashmob .container::after{
+    right: 50%;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -863,7 +868,7 @@
   }
 
   .main__footer--part:nth-child(3){
-    max-width: 19%;
+    max-width: 13%;
   }
 
   .service__item {
@@ -949,6 +954,24 @@
     padding: 100px 0;
   }
 
+  .ppoj__top.ppoj__block--consult .container{
+    padding-left: 50%;
+    padding-right: 60px;
+  }
+
+  .ppoj__block--opinion .title{
+    text-align: left;
+  }
+
+  .ppoj__top.ppoj__block--consult {
+    text-align: left;
+  }
+
+  .ppoj__top.ppoj__block--consult .title,
+  .ppoj__top.ppoj__flashmob .title{
+    text-align: left;
+  }
+
   .ppoj__top:nth-child(1){
     padding: 200px 0 100px;
   }
@@ -962,8 +985,8 @@
   }
 
   .ppoj__top.ppoj__block--right .container{
-    padding-right: 10px;
-    padding-left: 50%;
+    padding-left: 60px;
+    padding-right: 50%;
   }
 
   .ppoj__list--item{
@@ -1016,8 +1039,8 @@
   }
 
   .ppoj__top.ppoj__block--consult .container::after{
-    left: 50%;
-    background-position: 0% 100%;
+    right: 50%;
+    background-position: 100% 100%;
   }
 
   .ppoj__top.ppoj__block--opinion .container::after{
@@ -1035,7 +1058,7 @@
   }
 
   .ppoj__flashmob .ppoj__text{
-    text-align: right;
+    text-align: left;
   }
 
   .cases .container{
@@ -1439,6 +1462,24 @@
       padding: 110px 80px 0;
   }
 
+  .ppoj__top.ppoj__block--opinion .container {
+    padding-right: 50%;
+    text-align: left;
+  }
+
+  .ppoj__block--link::after{
+    width: 40px;
+    height: 40px;
+  }
+
+  .ppoj__top.ppoj__flashmob .container{
+    padding: 0 60px 0 50%;
+  }
+
+  .ppoj__top.ppoj__flashmob .container::after{
+    opacity: 1;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1500,9 +1541,9 @@
     height: 150%;
   }
 
-  .ppoj__top.ppoj__block--right .container{
+  /* .ppoj__top.ppoj__block--right .container{
     padding-left: 40%;
-  }
+  } */
 
   .ppoj__top.ppoj__block--right .container::after{
     right: 50%;
@@ -1646,6 +1687,14 @@
 
   .ppoj__top:nth-child(1){
     padding: 400px 0 100px;
+  }
+
+  .ppoj__top.ppoj__block--consult .container{
+    padding-left: 45%;
+  }
+
+  .ppoj__top.ppoj__flashmob .container {
+    padding: 0 60px 0 40%;
   }
 
 }
