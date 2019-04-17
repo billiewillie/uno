@@ -44,7 +44,11 @@ body {
 
 body.body__ppoj{
     background-color: #f2f2f2;
-    background-image: none;
+    background-image: url(../img/city-8.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
 }
 
 .body.body__azbuka{
@@ -96,6 +100,24 @@ body.body__ppoj{
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 33%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%,#217DDA 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%, #217DDA 100%);
+}
+
+.body.body__ppoj::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #ec6408 url(../img/azbuka_bg.jpg);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
 }
 
 .wrapper {
@@ -306,6 +328,7 @@ main.main.main__azbuka{
     flex-direction: row;
     font-family: 'SFUIDisplay-Medium', sans-serif;
     margin-bottom: 25px;
+    justify-content: center;
 }
 
 .breadcrumbs.azbuka__breadcrumbs{
@@ -334,10 +357,17 @@ main.main.main__azbuka{
     padding: 50px 0;
     position: relative;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.ppoj__top:nth-child(1){
+    color: #fff;
+    margin-bottom: 0;
 }
 
 .ppoj__top.ppoj__block--right{
     margin-bottom: 0;
+    background-color: #DEC294;
 }
 
 .ppoj__title--block h1.title.ppoj__top--title{
@@ -346,6 +376,11 @@ main.main.main__azbuka{
 
 .ppoj__top .container{
     position: relative;
+}
+
+.ppoj__title--block{
+    background-color: #F8F2E9;
+    padding: 30px 0;
 }
 
 .ppoj__top .container::after{
@@ -357,7 +392,6 @@ main.main.main__azbuka{
     width: 100%;
     height: 130%;
     max-height: 500px;
-    background-image: url(../img/ppoj_top.png);
     background-position: 0% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
@@ -366,16 +400,16 @@ main.main.main__azbuka{
 }
 
 .ppoj__top.ppoj__block--right .container::after{
-    top: -10%;
+    top: 0;
     right: 50%;
     left: auto;
     width: 100%;
-    height: 130%;
+    height: 100%;
     background-image: url(../img/ppoj_top-2.png);
     background-position: 100% 50%;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 0;
     opacity: .2;
 }
 
@@ -415,10 +449,14 @@ main.main.main__azbuka{
 
 h1.title.ppoj__top--title{
     font-size: 24px;
-    text-align: left;
     letter-spacing: 1px;
     line-height: 1.4;
     margin-bottom: 30px;
+}
+
+.jjop__logo{
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .subtitle{
@@ -426,6 +464,11 @@ h1.title.ppoj__top--title{
     font-size: 18px;
     margin-bottom: 30px;
     text-transform: uppercase;
+}
+
+.jjop__subtitle.subtitle{
+    font-family: 'SFUIDisplay-Medium', sans-serif; 
+    text-transform: none;
 }
 
 .main__content .subtitle{
@@ -470,6 +513,10 @@ h1.title.ppoj__top--title{
 
 .ppoj__top--text{
     font-size: 16px;
+}
+
+.ppoj__top:nth-child(1) .ppoj__top--text{
+    font-family: 'SFUIDisplay-Light', sans-serif; 
 }
 
 .ppoj__block--consult .ppoj__top--text{
@@ -2991,6 +3038,75 @@ p.subtitle.azbuka__subtitle{
 .popup__thank.active{
     left: 0;
     opacity: 1;
+}
+
+.ppoj__stats{
+    margin-top: 35px;
+    color: #252525;
+}
+
+.stats__list{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.stats__item{
+    width: 50%;
+    margin-bottom: 70px;
+    padding: 0 10px;
+    padding-top: 110px;
+    position: relative;
+}
+
+.stats__item::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    border: 1px solid #5F4A4A;
+    background-position: 50% 50%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+.stats__item:nth-child(1)::before{
+    background-image: url(../img/icons/icon_stats-1.svg);
+}
+
+.stats__item:nth-child(2)::before{
+    background-image: url(../img/icons/icon_stats-2.svg);
+}
+
+.stats__item:nth-child(3)::before{
+    background-image: url(../img/icons/icon_stats-3.svg);
+}
+
+.stats__item:nth-child(4)::before{
+    background-image: url(../img/icons/icon_stats-4.svg);
+}
+
+.stats__item:nth-child(5)::before{
+    background-image: url(../img/icons/icon_stats-5.svg);
+}
+
+.stats__item:last-child{
+    margin-bottom: 0;
+}
+
+.ppoj__stats .breadcrumbs{
+    margin-bottom: 70px;
+}
+
+.ppoj__stats .breadcrumb__item{
+    opacity: .5;
 }
   
 /* Track */

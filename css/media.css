@@ -630,6 +630,18 @@
     justify-content: flex-start;
   }
 
+  .body.body__ppoj::after {
+    background: #ec6408 url(../img/azbuka_bg.jpg);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 12%, rgba(222, 194,148, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 12%, rgba(222, 194,148, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 12%, rgba(222, 194,148, 1) 100%);
+  }
+
+  .stats__item{
+    width: 34%;
+    font-size: 18px;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -657,7 +669,7 @@
     align-items: center;
   }
 
-  .logo span{
+  .logo>*{
     text-align: left;
   }
 
@@ -727,7 +739,7 @@
 
   h1.title{
     font-size: 90px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
   }
 
   .main__index .title{
@@ -937,9 +949,16 @@
     padding: 100px 0;
   }
 
+  .ppoj__top:nth-child(1){
+    padding: 200px 0 100px;
+  }
+
   .ppoj__top .container{
     flex-direction: column;
-    padding-right: 45%;
+  }
+
+  .ppoj__top:nth-child(1) .container{
+    padding: 0 10%;
   }
 
   .ppoj__top.ppoj__block--right .container{
@@ -981,6 +1000,10 @@
   }
   .ppoj__top--text{
     font-size: 24px;
+  }
+
+  .ppoj__top:nth-child(1) .ppoj__top--text{
+    font-size: 18px;
   }
 
   .ppoj__top.ppoj__block--right .container::after,
@@ -1409,9 +1432,11 @@
     padding-right: 60%;
   }
 
-  .wrapper{
-    min-height: 700px;
-    height: 100vh;
+  .ppoj__title--block{
+    padding: 70px 0;
+  }
+  .stats__item {
+      padding: 110px 80px 0;
   }
 
 }
@@ -1460,6 +1485,10 @@
 
   .ppoj__top .container{
     padding-right: 40%;
+  }
+
+  .ppoj__top:nth-child(1) .container{
+    padding-right: 60px;
   }
 
   .ppoj__top{
@@ -1615,8 +1644,8 @@
     padding: 37px 0;
   }
 
-  .header__content{
-    padding-top: 40px;
+  .ppoj__top:nth-child(1){
+    padding: 400px 0 100px;
   }
 
 }
