@@ -179,7 +179,7 @@
   
     function showScreen () {
       setInterval(func, 1);
-      mainFooter.classList.add('show');
+      // mainFooter.classList.add('show');
     }
     
     setTimeout(function(){
