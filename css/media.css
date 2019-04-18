@@ -598,7 +598,7 @@
   .case__content{
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 15px 25px;
     flex-direction: column;
   }
