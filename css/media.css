@@ -13,10 +13,6 @@
     padding: 40px 0;
   }
 
-  main.main{
-    background-image: url(../img/index_bg.jpg);
-  }
-
   .footer__top{
     border-bottom: 2px solid #303030;
     padding-bottom: 25px;
@@ -196,6 +192,7 @@
 
   .ppoj__result--content>div{
     width: 48%;
+    text-align: left;
   }
   .ppoj__block--link, 
   .ppoj__block--link:hover{

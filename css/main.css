@@ -289,7 +289,7 @@ form.form__search {
 
 main.main {
     position: relative;
-    background-image: url('../img/index_bg-mobile.jpg');
+    background-image: url('../img/index_bg.jpg');
     background-size: cover;
     background-position: 50% 80%;
     display: flex;
@@ -1419,6 +1419,10 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.ppoj__block--soc .ppoj__block--link::after{
+    display: none;
 }
 
 .ppoj__block--link:last-child,
