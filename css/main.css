@@ -315,6 +315,9 @@ main.main__geroi{
 main.main.main__cases{
     background-image: none;
     justify-content: flex-start;
+}
+
+.geroi__iseland{
     padding: 50px 0;
 }
 
@@ -1688,9 +1691,12 @@ p.subtitle.azbuka__subtitle{
     position: relative;
     outline: none;
     border-radius: 6px;
+    text-align: center;
 }
 
-.case__card:hover .case__content{
+.case__item .case__card:hover .case__content,
+.case__item .case__card:hover .case__content p,
+.case__item .case__card:hover .case__content a{
     color: #C4A16B;
 }
 
@@ -1700,12 +1706,16 @@ p.subtitle.azbuka__subtitle{
     justify-content: flex-end;
     align-items: flex-end;
     background-repeat: no-repeat;
-    background-position: 50% 0%;
+    background-position: 50% 50%;
     background-size: cover;
     position: relative;
-    min-height: 170px;
+    min-height: 130px;
     border-radius: 6px;
     overflow: hidden;
+}
+
+.case__item{
+    margin-bottom: 28px;
 }
 
 .case__top::after {
@@ -1726,8 +1736,8 @@ p.subtitle.azbuka__subtitle{
     background: linear-gradient(to bottom, rgba(37,37,37,0) 0%, rgba(37,37,37,.9) 100%);
 }
 
-.case__item{
-    margin-bottom: 28px;
+.geroi__made .case__top::after{
+    display: none;
 }
 
 .case__card:hover .case__top::before{
@@ -1751,12 +1761,17 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__top.case__supergeroi{
-    background-image: url(../img/case-supergeroi.jpg);
+    background-image: url(../img/super-geroi-4.jpg);
 }
 
 .case__top.case__geroi{
     background-image: url(../img/geroi_docs.png);
     background-position: 0 50%;
+}
+
+.case__top.case__geroi-3{
+    background-image: url(../img/super-geroi-vk.jpg);
+    background-position: 0 0%;
 }
 
 .case__item--azbuka .case__content--title,
@@ -1768,8 +1783,18 @@ p.subtitle.azbuka__subtitle{
 
 .case__content{
     padding: 25px 20px;
-    color: #fff;
+    color: #252525;
     min-height: 128px;
+}
+
+.geroi__made .case__content a,
+.geroi__made .case__content p{
+    color: #252525;
+    font-size: 18px;
+}
+
+.geroi__made .case__content a{
+    text-decoration: underline;
 }
 
 .case__members{
@@ -2054,6 +2079,7 @@ p.subtitle.azbuka__subtitle{
     margin-right: 15px;
     font-size: 9px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .case__detail:last-child{
@@ -2189,13 +2215,8 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__table .case__slider--item{
-    margin-bottom: 30px;
     padding: 0;
     cursor: pointer;
-}
-
-.case__table .case__card{
-    min-height: 358px;
 }
 
 .case__item--small .case__card{
@@ -2245,7 +2266,7 @@ p.subtitle.azbuka__subtitle{
 
 .case__item.case__item--prostatilen .case__top{
     background-image: url(../img/case_prostatilen.jpg);
-    background-position: 100% 0%;
+    background-position: 50% 0%;
 }
 
 .case__item .case__geroi--web{
@@ -2618,16 +2639,12 @@ p.subtitle.azbuka__subtitle{
     padding-bottom: 200px;
 }
 
-.geroi__black{
-    background-color: #191919;
-    padding-bottom: 30px;
+.geroi__block--advs{
+    background-color: #fff;
+    padding: 30px 0;
 }
 
 .geroi__about{
-    background-color: #252525;
-    margin-top: -20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
     padding: 20px 10px;
 }
 
@@ -2727,14 +2744,13 @@ p.subtitle.azbuka__subtitle{
     bottom: 0;
     right: -40px;
     margin: auto;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-image: url(../img/icons/icon_link-white.svg);
+    background-image: url(../img/icons/icon_link-dark.svg);
     background-position: 50% 50%;
     background-size: 50%;
     background-repeat: no-repeat;
-    background-color: #052F5A;
 }
 
 .star{
@@ -2794,8 +2810,12 @@ p.subtitle.azbuka__subtitle{
     padding: 15px 10px;
     margin-right: 2%;
     position: relative;
-    border-bottom: 2px solid #303030;
     cursor: pointer;
+    color: #252525;
+}
+
+.about__title--item:hover{
+    color: #252525;
 }
 
 .about__title--item:last-child{
@@ -2811,19 +2831,26 @@ p.subtitle.azbuka__subtitle{
     color: #fff;
 }
 
-.about__title--item.active::before{
+.about__title--item::before{
     position: absolute;
-    display: block;
+    display: none;
     content: '';
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(../img/super-geroi-1.jpg);
-    filter: brightness(0.5);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+    background-color: #E0E0E0;
+    border-radius: 20px;
+}
+
+.about__title--item:hover::before{
+    display: block;
+}
+
+.about__title--item.active::before{
+    display: block;
+    box-shadow: 0px 12px 24px rgba(33, 125, 218, 0.32);
+    background-color: #217DDA;
 }
 
 .about__title--item::after{
@@ -2846,14 +2873,6 @@ p.subtitle.azbuka__subtitle{
     bottom: -36px;
 }
 
-.about__title--item.active:nth-child(2)::before{
-    background-image: url(../img/super-geroi-2.jpg);
-}
-
-.about__title--item.active:nth-child(3)::before{
-    background-image: url(../img/super-geroi-3.jpg);
-}
-
 .about__text{
     padding-top: 20px;
 }
@@ -2861,6 +2880,27 @@ p.subtitle.azbuka__subtitle{
 .about__text--item{
     text-align: left;
     display: none;
+    color: #000;
+}
+
+.about__text--item a{
+    position: relative;
+}
+
+.about__text--item a::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 103%;
+    margin: auto;
+    width: 33px;
+    height: 33px;
+    background-image: url(../img/icons/icon_link-dark.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .about__text--item.active{
@@ -2875,20 +2915,20 @@ p.subtitle.azbuka__subtitle{
     color: rgb(156, 167, 190);
 }
 
-
-
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 .geroi__made{
-    background-color: #191919;
+    background-color: #FFC500;
     padding: 30px 0;
 }
 
 .geroi__made h2.title{
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
     text-transform: uppercase;
     margin-bottom: 30px;
+    color: #0A63AF;
 }
 
 .geroi__made .case__table{
@@ -2957,8 +2997,8 @@ p.subtitle.azbuka__subtitle{
     align-items: flex-end;
     justify-content: flex-end;
     padding: 20px;
-    margin-bottom: 30px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .geroi__about--part:nth-child(1)::before{
@@ -3000,18 +3040,19 @@ p.subtitle.azbuka__subtitle{
 }
 
 .geroi__about--part-item{
-    background-color: #252525;
-    margin-bottom: 30px;
     text-align: left;
-    padding: 20px;
+    padding: 20px 0;
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     flex-direction: column;
     align-items: flex-start;
-    border-left: 7px solid rgba(33,125,218,1);
-    border-radius: 6px;
+    border-bottom: 2px dashed #fff;
     line-height: 1.8;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    color: #252525;
+}
+
+.geroi__about--part-item:last-child{
+    border-bottom: none;
 }
 
 .geroi__part--bottom-topic{
@@ -3027,30 +3068,22 @@ p.subtitle.azbuka__subtitle{
     font-size: 18px;
     text-align: left;
     margin-bottom: 50px; 
-}
-
-.geroi__how{
-    width: 100%;
-    background-color: #252525;
-    border-radius: 6px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
+    color: #252525;
 }
 
 .geroi__how--title{
     text-transform: uppercase;
     font-family: "SFUIDisplay-Heavy";
-    color: #217DDA;
+    color: #0A63AF;
     font-size: 24px;
-    border-bottom: 2px dashed #217DDA;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .geroi__how--text{
     text-align: left;
-    padding: 0 10px;
     font-size: 16px;
+    color: #252525;
+    position: relative;
 }
 
 .geroi__how--item{
