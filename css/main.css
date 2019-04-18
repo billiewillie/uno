@@ -222,6 +222,10 @@ form.form__search {
     width: 50%;
 }
 
+.main__azbuka .logo img{
+    width: auto;
+}
+
 .header__content--bottom {
     margin-top: -20px;
     background-color: #252525;
@@ -739,7 +743,6 @@ p.subtitle.azbuka__subtitle{
 }
 
 .azbuka__digits--item{
-    border-bottom: 1px solid #ECF0F1;
     max-width: 48%;
     padding-bottom: 15px;
     position: relative;
@@ -1421,7 +1424,7 @@ p.subtitle.azbuka__subtitle{
     background-repeat: no-repeat;
 }
 
-.ppoj__block--soc .ppoj__block--link::after{
+.ppoj__result--content .ppoj__block--link::after{
     display: none;
 }
 
