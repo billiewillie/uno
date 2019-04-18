@@ -1695,7 +1695,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__top{
-    padding: 15px;
+    padding: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -1761,7 +1761,8 @@ p.subtitle.azbuka__subtitle{
 
 .case__item--azbuka .case__content--title,
 .case__item--vystavka .case__content--title,
-.case__item .case__only--title{
+.case__item .case__only--title,
+.case__item--prostatilen .case__content--title{
     margin-bottom: 0;
 }
 
