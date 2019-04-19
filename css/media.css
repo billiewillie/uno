@@ -1740,6 +1740,10 @@
     padding: 150px 0;
   }
 
+  .geroi__about--part-item{
+    font-size: 24px;
+  }
+
 }
 
 @media (max-height:300px) and (max-width:767px){
