@@ -56,7 +56,7 @@
   if($('.case__slider').length){
     $('.case__slider').slick({
       dots: false,
-      infinite: true,
+      infinite: false,
       speed: 300,
       responsive: [
         {

@@ -1714,6 +1714,22 @@ p.subtitle.azbuka__subtitle{
     overflow: hidden;
 }
 
+.case__slider .case__slider--item:nth-child(even) .case__top{
+    min-height: 370px;
+}
+
+.case__slider .case__slider--item{
+    min-height: 370px;
+}
+
+.case__slider .case__card{
+    overflow: visible;
+}
+
+.case__slider .case__top{
+    min-height: 230px;
+}
+
 .case__item{
     margin-bottom: 28px;
 }
@@ -1748,6 +1764,10 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/case-cytomed.jpg);
 }
 
+.case__top.case__azbuka{
+    background-image: url(../img/azbuka_bg.jpg);
+}
+
 .case__item--azbuka .case__top{
     background-image: url(../img/azbuka_bg.jpg);
 }
@@ -1775,7 +1795,6 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__item--azbuka .case__content--title,
-.case__item--vystavka .case__content--title,
 .case__item .case__only--title,
 .case__item--prostatilen .case__content--title{
     margin-bottom: 0;
@@ -1785,6 +1804,20 @@ p.subtitle.azbuka__subtitle{
     padding: 25px 20px;
     color: #252525;
     min-height: 128px;
+}
+
+.case__slider--item .case__content{
+    color: #fff;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.case__slider .case__slider--item .case__content{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    margin-top: 0;
 }
 
 .geroi__made .case__content a,
@@ -2253,7 +2286,8 @@ p.subtitle.azbuka__subtitle{
     align-items: flex-end;
 }
 
-.case__item.case__item--jjop .case__card{
+.case__item.case__item--jjop .case__card,
+.case__slider--item .case__top.case__jjop{
     background-image: url(../img/city-8.jpg);
 }
 
@@ -2265,12 +2299,14 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/case_pill.jpg);
 }
 
-.case__item.case__item--prostatilen .case__top{
+.case__item.case__item--prostatilen .case__top,
+.case__slider--item .case__top.case__prostatilen{
     background-image: url(../img/case_prostatilen.jpg);
     background-position: 50% 0%;
 }
 
-.case__item .case__geroi--web{
+.case__item .case__geroi--web,
+.case__slider--item .case__top.case__geroi{
     background-image: url(../img/case-supergeroi.jpg);
     background-position: 50% 50%;
 }
