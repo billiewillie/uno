@@ -2265,7 +2265,7 @@ p.subtitle.azbuka__subtitle{
 
 .case__item.case__item--big .case__content{
     position: absolute;
-    bottom: 0px;
+    bottom: 17px;
     left: 15px;
 }
 
@@ -2281,9 +2281,8 @@ p.subtitle.azbuka__subtitle{
 .case__item.case__item--azbuka .case__content,
 .case__item.case__item--vystavka .case__content{
     min-height: inherit;
-    padding-bottom: 15px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 
 .case__item.case__item--jjop .case__card,
@@ -3211,6 +3210,34 @@ p.subtitle.azbuka__subtitle{
 .hide {
     visibility: hidden;
     opacity: 0;
+}
+
+.case__item.case__item--small .case__content,
+.case__item.case__item--big .case__content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* justify-content: flex-end; */
+}
+
+.case__item.case__item--big .case__content p,
+.case__item.case__item--big .case__content a{
+    color: #fff;
+}
+
+.case__item.case__item--small .case__content p,
+.case__item.case__item--small .case__content a{
+    color: #fff;
+}
+
+.case__item.case__item--small .case__content{
+    text-align: left;
+    color: #fff;
+}
+
+.case__item--big .case__content{
+    justify-content: flex-end;
 }
   
 /* Track */
