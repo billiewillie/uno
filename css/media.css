@@ -560,15 +560,6 @@
     flex-direction: row;
   }
 
-  .geroi__about--part:nth-child(1){
-    width: 60%;
-    margin-right: 2%;
-  }
-
-  .geroi__about--part:nth-child(2){
-    width: 38%;
-  }
-
   .case__big--title{
     padding-left: 20px;
     padding-right: 50%;
@@ -1083,6 +1074,10 @@
     padding-right: 30px;
   }
 
+  .case__table{
+    margin-bottom: 50px;
+  }
+
   .ppoj__result--content{
     margin-bottom: 100px;
   }
@@ -1474,6 +1469,54 @@
 
   .geroi__made h2.title{
     margin-bottom: 70px;
+  }
+
+  .video__wrap .video__cover {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 102%;
+    height: 102%;
+    top: -1%;
+    left: -1%;
+    z-index: 1;
+    border-radius: 20px;
+    background-image: url(../img/super-geroi-main.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .video__wrap .play {
+    content: '';
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: no-repeat center / contain;
+    background-image: url(../img/icons/icon_play.svg);
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    background-color: #217DDA;
+    background-size: 50%;
+    background-position: 60% 50%;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
+  }
+
+  .geroi__about--part:nth-child(1){
+    width: 60%;
+    margin-right: 2%;
+  }
+
+  .geroi__about--part:nth-child(2){
+    width: 38%;
   }
 
 }

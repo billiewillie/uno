@@ -38,6 +38,20 @@
       ]
     });
   }
+
+  if (window.innerWidth > 991){
+    // video
+    var video = $('.iframe').prop('src');
+    var cover = $('.video__cover');
+    var play = $('.play');
+    play.on('click', function(e){
+      video += "?autoplay=1";
+      $('.iframe').prop('src', video);
+      play.addClass('hide');
+      cover.addClass('hide');
+      return true;
+    });
+  }
   
   if($('.case__slider').length){
     $('.case__slider').slick({

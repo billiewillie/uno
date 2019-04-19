@@ -2029,6 +2029,7 @@ p.subtitle.azbuka__subtitle{
     padding: 20px;
     min-height: 200px;
     transition: .2s;
+    margin-top: 40px;
 }
 
 .case__big--top::after{
@@ -2982,6 +2983,7 @@ p.subtitle.azbuka__subtitle{
     flex-direction: column;
     width: 100%;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .geroi__about--part:nth-child(1){
@@ -2989,49 +2991,14 @@ p.subtitle.azbuka__subtitle{
     width: 100%;
     display: flex;
     position: relative;
-    background-image: url(../img/super-geroi-main.jpg);
     background-position: 100% 0%;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 6px;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 20px;
     cursor: pointer;
     overflow: hidden;
-}
-
-.geroi__about--part:nth-child(1)::before{
-    position: absolute;
-    content: '';
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-    background-color: rgba(33,125,218,.5);
-    background-image: url(../img/icons/icon_link-white.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 50%;
-}
-
-.geroi__about--part:nth-child(1)::after{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    background: #ec6408;
-    background: -moz-linear-gradient(top, rgba(33,125,218,.38), rgba(25,25,25,.9));
-    background: -webkit-linear-gradient(top, rgba(33,125,218,.38), rgba(25,25,25,.9));
-    background: linear-gradient(top, rgba(33,125,218,.38), rgba(25,25,25,.9));
 }
 
 .geroi__about--part:nth-child(2){
@@ -3184,6 +3151,30 @@ p.subtitle.azbuka__subtitle{
 
 .ppoj__top.ppoj__flashmob{
     background-color: #F8F2E9;
+}
+
+.video__wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 70%;
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+}
+
+.hide {
+    visibility: hidden;
+    opacity: 0;
 }
   
 /* Track */
