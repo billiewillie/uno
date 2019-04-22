@@ -141,9 +141,9 @@ body.body__ppoj{
     height: 100%;
     z-index: -1;
     background: #ec6408 url(../img/case_rshf.jpg);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 6%, rgba(255, 255,255, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 6%, rgba(255, 255,255, 1) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 6%, rgba(255, 255,255, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 8%, rgba(255, 255,255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 8%, rgba(255, 255,255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 8%, rgba(255, 255,255, 1) 100%);
 }
 
 .wrapper {
@@ -2553,6 +2553,22 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/team/vadim-2.jpg);
 }
 
+.team__vika--m .team__pic{
+    background-image: url(../img/team/vikab-1.jpg);
+}
+
+.team__vika--m .team__pic:hover{
+    background-image: url(../img/team/vikab-2.jpg);
+}
+
+.team__alex .team__pic{
+    background-image: url(../img/team/alex-1.jpg);
+}
+
+.team__alex .team__pic:hover{
+    background-image: url(../img/team/alex-2.jpg);
+}
+
 .partners {
     background-color: #fff;
     padding: 50px 0;
@@ -2611,6 +2627,10 @@ p.subtitle.azbuka__subtitle{
     padding-top: 65px;
     text-transform: uppercase;
     font-size: 12px;
+}
+
+.body__rshf .geroi__item{
+    color: #252525;
 }
 
 .geroi__item::before{
@@ -2714,7 +2734,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .body__rshf h1.title,
-p.subtitle{
+.body__rshf p.subtitle{
     color: #0A63AF;
 }
 
@@ -3299,6 +3319,33 @@ p.subtitle{
 
 .case__item--big .case__content{
     justify-content: flex-end;
+}
+
+.body__rshf .rshf__title{
+    color: #0A63AF;
+    text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    margin-bottom: 20px;
+}
+
+.rshf__section:nth-child(1){
+    background-image: url(../img/rshf_bg-top.png);
+    background-repeat: no-repeat;
+    background-position: 50% 101%;
+    background-size: 100% auto;
+    padding: 50px 0 0;
+}
+
+.rshf__section:nth-child(2){
+    background-image: url(../img/rshf_bg-bottom.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 100% auto;
+    padding: 0px 0 50px;
+}
+
+.body__rshf .rshf__text--block{
+    color: #252525;
 }
   
 /* Track */
