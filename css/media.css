@@ -672,7 +672,7 @@
     text-align: left;
   }
 
-  .logo img{
+  header .logo img{
     max-height: 50%;
     width: 70%;
   }
