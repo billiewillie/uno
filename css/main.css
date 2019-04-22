@@ -3331,7 +3331,7 @@ p.subtitle.azbuka__subtitle{
 .rshf__section:nth-child(1){
     background-image: url(../img/rshf_bg-top.png);
     background-repeat: no-repeat;
-    background-position: 50% 101%;
+    background-position: 50% 100%;
     background-size: 100% auto;
     padding: 50px 0 0;
 }
@@ -3342,10 +3342,85 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 0%;
     background-size: 100% auto;
     padding: 0px 0 50px;
+    margin-top: -1px;
 }
 
 .body__rshf .rshf__text--block{
     color: #252525;
+    margin-bottom: 40px;
+}
+
+.rshf__timeline{
+    color: #252525;
+    display: flex;
+    position: relative;
+}
+
+.rshf__timeline--0{
+    justify-content: flex-end;
+}
+
+.rshf__timeline--title{
+    text-transform: uppercase;
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.rshf__timeline--1{
+    padding-bottom: 100px;
+}
+
+.rshf__timeline--quote{
+    background-color: #094B84;
+    box-shadow: 0px 4px 20px rgba(7, 76, 135, 0.75);
+    border-radius: 20px;
+    padding: 20px 10px 10px 20px;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.rshf__timeline--quote::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: -14px;
+    left: -17px;
+    width: 50px;
+    height: 35px;
+    background-image: url(../img/icons/icon_quotes.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rshf__timeline--author{
+    text-align: right;
+    padding-top: 100px;
+    position: relative;
+}
+
+.rshf__timeline--author h3{
+    font-size: 18px;
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+}
+
+.rshf__timeline--author::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: url(../img/tsurkanu.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
   
 /* Track */
