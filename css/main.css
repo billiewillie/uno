@@ -3695,8 +3695,27 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/tab_image-8.jpg);
 }
 
-.rshf__redirect{
+.rshf__redirect a{
     text-align: center;
+    color: #0A63AF;
+    display: inline-block;
+    position: relative;
+}
+
+.rshf__redirect a::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: -60px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/icon_link-blue.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
   
 /* Track */

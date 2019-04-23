@@ -1786,6 +1786,15 @@
     font-size: 18px;
   }
 
+  .tabgroup {
+    min-height: auto;
+    margin-bottom: 50px;
+  }
+
+  .rshf__result{
+    padding: 100px 0 250px;
+  }
+
 }
 
 @media (min-width: 1440px) {
