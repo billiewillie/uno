@@ -861,6 +861,30 @@
     right: auto;
   }
 
+  .tabs{
+    justify-content: center;
+  }
+
+  .tabs li a{
+    padding: 20px;
+  }
+
+  .tabs{
+    margin-bottom: 50px;
+  }
+
+  .tab__image{
+    height: 400px;
+  }
+
+  .tabgroup{
+    min-height: 750px;
+  }
+
+  .rshf__result h2{
+    margin-bottom: 50px;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -1735,6 +1759,31 @@
 
   .rshf__how{
     padding: 100px 0 250px;
+  }
+
+  .tab__content,
+  .tab__image{
+    width: 49%;
+  }
+
+  .tab__content{
+    border-right: 1px solid #0A63AF;
+    padding-right: 30px;
+    padding-left: 50px;
+    text-align: right;
+  }
+
+  .tabgroup>div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tabgroup h3 {
+    font-size: 24px;
+  }
+
+  .tabgroup p{
+    font-size: 18px;
   }
 
 }

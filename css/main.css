@@ -2545,27 +2545,27 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/team/zhenya-2.jpg);
 } */
 
-.team__vadim .team__pic{
+.team__vadim .team__pic span{
     background-image: url(../img/team/vadim-1.jpg);
 }
 
-.team__vadim .team__pic:hover{
+.team__vadim .team__pic{
     background-image: url(../img/team/vadim-2.jpg);
 }
 
-.team__vika--m .team__pic{
+.team__vika--m .team__pic span{
     background-image: url(../img/team/vikab-1.jpg);
 }
 
-.team__vika--m .team__pic:hover{
+.team__vika--m .team__pic{
     background-image: url(../img/team/vikab-2.jpg);
 }
 
-.team__alex .team__pic{
+.team__alex .team__pic span{
     background-image: url(../img/team/alex-1.jpg);
 }
 
-.team__alex .team__pic:hover{
+.team__alex .team__pic{
     background-image: url(../img/team/alex-2.jpg);
 }
 
@@ -3590,6 +3590,113 @@ p.subtitle.azbuka__subtitle{
 
 .rshf__timeline--8 p:nth-child(2){
     font-family: "SFUIDisplay-Heavy", sans-serif;
+}
+
+.rshf__result{
+    padding: 50px 0 100px;
+    background-image: url(../img/rshf_bg-top.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 120% auto;
+    position: relative;
+}
+
+.rshf__result h2{
+    font-size: 36px;
+    color: #252525;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+
+.tabs{
+    display: flex;  
+    background: #094B84;
+    border: 1px solid #C2C3C3;
+    box-shadow: 0px 4px 20px rgba(7, 76, 135, 0.75);
+    border-radius: 50px;
+    padding: 0 10px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.tabs li{
+    text-align: center;
+}
+
+.tabs li a{
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.tabs li a.active{
+    border-bottom: 2px solid #fff;
+}
+
+.tabgroup h3{
+    color: #0A63AF;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: "SFUIDisplay-Light", sans-serif;
+}
+
+.tabgroup{
+    min-height: 550px;
+}
+
+.tabgroup p{
+    font-size: 14px;
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+.tabgroup p:last-child{
+    margin-bottom: 0;
+}
+
+.tab__content{
+    text-align: left;
+}
+
+.tab__image{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/tab_image-1.jpg);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+#tab2 .tab__image{
+    background-image: url(../img/tab_image-2.jpg);
+}
+
+#tab3 .tab__image{
+    background-image: url(../img/tab_image-3.jpg);
+}
+
+#tab4 .tab__image{
+    background-image: url(../img/tab_image-4.jpg);
+}
+
+#tab5 .tab__image{
+    background-image: url(../img/tab_image-5.jpg);
+}
+
+#tab6 .tab__image{
+    background-image: url(../img/tab_image-6.jpg);
+}
+
+#tab7 .tab__image{
+    background-image: url(../img/case_rshf.jpg);
+}
+
+#tab8 .tab__image{
+    background-image: url(../img/tab_image-8.jpg);
+}
+
+.rshf__redirect{
+    text-align: center;
 }
   
 /* Track */
