@@ -3033,7 +3033,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 0px;
 }
 
 .geroi__made{
@@ -3326,6 +3326,7 @@ p.subtitle.azbuka__subtitle{
     text-transform: uppercase;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     margin-bottom: 20px;
+    font-size: 36px;
 }
 
 .rshf__section:nth-child(1){
@@ -3341,13 +3342,20 @@ p.subtitle.azbuka__subtitle{
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: 100% auto;
-    padding: 0px 0 50px;
+    padding: 100px 0 50px;
     margin-top: -1px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .body__rshf .rshf__text--block{
     color: #252525;
     margin-bottom: 40px;
+}
+
+.body__rshf .rshf__text--block p{
+    font-size: 18px;
 }
 
 .rshf__timeline{
@@ -3369,6 +3377,7 @@ p.subtitle.azbuka__subtitle{
 
 .rshf__timeline--1{
     padding-bottom: 100px;
+    flex-direction: column;
 }
 
 .rshf__timeline--quote{
@@ -3421,6 +3430,70 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.rshf__timeline--2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.rshf__section:nth-child(2) .rshf__timeline{
+    margin-bottom: 40px;
+}
+
+.rshf__timeline--2 .rshf__timeline--title{
+    color: #0A63AF;
+    text-transform: uppercase;
+}
+
+.rshf__timeline--2::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 70%;
+    width: 200%;
+    height: 200%;
+    background-image: url(../img/rshf_team.png);
+    background-position: 100% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+    z-index: -1;
+}
+
+.rshf__timeline--3{
+    position: relative;
+    z-index: 1;
+}
+
+.rshf__timeline--3 .timeline__inner{
+    background-color: #094B84;
+    box-shadow: 0px 4px 20px rgba(7, 76, 135, 0.75);
+    border-radius: 20px;
+    padding: 10px;
+    color: #fff;
+    width: 100%;
+}
+
+.rshf__timeline--3 .timeline__inner p{
+    text-align: center;
+    width: 100%;
+}
+
+.rshf__timeline--3 .timeline__inner span{
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.rshf__timeline--4{
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
 }
   
 /* Track */
