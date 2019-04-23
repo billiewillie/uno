@@ -156,11 +156,6 @@
     justify-content: center;
   }
 
-  /* .footer__bottom .main__footer--part:nth-child(1)::after, 
-  .footer__bottom .main__footer--part:nth-child(2)::after{
-    display: none;
-  } */
-
   .mobile__map{
     width: 500px;
     height: 500px;
@@ -662,6 +657,7 @@
     height: 28px;
     border-radius: 50%;
     background-color: #0A63AF;
+    z-index: 1;
   }
 
   .rshf__timeline--0{
@@ -685,6 +681,7 @@
     height: 18px;
     border-radius: 50%;
     background-color: #0A63AF;
+    z-index: 1;
   }
 
   .rshf__timeline--1{
@@ -737,7 +734,8 @@
     flex-direction: row;
   }
 
-  .rshf__section:nth-child(2) .timeline{
+  .rshf__section:nth-child(2) .timeline,
+  .rshf__section:nth-child(3) .timeline{
     position: absolute;
     display: block;
     width: 0;
@@ -748,6 +746,10 @@
     right: 0;
     left: 0;
     margin: auto;
+  }
+
+  .rshf__section:nth-child(3) .timeline{
+    border: 1px dashed #fff;
   }
 
   .rshf__timeline--2,
@@ -804,12 +806,59 @@
     display: block;
     position: absolute;
     content: '';
-    top: 0;
+    top: 50px;
     left: 110%;
     right: auto;
     height: 650px;
     background-position: 0 0;
     opacity: 1;
+  }
+
+  .rshf__timeline--6,
+  .rshf__timeline--5,
+  .rshf__timeline--8{
+    align-items: flex-end;
+  }
+
+  .rshf__timeline--5 .rshf__timeline--title,
+  .rshf__timeline--6 .rshf__timeline--inner,
+  .rshf__timeline--8 .rshf__timeline--inner{
+    width: 50%;
+    padding-left: 50px;
+    text-align: left;
+  }
+
+  .rshf__timeline--7 .rshf__timeline--inner{
+    width: 50%;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .rshf__timeline--7 .rshf__timeline--inner p{
+    text-align: right;
+  }
+
+  .rshf__timeline--7::before {
+    top: auto;
+    bottom: 100%;
+    left: auto;
+    right: 50%;
+    width: 600px;
+    height: 600px;
+    background-position: 0% 100%;
+    opacity: 1;
+    z-index: 0;
+  }
+
+  .rshf__how .rshf__timeline p {
+    margin-bottom: 50px;
+  }
+
+  .rshf__how .rshf__timeline--7 .rshf__timeline--title::before {
+    left: -60px;
+    right: auto;
   }
 
 }
@@ -1682,6 +1731,10 @@
 
   .rshf__section:nth-child(2){
     padding: 250px 0 100px;
+  }
+
+  .rshf__how{
+    padding: 100px 0 250px;
   }
 
 }

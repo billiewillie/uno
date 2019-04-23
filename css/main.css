@@ -3333,7 +3333,7 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/rshf_bg-top.png);
     background-repeat: no-repeat;
     background-position: 50% 100%;
-    background-size: 100% auto;
+    background-size: 110% auto;
     padding: 50px 0 0;
 }
 
@@ -3341,7 +3341,7 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/rshf_bg-bottom.png);
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: 100% auto;
+    background-size: 110% auto;
     padding: 100px 0 50px;
     margin-top: -1px;
     position: relative;
@@ -3490,10 +3490,106 @@ p.subtitle.azbuka__subtitle{
     margin-bottom: 10px;
 }
 
-.rshf__timeline--4{
+.rshf__section:nth-child(2) .rshf__timeline--4{
     margin-bottom: 0;
     position: relative;
     z-index: 1;
+}
+
+.rshf__how{
+    background-color: #0A63AF;
+    padding: 50px 0 100px;
+    background-image: url(../img/rshf_bg-top.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    background-size: 120% auto;
+    position: relative;
+}
+
+.rshf__how .rshf__timeline{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.rshf__how .rshf__timeline p{
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.rshf__timeline--5{
+    margin-bottom: 50px;
+}
+
+.rshf__timeline--5 h2{
+    margin-bottom: 0;
+}
+
+.rshf__timeline--7{
+    position: relative;
+}
+
+.rshf__timeline--7 p{
+    position: relative;
+}
+
+.rshf__timeline--7::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 70%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/rshf_how.png);
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .5;
+    z-index: 0;
+}
+
+.rshf__how .rshf__timeline--title{
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+.rshf__how .rshf__timeline--title::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: -60px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rshf__timeline--6 .rshf__timeline--title::before{
+    background-image: url(../img/icons/icon_rshf-how-1.svg);
+}
+
+.rshf__timeline--7 .rshf__timeline--title::before{
+    background-image: url(../img/icons/icon_rshf-how-2.svg);
+}
+
+.rshf__timeline--8 .rshf__timeline--title::before{
+    background-image: url(../img/icons/icon_rshf-how-3.svg);
+}
+
+.rshf__timeline--5 .rshf__timeline--title{
+    display: block;
+    width: auto;
+}
+
+.rshf__timeline--8 p:nth-child(2){
+    font-family: "SFUIDisplay-Heavy", sans-serif;
 }
   
 /* Track */
