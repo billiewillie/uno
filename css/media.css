@@ -905,6 +905,10 @@
     bottom: 0;
   }
 
+  .tools__item{
+    width: 33%;
+  }
+
 }
 
 @media (max-width: 991px){
