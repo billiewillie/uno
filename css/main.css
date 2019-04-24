@@ -59,6 +59,14 @@ body.body__ppoj{
     position: relative;
 }
 
+.body.body__citovir{
+    background-image: url(../img/citovir_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: 100% auto;
+    position: relative;
+}
+
 .body.body__geroi{
     background-image: url(../img/case-supergeroi.jpg);
     background-repeat: no-repeat;
@@ -90,6 +98,23 @@ body.body__ppoj{
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 6%,#ec6408 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 6%, #ec6408 100%);
+}
+
+.body.body__citovir::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 203, 19);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 33%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 6%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 6%, rgba(255, 203, 19) 100%);
 }
 
 .body.body__geroi::after{
@@ -775,6 +800,7 @@ p.subtitle.azbuka__subtitle{
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 .azbuka__digits--item{
@@ -804,6 +830,23 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
     background-size: 50%;
     background-repeat: no-repeat;
+}
+
+.body__citovir .azbuka__digits--icon{
+    border: 1px solid #3175BE;
+    background-image: url(../img/icons/icon_citovir-11.svg);
+}
+
+.body__citovir .azbuka__digits--item{
+    color: #252525;
+}
+
+.body__citovir .azbuka__digits--item:nth-child(2) .azbuka__digits--icon{
+    background-image: url(../img/icons/icon_citovir-12.svg);
+}
+
+.body__citovir .azbuka__digits--item:nth-child(3) .azbuka__digits--icon{
+    background-image: url(../img/icons/icon_citovir-13.svg);
 }
 
 .azbuka__digits--item:last-child .azbuka__digits--icon{
@@ -1919,6 +1962,11 @@ p.subtitle.azbuka__subtitle{
     box-shadow: 0px 12px 24px rgba(236, 100, 8, 0.32);
 }
 
+.body__citovir .target__item{
+    color: #252525;
+    box-shadow: none;
+}
+
 .target__item:last-child{
     margin-bottom: 0;
 }
@@ -1926,6 +1974,12 @@ p.subtitle.azbuka__subtitle{
 .target__item:hover{
     background: #FE9148;
     border: 2px solid #FE9148;
+}
+
+.body__citovir .target__item:hover{
+    background: #fff;
+    border: 2px solid #fff;
+    color: #3175BE;
 }
 
 .azbuka__tv{
@@ -2386,7 +2440,9 @@ p.subtitle.azbuka__subtitle{
     justify-content: center;
     flex-direction: column;
     text-align: center;
-}__slider--item.case__item--big .case__members{
+}
+
+.case__slider--item.case__item--big .case__members{
     background-color: rgba(37,37,37,.8);
 }
 
@@ -2394,6 +2450,7 @@ p.subtitle.azbuka__subtitle{
     font-size: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .case__content--text{
@@ -3720,6 +3777,111 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.body__citovir .challenge__item::after{
+    display: none;
+}
+
+.body__citovir .challenge__item{
+    border-radius: 0;
+    box-shadow: 0px 0px 24px rgba(49, 117, 190, 0.5);
+    border: none;
+    padding: 0;
+    width: auto;
+}
+
+.body__citovir .breadcrumb__item{
+    color: #3175BE;
+    border: 1px solid #3175BE;
+    opacity: .5;
+}
+
+.citovir__advantage{
+    margin-bottom: 50px;
+    margin-top: 150px;
+    background-color: #E58221;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+    padding: 50px 10px 10px 10px;
+    text-align: left;
+}
+
+.citovir__advantage::before{
+    display: block;
+    position: absolute;
+    content: '';
+    right: 0;
+    left: 0;
+    top: -150px;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/citovir_pack.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.tools .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tools{
+    background-color: #FDEED9;
+    color: #252525;
+    text-align: left;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.tools::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+    background-color: #3175BE;
+}
+
+.tools__content{
+    font-weight: 600;
+}
+
+.tools__title{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #3175BE;
+    font-size: 40px;
+    margin-bottom: 100px;
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+}
+
+.tools__title::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    width: 572px;
+    height: 174px;
+    background-image: url(../img/tools_title.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
 }
   
 /* Track */

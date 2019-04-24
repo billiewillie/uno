@@ -212,6 +212,7 @@
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 80px;
+    font-size: 18px;
   }
 
   .target__item{
@@ -891,6 +892,19 @@
     background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 5%, rgba(255, 255,255, 1) 100%);
   }
 
+  .citovir__advantage{
+    padding: 50px 50px 50px 200px;
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .citovir__advantage::before{
+    right: auto;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -1372,13 +1386,18 @@
   }
 
   .azbuka__digits{
-    margin-bottom: 200px;
+    margin-bottom: 100px;
   }
 
   .azbuka__digits--item{
     padding-top: 120px;
     max-width: 300px;
     padding-bottom: 30px;
+  }
+
+  .body__citovir .azbuka__digits--item{
+    max-width: inherit;
+    width: 34%;
   }
 
   .azbuka__digits--icon{
@@ -1809,6 +1828,18 @@
 
   .rshf__section:nth-child(1) {
     padding: 200px 0 0;
+  }
+
+  .citovir__advantage{
+    padding: 50px 50px 50px 150px;
+    margin-bottom: 70px;
+  }
+
+  .citovir__advantage::before{
+    right: auto;
+    left: -50px;
+    top: 0;
+    bottom: 0;
   }
 
 }
