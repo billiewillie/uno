@@ -2342,6 +2342,10 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
 }
 
+.case__slider--item .case__top.case__rshf{
+    background-image: url(../img/case_rshf.jpg);
+}
+
 .case__item.case__item--big .case__card{
     position: relative;
 }
