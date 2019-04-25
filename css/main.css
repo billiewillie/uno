@@ -2396,6 +2396,11 @@ p.subtitle.azbuka__subtitle{
     background-position: 50% 50%;
 }
 
+.case__slider--item .case__top.case__citovir{
+    background-image: url(../img/citovir_bg.jpg);
+    background-position: 50% 50%;
+}
+
 .case__slider--item .case__top.case__rshf{
     background-image: url(../img/case_rshf.jpg);
 }
@@ -2447,7 +2452,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__content--title{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -4020,6 +4025,7 @@ p.subtitle.azbuka__subtitle{
 .tasks .item:hover{
     background-color: #3175BE;
     color: #fff;
+    box-shadow: 0px 0px 24px rgba(49, 117, 190, 0.5);
 }
   
 /* Track */
