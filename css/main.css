@@ -131,8 +131,8 @@ body.body__ppoj{
     z-index: -1;
     background: #ec6408 url(../img/azbuka_bg.jpg);
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%,#217DDA 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%, #217DDA 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 2%,#217DDA 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.4) 0%, #217DDA 2%, #217DDA 100%);
 }
 
 .body.body__ppoj::after{
@@ -369,7 +369,7 @@ main.main.main__cases{
 }
 
 .geroi__iseland{
-    padding: 50px 0;
+    padding: 50px 0 0;
 }
 
 main.main.main__azbuka{
@@ -397,9 +397,9 @@ main.main.main__azbuka{
 .breadcrumb__item{
     border: 1px solid #5F4A4A;
     border-radius: 20px;
-    padding: 7px 20px;
+    padding: 7px 10px;
     line-height: 1;
-    margin-right: 15px;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 
@@ -2154,8 +2154,7 @@ p.subtitle.azbuka__subtitle{
     background-position: 50%;
     background-repeat: no-repeat;
     padding: 50px 0 5px;
-    position: relative;   
-    margin-bottom: 25px;
+    position: relative;
     color: #ECF0F1;
     border-radius: 6px;
     display: flex;
@@ -2194,6 +2193,7 @@ p.subtitle.azbuka__subtitle{
 
 .case__big--title{
     color: #fff;
+    padding: 20px;
 }
 
 .case:hover .case__big--title{
@@ -2398,6 +2398,10 @@ p.subtitle.azbuka__subtitle{
 
 .case__item.case__item--timogen .case__top{
     background-image: url(../img/case-timogen.jpg);
+}
+
+.case__item .case__top.case__rangers{
+    background-image: url(../img/case_rangers.jpg);
 }
 
 .case__item .case__citovir{
