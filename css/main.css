@@ -3956,6 +3956,71 @@ p.subtitle.azbuka__subtitle{
     height: 100%;
     font-size: 16px;
 }
+
+.tasks{
+    padding: 140px 0 0;
+    height: 890px;
+    overflow: hidden;
+    background: #f6b865;
+    background: -moz-linear-gradient(left, #f6b865 0%, #f6b865 50%, #ffdf96 100%);
+    background: -webkit-linear-gradient(left, #f6b865 0%,#f6b865 50%,#ffdf96 100%); 
+    background: linear-gradient(to right, #f6b865 0%,#f6b865 50%,#ffdf96 100%);
+}
+
+.tasks .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.tasks .title{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: "SFUIDisplay-Heavy", sans-serif;
+    margin-bottom: 80px;
+    color: #3175BE;
+    position: relative;
+    z-index: 2;
+}
+
+.tasks .list{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks .list::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 933px;
+    background-image: url(../img/citovir_bg-2.jpg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.tasks .item{
+    font-size: 16px;
+    color: #252525;
+    padding: 35px 5px;
+    transition: .2s;
+    border-radius: 15px;
+    max-width: 470px;
+    width: 100%;
+}
+
+.tasks .item:hover{
+    background-color: #3175BE;
+    color: #fff;
+}
   
 /* Track */
 ::-webkit-scrollbar-track {
