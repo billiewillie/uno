@@ -344,7 +344,7 @@ header .logo img {
 
 main.main {
     position: relative;
-    background-image: url('../img/index_bg.jpg');
+    background-image: url('../img/index_bg-mobile.jpg');
     background-size: cover;
     background-position: 50% 80%;
     display: flex;
@@ -1792,6 +1792,21 @@ p.subtitle.azbuka__subtitle{
 
 .case__slider .case__slider--item:nth-child(even) .case__top{
     min-height: 370px;
+}
+
+.case__slider .case__slider--item:nth-child(even) .case__content{
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    bottom: 16px;
+    left: 20px;
+    right: 20px;
+    width: 90%;
+    padding: 0;
+    align-items: flex-start;
+    text-align: left;
+    color: #fff;
 }
 
 .case__slider .case__slider--item{

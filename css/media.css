@@ -70,7 +70,7 @@
   }
 
   main .main__footer{
-    font-size: 12px;
+    font-size: 11px;
     padding: 20px 0;
   }
 
@@ -82,12 +82,13 @@
 
   .main__footer--part{
     text-align: left;
+    width: 33.33%;
   }
 
   .main__footer--part:nth-child(1),
   .main__footer--part:nth-child(2){
       margin-bottom: 0px;
-      padding-right: 25px;
+      padding-right: 15px;
   }
 
   .main__footer--part:nth-child(1)::after,
@@ -1020,6 +1021,10 @@
     font-size: 43px;
   }
 
+  main.main{
+    background-image: url('../img/index_bg.jpg');
+  }
+
   .contacts__content h1.title{
     font-size: 90px;
   }
@@ -1116,7 +1121,7 @@
   }
 
   main .main__footer{
-    font-size: 14px;
+    font-size: 12px;
     transition: 1.5s;
   }
  
@@ -1863,6 +1868,10 @@
     background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 15%, rgba(255, 203, 19) 100%);
   }
 
+  .team__one{
+    width: 33.333%;
+  }
+
 }
 
 @media (min-width: 1440px) {
@@ -1994,10 +2003,6 @@
     padding-right: 25%;
   }
 
-  .team__one{
-    width: 33.333%;
-  }
-
   .team__name{
     font-size: 22px;
     letter-spacing: 1px;
@@ -2102,7 +2107,7 @@
 
 }
 
-@media (max-height:300px) and (max-width:767px){
+@media (max-height:430px) and (max-width:767px){
   .wrapper{
     display: none;
   }
