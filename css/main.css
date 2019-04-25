@@ -1771,7 +1771,8 @@ p.subtitle.azbuka__subtitle{
 
 .case__item .case__card:hover .case__content,
 .case__item .case__card:hover .case__content p,
-.case__item .case__card:hover .case__content a{
+.case__item .case__card:hover .case__content a,
+.case__slider .case__slider--item:hover .case__content{
     color: #C4A16B;
 }
 
@@ -2378,6 +2379,18 @@ p.subtitle.azbuka__subtitle{
 
 .case__item.case__item--vystavka .case__top{
     background-image: url(../img/case_vystavka.jpg);
+}
+
+.case__item.case__item--timogen .case__top{
+    background-image: url(../img/case-timogen.jpg);
+}
+
+.case__item .case__citovir{
+    background-image: url(../img/case-citovir.jpg);
+}
+
+.case__item.case__item--citovir .case__top{
+    background-image: url(../img/case-citovir.jpg);
 }
 
 .case__item.case__item--pill .case__top{
