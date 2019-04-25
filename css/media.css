@@ -1269,7 +1269,11 @@
   }
 
   .breadcrumbs{
-    margin-bottom: 45px;
+    margin-bottom: 80px;
+  }
+
+  .body__citovir .azbuka__digits--item:last-child{
+    margin-bottom: 0;
   }
 
   .breadcrumbs.azbuka__breadcrumbs{
@@ -1396,7 +1400,7 @@
   .azbuka__digits--item{
     padding-top: 120px;
     max-width: 300px;
-    padding-bottom: 30px;
+    margin-bottom: 130px;
   }
 
   .body__citovir .azbuka__digits--item{
@@ -2069,6 +2073,11 @@
 
   .geroi__about--part-item{
     font-size: 24px;
+  }
+
+  .tools__item{
+    padding-right: 60px;
+    margin-bottom: 80px;
   }
 
 }
