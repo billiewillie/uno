@@ -35,11 +35,11 @@ body {
     font-size: 14px;
     color: #BDC3C7;
     background-color: #191919;
-    background-image: url(../img/body_bg.jpg);
+    background-image: url(../img/body_bg.png);
     background-position: 50% 0;
     background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
 }
 
 body.body__ppoj{
