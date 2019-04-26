@@ -2505,7 +2505,7 @@ p.subtitle.azbuka__subtitle{
 
 .team__list{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
@@ -2644,13 +2644,13 @@ p.subtitle.azbuka__subtitle{
     background-image: url(../img/team/varya-2.jpg);
 }
 
-/* .team__zhenya .team__pic{
+.team__zhenya .team__pic span{
     background-image: url(../img/team/zhenya-1.jpg);
 }
 
-.team__zhenya .team__pic:hover{
+.team__zhenya .team__pic{
     background-image: url(../img/team/zhenya-2.jpg);
-} */
+}
 
 .team__vadim .team__pic span{
     background-image: url(../img/team/vadim-1.jpg);
