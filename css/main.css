@@ -1778,6 +1778,7 @@ p.subtitle.azbuka__subtitle{
     text-align: center;
 }
 
+.case__slider .case__slider--item:nth-child(even):hover .case__content,
 .case__item .case__card:hover .case__content,
 .case__item .case__card:hover .case__content p,
 .case__item .case__card:hover .case__content a,
