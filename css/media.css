@@ -145,7 +145,7 @@
   }
 
   .service__item--list-item{
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .service__item:last-child {
@@ -917,6 +917,10 @@
     font-size: 20px;
   }
 
+  .rights{
+    display: block;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -935,7 +939,6 @@
 
   .container{
     display: flex;
-    padding: 0 60px;
   }
 
   .logo{
@@ -943,6 +946,7 @@
     padding: 0;
     align-items: center;
     justify-content: center;
+    margin: auto;
   }
 
   header .logo>*{
@@ -1122,8 +1126,7 @@
   }
 
   main .main__footer{
-    font-size: 12px;
-    transition: 1.5s;
+    font-size: 11px;
   }
  
   .main__footer--part:nth-child(1), 
@@ -1230,8 +1233,8 @@
   }
 
   .ppoj__top.ppoj__block--consult .container{
-    padding-left: 50%;
-    padding-right: 60px;
+    padding-left: 30%;
+    padding-right: 10px;
   }
 
   .ppoj__block--opinion .title{
@@ -1260,8 +1263,8 @@
   }
 
   .ppoj__top.ppoj__block--right .container{
-    padding-left: 60px;
-    padding-right: 50%;
+    padding-left: 10px;
+    padding-right: 30%;
   }
 
   .ppoj__list--item{
@@ -1664,7 +1667,7 @@
   }
 
   .geroi__how .container{
-    padding: 0 60px 0 30%;
+    padding: 0 10px 0 20%;
   }
 
   .geroi__how--text::before{
@@ -1713,11 +1716,11 @@
     padding: 70px 0;
   }
   .stats__item {
-      padding: 110px 80px 0;
+      padding: 110px 20px 0;
   }
 
   .ppoj__top.ppoj__block--opinion .container {
-    padding-right: 50%;
+    padding-right: 30%;
     text-align: left;
   }
 
@@ -1879,7 +1882,7 @@
 
   .main__footer--part:nth-child(1), 
   .main__footer--part:nth-child(2){
-    padding-right: 100px;
+    padding-right: 60px;
   }
 
   .main__footer--part:nth-child(1)::after, 
@@ -1902,10 +1905,6 @@
 
   .main__services .main__content{
     padding-top: 135px;
-  }
-
-  .contacts__content .container{
-    padding: 0 130px;
   }
 
   .contact__block--right{
@@ -1963,9 +1962,9 @@
   }
 
   .ppoj__top.ppoj__result .container{
-    flex-direction: row;
     justify-content: space-between;
-    padding-right: 30px;
+    flex-direction: column;
+    padding: 0 10px;
   }
 
   .ppoj__result h1.title.ppoj__top--title{
@@ -1975,10 +1974,7 @@
   .ppoj__result--youtube .ppoj__block--soc{
     display: flex;
     justify-content: space-between;
-  }
-
-  .ppoj__result--content{
-    width: 70%;
+    align-items: center;
   }
 
   .azbuka__top {
@@ -2067,11 +2063,11 @@
   }
 
   .main__index .title{
-    font-size: 53px;
+    font-size: 46px;
   }
 
   main .main__footer {
-    padding: 37px 0;
+    padding: 25px 0;
   }
 
   .ppoj__top:nth-child(1){
@@ -2079,11 +2075,11 @@
   }
 
   .ppoj__top.ppoj__block--consult .container{
-    padding-left: 45%;
+    padding-left: 30%;
   }
 
   .ppoj__top.ppoj__flashmob .container {
-    padding: 0 60px 0 40%;
+    padding: 0 10px 0 30%;
   }
 
   .geroi__black{
