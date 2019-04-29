@@ -931,6 +931,11 @@
     min-height: auto;
   }
 
+  .hidden__menu,
+  .bar{
+    display: none;
+  }
+
 }
 
 @media (max-width: 991px){
