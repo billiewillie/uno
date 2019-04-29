@@ -297,11 +297,14 @@
       $burger.toggleClass('active');
       $burger.parent().toggleClass('is-open');
       $('.bar').toggleClass('active');
+      $('.hidden__menu').toggleClass('active');
       $('.bar .logo img').attr('src', 'img/logo_dark.svg');
-      
+      $('body').css('height', '100vh');
+
       if(!$burger.hasClass('active')) {
         $burger.addClass('closing');
         $('.bar .logo img').attr('src', 'img/logo.svg');
+        $('body').css('height', 'auto');
       }
 
       clickDelayTimer = setTimeout(function () {
@@ -311,5 +314,12 @@
       }, clickDelay);
     }
   });
-  
+
+  $(window).on('scroll', function () {
+    if($(document).scrollTop() > $('.main__index')[0].offsetHeight){
+      $('.bar').addClass('show');
+    }else{
+      $('.bar').removeClass('show');
+    }
+  })
 })();

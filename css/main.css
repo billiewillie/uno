@@ -4089,6 +4089,13 @@ p.subtitle.azbuka__subtitle{
     z-index: 2;
     text-align: center;
     padding: 40px 0;
+    top: 0;
+    left: 100%;
+    transition: .5s;
+}
+
+.hidden__menu.active{
+    left: 0;
 }
 
 .hidden__menu .container{
@@ -4141,13 +4148,17 @@ p.subtitle.azbuka__subtitle{
 
 .bar{
     position: fixed;
-    top: 0;
+    top: -60px;
     left: 0;
     width: 100%;
     z-index: 3;
     background-color: #252525;
     padding: 12px 0;
     transition: .2s;
+}
+
+.bar.show{
+    top: 0;
 }
 
 .bar.active{
