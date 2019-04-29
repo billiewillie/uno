@@ -360,6 +360,8 @@ main.main {
     flex-direction: column;
     justify-content: flex-end;
     flex: auto;
+    padding: 100px 0 50px;
+    min-height: 70vh;
 }
 
 main.main.ppoj__main{
@@ -742,6 +744,7 @@ h1.title {
     font-size: 6vw;
     letter-spacing: 3px;
     line-height: 1.4;
+    margin-bottom: 100px;
 }
 
 .main__index .title--gold{
