@@ -690,6 +690,7 @@ main .main__footer {
     transition: 1s;
     color: rgba(255, 255, 255, .7);
     background: rgba(37, 37, 37, 0.7);
+    display: none;
 }
 
 main .main__footer.show {

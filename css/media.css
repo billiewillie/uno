@@ -1127,6 +1127,7 @@
 
   main .main__footer{
     font-size: 11px;
+    display: block;
   }
  
   .main__footer--part:nth-child(1), 
