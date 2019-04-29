@@ -285,5 +285,31 @@
       $(target).show();
     });
   }
+
+  var clickDelay = 500;
+  var clickDelayTimer = null;
+
+  $('.burger-click-region').on('click', function () {
+    
+    if(clickDelayTimer === null) {
+    
+      var $burger = $(this);
+      $burger.toggleClass('active');
+      $burger.parent().toggleClass('is-open');
+      $('.bar').toggleClass('active');
+      $('.bar .logo img').attr('src', 'img/logo_dark.svg');
+      
+      if(!$burger.hasClass('active')) {
+        $burger.addClass('closing');
+        $('.bar .logo img').attr('src', 'img/logo.svg');
+      }
+
+      clickDelayTimer = setTimeout(function () {
+        $burger.removeClass('closing');
+        clearTimeout(clickDelayTimer);
+        clickDelayTimer = null;
+      }, clickDelay);
+    }
+  });
   
 })();

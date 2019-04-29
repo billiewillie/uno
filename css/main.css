@@ -208,6 +208,7 @@ header.header.header__azbuka{
 
 .header__content--top {
     text-align: center;
+    margin-bottom: 35px;
 }
 
 .contacts {
@@ -215,7 +216,6 @@ header.header.header__azbuka{
     justify-content: center;
     align-items: center;
     font-size: 0;
-    margin-bottom: 20px;
     position: relative;
 }
 
@@ -321,7 +321,7 @@ header .logo img {
     width: 100%;
     background-color: #303030;
     top: 0;
-    left: 0;
+    right: -10px;
 }
 
 .header__case .menu::before{
@@ -653,7 +653,7 @@ main.main.main__services {
     text-transform: uppercase;
     position: relative;
     line-height: 1;
-    min-width: 150px;
+    min-width: 145px;
     transition: .2s;
     text-align: center;
     font-weight: 600;
@@ -1003,9 +1003,6 @@ p.subtitle.azbuka__subtitle{
     height: 100%;
     overflow: hidden;
     z-index: -1;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .popup__inner {
@@ -1014,9 +1011,9 @@ p.subtitle.azbuka__subtitle{
     max-width: 340px;
     flex-direction: column;
     font-family: 'SFUIDisplay-Medium', sans-serif;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    top: 120px;
+    transform: translateX(-50%);
 }
 
 .popup__inner.show {
@@ -4083,6 +4080,125 @@ p.subtitle.azbuka__subtitle{
 .tools__sublist li{
     display: block;
 }
+
+.bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #252525;
+    padding: 12px 0;
+    transition: .2s;
+}
+
+.bar.active{
+    background-color: #BFBFBF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bar .logo{
+    max-width: 88px;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+.burger-click-region {
+    width: 24px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger-menu-piece {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-top: 1px solid #fff;
+    transform-origin: 50% 50%;
+    transition: transform 400ms ease-out;
+}
+
+.burger-menu-piece:nth-child(1) {
+    top: 0;
+}
+
+.burger-menu-piece:nth-child(2) {
+    top: 8px;
+    opacity: 1;
+    transition: transform 400ms ease-out, opacity 0ms linear 200ms;
+}
+
+.burger-menu-piece:nth-child(3) {
+    top: 16px;
+}
+
+.active .burger-menu-piece:nth-child(1) {
+    animation: burger-open-top 400ms ease-out forwards;
+    border-top: 1px solid #252525;
+}
+
+.active .burger-menu-piece:nth-child(2) {
+    opacity: 0;
+    border-top: 1px solid #252525;
+    transition: transform 400ms ease-out, opacity 0ms linear 200ms;
+}
+
+.active .burger-menu-piece:nth-child(3) {
+    border-top: 1px solid #252525;
+    animation: burger-open-bot 400ms ease-out forwards;
+}
+
+.closing .burger-menu-piece:nth-child(1) {
+    animation: burger-close-top 400ms ease-out forwards;
+}
+
+.closing .burger-menu-piece:nth-child(3) {
+    animation: burger-close-bot 400ms ease-out forwards;
+}
+
+@keyframes burger-open-top {
+    50% {
+        transform: translate3d(0, 8px, 0);
+    }100% {
+        transform: translate3d(0, 8px, 0) rotate(45deg);
+    }
+}
+
+@keyframes burger-open-bot {
+    50% {
+        transform: translate3d(0, -8px, 0);
+    }100% {
+        transform: translate3d(0, -8px, 0) rotate(-45deg);
+    }
+}
+
+@keyframes burger-close-top {
+    0% {
+        transform: translate3d(0, 8px, 0) rotate(45deg);
+    }50% {
+        transform: translate3d(0, 8px, 0) rotate(0deg);
+    }100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes burger-close-bot {
+    0% {
+        transform: translate3d(0, -8px, 0) rotate(-45deg);
+    }50% {
+        transform: translate3d(0, -8px, 0) rotate(0deg);
+    }100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
   
 /* Track */
 ::-webkit-scrollbar-track {
@@ -4122,24 +4238,24 @@ p.subtitle.azbuka__subtitle{
 @-webkit-keyframes popupInner {
     0% {
         left: 120%;
-        transform: translate(0%, -50%);
+        transform: translateX(-50%);
     }
 
     100% {
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 }
 
 @keyframes popupInner {
     0% {
         left: 120%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 
     100% {
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translateX(-50%);
     }
 }
 
