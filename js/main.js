@@ -7,7 +7,7 @@
   }
 
   $(document).ready(function(){
-    $("form").attr("action", "mail.php");
+    $("form").attr("action", "./mail.php");
   });
 
   // slider
@@ -322,12 +322,14 @@
       }, clickDelay);
     }
   });
-
+  
   $(window).on('scroll', function () {
-    if($(document).scrollTop() > $('.main__index')[0].offsetHeight){
-      $('.bar').addClass('show');
-    }else{
-      $('.bar').removeClass('show');
+    if($('.bar').length){
+      if($(document).scrollTop() > $('.main__index')[0].offsetHeight){
+        $('.bar').addClass('show');
+      }else{
+        $('.bar').removeClass('show');
+      }
     }
   })
 })();

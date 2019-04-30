@@ -360,7 +360,6 @@ main.main {
     flex-direction: column;
     justify-content: flex-end;
     flex: auto;
-    padding: 100px 0 50px;
     min-height: 70vh;
 }
 
