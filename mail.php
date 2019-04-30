@@ -39,7 +39,7 @@ $mail->Body    =  "<table><tr style='background-color: #f8f8f8;'><td style='padd
 
 $mail->AltBody = '';
 
-if($name === '' || $phone === '' || $email === '' || $url != '') {
+if(strlen($name) === 0 || strlen($phone) === 0 || strlen($email) === 0  || strlen($url) > 0) {
     echo 'Error';
 } elseif($mail->send()) {
     echo 'ok';

@@ -1105,6 +1105,7 @@
 
   .menu::before{
     width: 300%;
+    left: 0;
   }
 
   .menu__item{
