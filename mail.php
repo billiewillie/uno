@@ -33,13 +33,13 @@ $mail->isHTML(true);                                  // Set email format to HTM
 
 $mail->Subject = 'Заявка с сайта';
 
-$mail->Body    =  "<table><tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Имя</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $name . "</td></tr>
+$mail->Body = "<table><tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Имя</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $name . "</td></tr>
 <tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Телефон</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $phone . "</td></tr>
 <tr style='background-color: #f8f8f8;'><td style='padding: 10px; border: #e9e9e9 1px solid;'><b>Почта</b></td><td style='padding: 10px; border: #e9e9e9 1px solid;'>" . $email . "</td></tr></table>";
 
 $mail->AltBody = '';
 
-if(strlen($name) === 0 || strlen($phone) === 0 || strlen($email) === 0  || strlen($url) > 0) {
+if($name === '' || $phone === '' || $email === '' || $url != '') {
     echo 'Error';
 } elseif($mail->send()) {
     echo 'ok';

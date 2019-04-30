@@ -6,6 +6,10 @@
     new WOW().init();
   }
 
+  $(document).ready(function(){
+    $("form").attr("action", "mail.php");
+  });
+
   // slider
   if($('.slider').length){
     $('.slider').slick({
@@ -228,15 +232,17 @@
         processData: false, 
         data: fd,
         success: function(msg){
-          if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '' && msg === 'ok') {
-            th.trigger('reset');
-            $('.popup__title').text('Cпасибо! Мы скоро c вами свяжемся');
-            setTimeout(function(){
-              popupBg.classList.toggle('turn');
-              popup.classList.toggle('show');
-              popupInner.classList.toggle('show');
-              $('.popup__title').text('напишите нам');
-            }, 2000);
+          if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '') {
+            if(msg === 'ok'){
+              th.trigger('reset');
+              $('.popup__title').text('Cпасибо! Мы скоро c вами свяжемся');
+              setTimeout(function(){
+                popupBg.classList.toggle('turn');
+                popup.classList.toggle('show');
+                popupInner.classList.toggle('show');
+                $('.popup__title').text('напишите нам');
+              }, 2000);
+            }
           } else {
             alert('Заполните все поля пожалуйста!');
           }
@@ -260,9 +266,11 @@
       processData: false, 
       data: fd,
       success: function(msg){
-        if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '' && msg === 'ok') {
-          th.trigger('reset');
-          $('.contact__block--form .title').text('Cпасибо! Мы скоро c вами свяжемся');
+        if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '') {
+          if(msg === 'ok'){
+            th.trigger('reset');
+            $('.contact__block--form .title').text('Cпасибо! Мы скоро c вами свяжемся');
+          }
         } else {
           alert('Заполните все поля пожалуйста!');
         }
