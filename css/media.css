@@ -421,6 +421,7 @@
 
   .case__big--top{
     min-height: 300px;
+    justify-content: flex-end;
   }
 
   .title.case__big--top{
@@ -569,6 +570,7 @@
 
   .case__item--small .case__top{
     min-height: 233px;
+    justify-content: flex-end;
   }
 
   .case__item.case__item--big{
@@ -577,6 +579,7 @@
 
   .case__item--big .case__top{
     min-height: 369px;
+    justify-content: flex-end;
   }
 
   .case__item.case__item--big .case__content{
