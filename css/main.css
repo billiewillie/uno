@@ -2387,7 +2387,7 @@ p.subtitle.azbuka__subtitle{
 .case__item.case__item--big .case__card{
     display: flex;
     background-position: 50%;
-    background-size: cover;
+    background-size: 100%;
 }
 
 .case__item.case__item--big .case__content{
@@ -2460,6 +2460,10 @@ p.subtitle.azbuka__subtitle{
 
 .case__slider--item .case__top.case__rshf{
     background-image: url(../img/case_rshf.jpg);
+}
+
+.case__slider--item .case__top.case__rangers{
+    background-image: url(../img/case_rangers.jpg);
 }
 
 .case__item.case__item--big .case__card{
