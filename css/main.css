@@ -351,7 +351,7 @@ header .logo img {
     background-color: #000;
 }
 
-main.main {
+main.main{
     position: relative;
     background-image: url('../img/index_bg-mobile.jpg');
     background-size: cover;
