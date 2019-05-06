@@ -560,7 +560,7 @@
 
   .case__big--title{
     padding-left: 20px;
-    padding-right: 50%;
+    padding-right: 45%;
   }
 
   .case__item.case__item--small{
@@ -936,6 +936,14 @@
     display: none;
   }
 
+  .case__content p{
+    display: block;
+  }
+
+  .subtitle.case__big--bottom{
+    display: block;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -1020,7 +1028,12 @@
     margin-right: 10px;
   }
 
-  .main__content .container{
+  main.main.main__conf{
+    padding: 50px 0;
+}
+
+  .main__content .container,
+  .main__conf .container{
     flex-direction: column;
   }
 

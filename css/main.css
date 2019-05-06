@@ -378,6 +378,20 @@ main.main.main__cases{
     justify-content: flex-start;
 }
 
+main.main.main__conf{
+    background-image: none;
+    justify-content: flex-start;
+    padding: 30px 0;
+}
+
+.main__conf h1{
+    margin-bottom: 30px;
+}
+
+.main__conf h3{
+    margin: 20px 0;
+}
+
 .geroi__iseland{
     padding: 50px 0 0;
 }
@@ -2246,6 +2260,7 @@ p.subtitle.azbuka__subtitle{
     font-family: "SFUIDisplay-Medium";
     margin-bottom: 0;
     text-transform: none;
+    display: none;
 }
 
 .case__big--stat{
@@ -2502,6 +2517,10 @@ p.subtitle.azbuka__subtitle{
 
 .case__content--text{
     font-size: 14px;
+}
+
+.case__content p{
+    display: none;
 }
 
 .team__list{

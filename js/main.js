@@ -325,7 +325,7 @@
   
   $(window).on('scroll', function () {
     if($('.bar').length){
-      if($(document).scrollTop() > $('.main__index')[0].offsetHeight){
+      if($(document).scrollTop() > $('.header')[0].offsetHeight){
         $('.bar').addClass('show');
       }else{
         $('.bar').removeClass('show');
