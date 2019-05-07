@@ -130,22 +130,6 @@
   const userUrl = document.querySelector('.user_url');
   const tabgroup = document.querySelector('.tabgroup');
 
-  // about selection
-  $('.about__title--item').on('click', function (e) {
-  
-    e.preventDefault();
-    
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-    
-    let target = $(this).attr('href');
-  
-    $('.about__text--item').not(target).hide();
-    
-    $(target).fadeIn(600);
-    
-  });
-
   // service page decorations
   function service(el1, name, content) {
     for(let i = 0; i < el1.length; i++) {
@@ -293,6 +277,18 @@
       $(target).show();
     });
   }
+
+  // about selection
+  $('.about__title--item').on('click', function (e) {
+
+    e.preventDefault();
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+    let target = $(this).attr('href');
+    $('.about__text--item').not(target).hide();
+    $(target).fadeIn(600);
+    
+  });
 
   var clickDelay = 500;
   var clickDelayTimer = null;
