@@ -972,7 +972,8 @@
     margin-bottom: 50px;
   }
 
-  .campaign .slider__campaign::before {
+  .campaign .slider__campaign::before,
+  .campaign .slider__citovir::before {
     display: block;
     position: absolute;
     content: '';
@@ -989,7 +990,8 @@
     background: linear-gradient(to right, #ecf0f1 0%, transparent 50%, transparent 100%);
   }
 
-  .campaign .slider__campaign::after {
+  .campaign .slider__campaign::after,
+  .campaign .slider__citovir::after {
     display: block;
     position: absolute;
     content: '';
@@ -1946,9 +1948,9 @@
 
   .body.body__citovir::after{
     background: rgba(255, 203, 19);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 15%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 15%,rgba(255, 203, 19) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 15%, rgba(255, 203, 19) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%, rgba(255, 203, 19) 100%);
   }
 
   .team__one{
@@ -1959,13 +1961,15 @@
     display: none;
   }
 
-  .campaign .slider__campaign::before {
+  .campaign .slider__campaign::before,
+  .campaign .slider__citovir::before {
     background: -moz-linear-gradient(left, #ecf0f1 0%, transparent 70%, transparent 100%);
     background: -webkit-linear-gradient(left, #ecf0f1 0%, transparent 70%, transparent 100%); 
     background: linear-gradient(to right, #ecf0f1 0%, transparent 70%, transparent 100%);
   }
 
-  .campaign .slider__campaign::after {
+  .campaign .slider__campaign::after,
+  .campaign .slider__citovir::after {
     background: -moz-linear-gradient(left, transparent 0%, #ecf0f1 70%, #ecf0f1 100%);
     background: -webkit-linear-gradient(left, transparent 0%, #ecf0f1 70%, #ecf0f1 100%); 
     background: linear-gradient(to right, transparent 0%, #ecf0f1 70%, #ecf0f1 100%);
@@ -2013,10 +2017,6 @@
 
   .ppoj__top .container{
     padding-right: 40%;
-  }
-
-  .ppoj__top:nth-child(1) .container{
-    padding-right: 60px;
   }
 
   .ppoj__top{
@@ -2192,9 +2192,9 @@
 
   .body.body__citovir::after{
     background: rgba(255, 203, 19);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 23%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 23%,rgba(255, 203, 19) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 23%, rgba(255, 203, 19) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%, rgba(255, 203, 19) 100%);
   }
 
 }

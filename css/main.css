@@ -113,8 +113,8 @@ body.body__ppoj{
     height: 100%;
     background: rgba(255, 203, 19);
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 4%,rgba(255, 203, 19) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 4%, rgba(255, 203, 19) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 3%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 3%, rgba(255, 203, 19) 100%);
 }
 
 .body.body__geroi::after{
@@ -4342,12 +4342,15 @@ p.subtitle.azbuka__subtitle{
     margin: auto;
 }
 
-.campaign .slider__campaign {
+.campaign .slider__campaign,
+.campaign .slider__citovir{
     margin: 0 auto;
     position: relative;
+    margin-bottom: 50px;
 }
 
-.campaign .slider__campaign .item{
+.campaign .slider__campaign .item,
+.campaign .slider__citovir .item{
     text-align: center;
     padding: 5px;
     margin-bottom: 0;
