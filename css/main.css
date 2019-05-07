@@ -3906,7 +3906,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .tools{
-    background-color: #FDEED9;
+    background-color: #FFCB13;
     color: #252525;
     text-align: left;
     padding: 50px 0;
@@ -4290,6 +4290,30 @@ p.subtitle.azbuka__subtitle{
 
 .auditory h2{
     margin-bottom: 15px;
+}
+
+.campaign{
+    background-color: #ecf0f1;
+    color: #252525;
+    padding: 30px 0;
+}
+
+.campaign .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign h2,
+.campaign h3{
+    color: #1D70B7;
+    font-weight: 800;
+    font-family: "SFUIDisplay-Heavy";
+    line-height: 1.2;
+}
+
+.campaign h2{
+    font-size: 30px;
+    margin-bottom: 40px;
 }
 
 @keyframes burger-open-top {
