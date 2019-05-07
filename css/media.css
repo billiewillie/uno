@@ -943,6 +943,23 @@
     display: block;
   }
 
+  .auditory{
+    
+    background: #ea9e40;
+    background: -moz-linear-gradient(left, #ea9e40 0%, #ea9e40 50%, #e58221 50%, #e58221 50%, #e58221 100%); 
+    background: -webkit-linear-gradient(left, #ea9e40 0%,#ea9e40 50%,#e58221 50%,#e58221 50%,#e58221 100%); 
+    background: linear-gradient(to right, #ea9e40 0%,#ea9e40 50%,#e58221 50%,#e58221 50%,#e58221 100%); 
+  }
+
+  .auditory .container{
+    flex-direction: row;
+  }
+
+  .auditory__part{
+    width: 50%;
+    padding: 70px;
+  }
+
 }
 
 @media (max-width: 991px){

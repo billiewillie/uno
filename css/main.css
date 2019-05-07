@@ -2524,6 +2524,14 @@ p.subtitle.azbuka__subtitle{
     display: none;
 }
 
+.case__slider .case__content p{
+    display: block;
+}
+
+.geroi__made .case__content p{
+    display: block;
+}
+
 .team__list{
     display: flex;
     justify-content: flex-start;
@@ -3165,7 +3173,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .geroi__made{
-    background-color: #FFC500;
+    background-color: #75C230;
     padding: 30px 0;
 }
 
@@ -4250,6 +4258,38 @@ p.subtitle.azbuka__subtitle{
 
 .closing .burger-menu-piece:nth-child(3) {
     animation: burger-close-bot 400ms ease-out forwards;
+}
+
+.auditory{
+    align-items: center;
+    background: #ea9e40;
+    background: -moz-linear-gradient(top, #ea9e40 0%, #ea9e40 50%, #e58221 50%, #e58221 50%, #e58221 100%);
+    background: -webkit-linear-gradient(top, #ea9e40 0%,#ea9e40 50%,#e58221 50%,#e58221 50%,#e58221 100%);
+    background: linear-gradient(to bottom, #ea9e40 0%,#ea9e40 50%,#e58221 50%,#e58221 50%,#e58221 100%);
+}
+
+.auditory .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.auditory__part{
+    width: 100%;
+    background-color: #EA9E40;
+    text-align: center;
+    padding: 20px;
+}
+
+.auditory__part:nth-child(2){
+    background-color: #E58221;
+}
+
+.auditory p{
+    color: #252525;
+}
+
+.auditory h2{
+    margin-bottom: 15px;
 }
 
 @keyframes burger-open-top {
