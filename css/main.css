@@ -4296,11 +4296,13 @@ p.subtitle.azbuka__subtitle{
     background-color: #ecf0f1;
     color: #252525;
     padding: 30px 0;
+    text-align: center;
 }
 
 .campaign .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .campaign h2,
@@ -4316,10 +4318,45 @@ p.subtitle.azbuka__subtitle{
     margin-bottom: 40px;
 }
 
+.campaign h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.campaign .item{
+    text-align: left;
+    margin-bottom: 40px; 
+    outline: none;
+}
+
+.campaign .item img{
+    box-shadow: 0px 0px 10px rgba(77, 77, 77, 0.25);
+    opacity: .5;
+    transform: scale(.9);
+    transition: .2s;
+}
+
+.campaign .slick-center img{
+    opacity: 1;
+    transform: scale(1);
+    margin: auto;
+}
+
+.campaign .slider__campaign {
+    margin: 0 auto;
+    position: relative;
+}
+
+.campaign .slider__campaign .item{
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 8px, 0);
-    }100% {
+    } 100% {
         transform: translate3d(0, 8px, 0) rotate(45deg);
     }
 }

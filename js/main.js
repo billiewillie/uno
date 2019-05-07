@@ -43,6 +43,45 @@
     });
   }
 
+  if($('.slider__campaign').length){
+    $('.slider__campaign').slick({
+      centerMode: true,
+      dots: false,
+      slidesToShow: 1,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: '30px',
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            centerPadding: '120px',
+            speed: 500,
+          }
+        },
+        {
+          breakpoint: 1440,
+          settings: {
+            centerPadding: '300px',
+          }
+        },
+        {
+          breakpoint: 2000,
+          settings: {
+            centerPadding: '400px',
+            speed: 1000,
+          }
+        },
+      ]
+    });
+  }
+
   if (window.innerWidth > 991){
     // video
     var video = $('.iframe').prop('src');
