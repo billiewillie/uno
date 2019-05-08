@@ -1036,6 +1036,27 @@
 
   .campaign__inner .item .item__inner{
     width: 50%;
+    position: relative;
+  }
+
+  .campaign__inner .item .item__inner::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 55px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 5px solid #1D70B7;
+    background-color: #ecf0f1;
+    z-index: 2;
+  }
+
+  .campaign__inner .item:nth-child(2) .item__inner::after{
+    top: 5px;
+    left: auto;
+    right: -8px;
   }
 
   .campaign__inner>.item:nth-child(1) .item__inner{
@@ -1045,6 +1066,14 @@
   .campaign__inner .item:nth-child(2) .item__inner{
     padding-right: 20px;
     text-align: right;
+  }
+
+  .auditory h2 {
+    font-size: 24px;
+  }
+
+  .auditory p {
+    font-size: 18px;
   }
 
 }
