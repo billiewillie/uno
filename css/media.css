@@ -972,6 +972,24 @@
     margin-bottom: 50px;
   }
 
+  .campaign__inner{
+    position: relative;
+  }
+
+  .campaign__inner::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 0px;
+    height: 100%;
+    border-left: 1px dashed #1D70B7;
+    border-right: 1px dashed #1D70B7;
+  }
+
   .campaign .slider__campaign::before,
   .campaign .slider__citovir::before {
     display: block;
@@ -1012,24 +1030,19 @@
     display: flex;
   }
 
-  .campaign .item:nth-child(1),
-  .campaign .item:nth-child(4),
-  .campaign .item:nth-child(7){
+  .campaign__inner .item:nth-child(1){
     justify-content: flex-end;
   }
 
-  .campaign .item .item__inner{
+  .campaign__inner .item .item__inner{
     width: 50%;
   }
 
-  .campaign .item:nth-child(1) .item__inner,
-  .campaign .item:nth-child(4) .item__inner,
-  .campaign .item:nth-child(7) .item__inner{
+  .campaign__inner>.item:nth-child(1) .item__inner{
     padding-left: 20px;
   }
 
-  .campaign .item:nth-child(2) .item__inner,
-  .campaign .item:nth-child(5) .item__inner{
+  .campaign__inner .item:nth-child(2) .item__inner{
     padding-right: 20px;
     text-align: right;
   }
@@ -2221,6 +2234,17 @@
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%,rgba(255, 203, 19) 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%, rgba(255, 203, 19) 100%);
+  }
+
+  .campaign .slider__citovir::before {
+    background: -moz-linear-gradient(left, #ecf0f1 0%, #ecf0f1 70%, transparent 100%);
+    background: -webkit-linear-gradient(left, #ecf0f1 0%, #ecf0f1 70%, transparent 100%); 
+    background: linear-gradient(to right, #ecf0f1 0%, #ecf0f1 70%, transparent 100%);
+  }
+  .campaign .slider__citovir::after {
+    background: -moz-linear-gradient(left, transparent 0%, #ecf0f1 30%, #ecf0f1 100%);
+    background: -webkit-linear-gradient(left, transparent 0%, #ecf0f1 30%, #ecf0f1 100%); 
+    background: linear-gradient(to right, transparent 0%, #ecf0f1 30%, #ecf0f1 100%);
   }
 
 }

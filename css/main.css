@@ -4334,19 +4334,19 @@ p.subtitle.azbuka__subtitle{
     opacity: .5;
     transform: scale(.9);
     transition: .2s;
+    margin: auto;
 }
 
 .campaign .slick-center img{
     opacity: 1;
     transform: scale(1);
-    margin: auto;
 }
 
 .campaign .slider__campaign,
 .campaign .slider__citovir{
     margin: 0 auto;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .campaign .slider__campaign .item,
@@ -4354,6 +4354,14 @@ p.subtitle.azbuka__subtitle{
     text-align: center;
     padding: 5px;
     margin-bottom: 0;
+}
+
+.campaign__inner>.item:nth-child(1) .item__inner{
+    padding-top: 50px;
+}
+
+.campaign__inner{
+    width: 100%;
 }
 
 @keyframes burger-open-top {
