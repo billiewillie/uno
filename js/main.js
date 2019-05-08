@@ -74,7 +74,7 @@
         {
           breakpoint: 2000,
           settings: {
-            centerPadding: '400px',
+            centerPadding: '500px',
             speed: 1000,
           }
         },
