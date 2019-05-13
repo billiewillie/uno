@@ -4503,6 +4503,35 @@ p.subtitle.azbuka__subtitle{
     padding: 30px;
     font-size: 15px;
     color: #252525;
+    transition: .2s;
+}
+
+.prostatilen__auditory .auditory__part{
+    padding: 0;
+    background-color: #fff;
+    color: #252525;
+}
+
+.prostatilen__auditory .auditory__part:nth-child(2){
+    display: none;
+}
+
+.prostatilen__auditory .auditory__part .title{
+    background-color: #67AEE6;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 45px 10px;
+    max-width: 720px;
+}
+
+.prostatilen__auditory .auditory__text{
+    padding: 20px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    max-width: 720px;
 }
 
 @keyframes burger-open-top {
