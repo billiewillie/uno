@@ -448,7 +448,7 @@ main.main.main__azbuka{
 .breadcrumb__item{
     border: 1px solid #5F4A4A;
     border-radius: 20px;
-    padding: 7px 10px;
+    padding: 7px 15px;
     line-height: 1;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -3379,6 +3379,10 @@ p.subtitle.azbuka__subtitle{
     color: #252525;
 }
 
+.body__prostatilen .ppoj__stats{
+    color: #fff;
+}
+
 .stats__list{
     text-transform: uppercase;
     display: flex;
@@ -3411,6 +3415,10 @@ p.subtitle.azbuka__subtitle{
     background-repeat: no-repeat;
 }
 
+.body__prostatilen .stats__item::before{
+    border: none;
+}
+
 .stats__item:nth-child(1)::before{
     background-image: url(../img/icons/icon_stats-1.svg);
 }
@@ -3429,6 +3437,22 @@ p.subtitle.azbuka__subtitle{
 
 .stats__item:nth-child(5)::before{
     background-image: url(../img/icons/icon_stats-5.svg);
+}
+
+.body__prostatilen .stats__item:nth-child(1)::before{
+    background-image: url(../img/icons/icon_prost-1.svg);
+}
+
+.body__prostatilen .stats__item:nth-child(2)::before{
+    background-image: url(../img/icons/icon_prost-2.svg);
+}
+
+.body__prostatilen .stats__item:nth-child(3)::before{
+    background-image: url(../img/icons/icon_prost-3.svg);
+}
+
+.body__prostatilen .stats__item:nth-child(4)::before{
+    background-image: url(../img/icons/icon_prost-4.svg);
 }
 
 .stats__item:last-child{
@@ -4415,6 +4439,70 @@ p.subtitle.azbuka__subtitle{
 
 .campaign__inner{
     width: 100%;
+}
+
+.text__hidden{
+    display: none;
+}
+
+.body__prostatilen .pic__block{
+    font-size: 0;
+}
+
+.prostatilen__block{
+    background-color: #1D70B7;
+    font-size: 20px;   
+    padding: 90px 0;  
+}
+
+.prostatilen__block p{
+    padding-left: 120px;
+    color: #fff;
+    position: relative;
+}
+
+.prostatilen__block p::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 98px;
+    height: 229px;
+    background-image: url(../img/suppozitory.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.prostatilen__specials{
+    background-color: #ebeff8;
+    padding-top: 50px;
+}
+
+.prostatilen__specials .title{
+    text-align: center;
+    font-weight: 800;
+    font-size: 20px;
+    color: #1D70B7;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.prostatilen__specials .pic{
+    font-size: 0;
+    text-align: center;
+}
+
+.special__list .item{
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    padding: 30px;
+    font-size: 15px;
+    color: #252525;
 }
 
 @keyframes burger-open-top {

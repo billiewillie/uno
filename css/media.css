@@ -5,6 +5,10 @@
 }
 @media (min-width: 768px) {
 
+  .text__hidden{
+    display: inline-block;
+  }
+
   .md__hidden{
     display: block;
   }
@@ -1074,6 +1078,49 @@
 
   .auditory p {
     font-size: 18px;
+  }
+
+  .body__prostatilen .pic__block{
+    display: none;
+  }
+
+  .prostatilen__block p{
+    padding-left: 150px;
+  }
+
+  .prostatilen__block p::before{
+      display: block;
+      position: absolute;
+      content: '';
+      top: auto;
+      bottom: -50px;
+      margin: inherit;
+  }
+
+  .prostatilen__block{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .body__prostatilen .stats__item:nth-child(1)::before{
+      background-image: url(../img/icons/icon_prostatilen-5.svg);
+  }
+
+  .body__prostatilen .stats__item:nth-child(2)::before{
+      background-image: url(../img/icons/icon_prostatilen-6.svg);
+  }
+
+  .body__prostatilen .stats__item:nth-child(3)::before{
+      background-image: url(../img/icons/icon_prostatilen-7.svg);
+  }
+
+  .body__prostatilen .stats__item:nth-child(4)::before{
+      background-image: url(../img/icons/icon_prostatilen-8.svg);
+  }
+
+  .body__prostatilen .stats__item::before{
+    border: 1px solid #fff;
   }
 
 }
