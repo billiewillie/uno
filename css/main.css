@@ -4534,6 +4534,29 @@ p.subtitle.azbuka__subtitle{
     max-width: 720px;
 }
 
+.prostatilen__tasks{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-color: #fff;
+}
+
+.prostatilen__tasks .title{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 40px 0;
+    background-color: #1D70B7;
+}
+
+.tasks__content li{
+    padding: 35px 0;
+    border-bottom: 1px solid rgba(29, 112, 183, 0.5);
+}
+
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 8px, 0);
