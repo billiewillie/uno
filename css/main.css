@@ -51,6 +51,15 @@ body.body__ppoj{
     position: relative;
 }
 
+body.body__prostatilen{
+    background-color: #f2f2f2;
+    background-image: url(../img/prostatilen_bg.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+}
+
 .body.body__azbuka{
     background-image: url(../img/azbuka_bg.jpg);
     background-repeat: no-repeat;
@@ -151,6 +160,24 @@ body.body__ppoj{
     background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
+}
+
+.body.body__prostatilen::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #ec6408 url(../img/azbuka_bg.jpg);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
 }
 
 .body.body__rshf::after{
@@ -425,6 +452,12 @@ main.main.main__azbuka{
     line-height: 1;
     margin-right: 10px;
     margin-bottom: 10px;
+    min-width: 60px;
+}
+
+.body__prostatilen .breadcrumb__item{
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .azbuka__breadcrumbs .breadcrumb__item{
