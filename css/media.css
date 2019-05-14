@@ -1156,6 +1156,14 @@
 
   .prostatilen__auditory{
     display: flex;
+    justify-content: center;
+    background: rgba(29,111,183,1);
+    background: -moz-linear-gradient(left, rgba(29,111,183,1) 0%, rgba(29,111,183,1) 50%, rgba(103,175,230,1) 50%, rgba(103,175,230,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(29,111,183,1)), color-stop(50%, rgba(29,111,183,1)), color-stop(50%, rgba(103,175,230,1)), color-stop(100%, rgba(103,175,230,1)));
+    background: -webkit-linear-gradient(left, rgba(29,111,183,1) 0%, rgba(29,111,183,1) 50%, rgba(103,175,230,1) 50%, rgba(103,175,230,1) 100%);
+    background: -o-linear-gradient(left, rgba(29,111,183,1) 0%, rgba(29,111,183,1) 50%, rgba(103,175,230,1) 50%, rgba(103,175,230,1) 100%);
+    background: -ms-linear-gradient(left, rgba(29,111,183,1) 0%, rgba(29,111,183,1) 50%, rgba(103,175,230,1) 50%, rgba(103,175,230,1) 100%);
+    background: linear-gradient(to right, rgba(29,111,183,1) 0%, rgba(29,111,183,1) 50%, rgba(103,175,230,1) 50%, rgba(103,175,230,1) 100%);
   }
 
   .prostatilen__auditory .auditory__part .title{
@@ -1181,6 +1189,8 @@
     background-color: #1D70B7;
     color: #fff;
     font-weight: 500;
+    display: flex;
+    flex-direction: column;
   }
 
   .prostatilen__auditory .auditory__part:nth-child(1) .title{
@@ -1189,6 +1199,77 @@
 
   .prostatilen__auditory .auditory__part:nth-child(1) .auditory__text{
     text-align: center;
+  }
+
+  .prostatilen__tasks{
+    background-image: url(../img/prostatilen_block.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-bottom: 145px;
+  }
+
+  .prostatilen__tasks .title{
+    background-color: transparent;
+    font-size: 40px;
+    padding: 70px 0 130px;
+  }
+
+  .tasks__content li{
+    border-bottom: none;
+    font-size: 20px;
+    padding: 40px;
+    border-radius: 15px;
+    position: relative;
+    transition: .2s;
+  }
+
+  .tasks__content li::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: -37px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+  }
+
+  .tasks__content li:hover{
+    background-color: #fff;
+    color: #1D70B7;
+  }
+
+  .tasks__content li:hover::after{
+    width: 27px;
+    height: 27px;
+    right: -44px;
+  }
+
+  .tasks__list{
+    width: 50%;
+    padding-right: 30px;
+    position: relative;
+    border-right: 1px dashed #fff;
+  }
+
+  .tasks__list::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/prostatilen_pack-3.jpg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
 }

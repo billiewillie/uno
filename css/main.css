@@ -4510,6 +4510,7 @@ p.subtitle.azbuka__subtitle{
     padding: 0;
     background-color: #fff;
     color: #252525;
+    max-width: 720px;
 }
 
 .prostatilen__auditory .auditory__part:nth-child(2){
@@ -4523,7 +4524,6 @@ p.subtitle.azbuka__subtitle{
     font-weight: 800;
     text-transform: uppercase;
     padding: 45px 10px;
-    max-width: 720px;
 }
 
 .prostatilen__auditory .auditory__text{
@@ -4531,7 +4531,6 @@ p.subtitle.azbuka__subtitle{
     font-size: 15px;
     font-weight: 600;
     text-align: left;
-    max-width: 720px;
 }
 
 .prostatilen__tasks{
@@ -4554,6 +4553,7 @@ p.subtitle.azbuka__subtitle{
 .tasks__content li{
     padding: 35px 0;
     border-bottom: 1px solid rgba(29, 112, 183, 0.5);
+    color: #252525;
 }
 
 
