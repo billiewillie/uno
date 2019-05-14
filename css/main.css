@@ -4647,6 +4647,18 @@ p.subtitle.azbuka__subtitle{
     padding-bottom: 0;
 }
 
+.tools__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.prostatilen__tools .title{
+    background-color: #1D70B7;
+    text-align: center;
+    color: #fff;
+    padding: 45px 0;
+    text-transform: uppercase;
+}
 
 @keyframes burger-open-top {
     50% {
