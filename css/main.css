@@ -2275,6 +2275,7 @@ p.subtitle.azbuka__subtitle{
     font-size: 9px;
     text-transform: uppercase;
     color: #fff;
+    letter-spacing: 1.125px;
 }
 
 .case__detail:last-child{
@@ -4211,6 +4212,11 @@ p.subtitle.azbuka__subtitle{
     color: #C4A16B;
 }
 
+.hidden__menu--list a{
+    display: block;
+    width: 100%;
+}
+
 .hidden__menu--adress{
     margin-top: 30px;
 }
@@ -4389,12 +4395,14 @@ p.subtitle.azbuka__subtitle{
     margin-bottom: 15px;
 }
 
+.prostatilen__slider .item,
 .campaign .item{
     text-align: left;
     margin-bottom: 40px; 
     outline: none;
 }
 
+.prostatilen__slider .item img,
 .campaign .item img{
     box-shadow: 0px 0px 10px rgba(77, 77, 77, 0.25);
     opacity: .5;
@@ -4403,17 +4411,20 @@ p.subtitle.azbuka__subtitle{
     margin: auto;
 }
 
+.prostatilen__slider .item img,
 .campaign .slider__citovir .item img{
     opacity: .5;
     transform: scale(.7);
     box-shadow: 0px 0px 10px rgba(77, 77, 77, 0.4);
 }
 
+.prostatilen__slider .item.slick-center img,
 .campaign .slider__citovir .slick-center img{
     opacity: 1;
     transform: scale(1);
 }
 
+.prostatilen__slider .item.slick-center img,
 .campaign .slick-center img{
     opacity: 1;
     transform: scale(1);
@@ -4554,6 +4565,86 @@ p.subtitle.azbuka__subtitle{
     padding: 35px 0;
     border-bottom: 1px solid rgba(29, 112, 183, 0.5);
     color: #252525;
+}
+
+.prostatilen__stages{
+    background-color: #ecf0f1;
+    padding: 0px 0 30px;
+    color: #252525;
+}
+
+.prostatilen__stages .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prostatilen__stages .title{
+    background-color: #67AEE6;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.prostatilen__stages .item{
+    padding-bottom: 30px;
+}
+
+.prostatilen__stages .item h3{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.prostatilen__stages .item b{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.prostatilen__stages .campaign__inner{
+    position: relative;
+    border-left: 1px dashed #1D70B7;
+    padding-left: 20px;
+}
+
+.prostatilen__stages .campaign__inner.prostatilen__stages--top{
+    margin-top: 50px;
+}
+
+.prostatilen__slider .item{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.prostatilen__stages--top.campaign__inner .item__inner{
+    padding-top: 0 !important;
+}
+
+.prostatilen__stages .campaign__inner .item{
+    position: relative;
+}
+
+.prostatilen__stages .campaign__inner .item::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 52px;
+    left: -28px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 4px solid #1D70B7;
+    background-color: #ecf0f1;
+}
+
+.prostatilen__stages .campaign__inner.prostatilen__stages--top .item::before{
+    top: 0;
+}
+
+.prostatilen__stages .item.prostatilen__stages--bottom{
+    padding-bottom: 0;
 }
 
 

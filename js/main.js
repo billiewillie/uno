@@ -124,6 +124,48 @@
     });
   }
 
+  if($('.prostatilen__slider').length){
+    $('.prostatilen__slider').slick({
+      centerMode: true,
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 6000,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: '10px',
+            slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 992,
+          settings: {
+            centerPadding: '250px',
+            slidesToShow: 1,
+            speed: 500,
+          }
+        },
+        {
+          breakpoint: 1440,
+          settings: {
+            centerPadding: '450px',
+            slidesToShow: 1,
+          }
+        },
+        {
+          breakpoint: 2000,
+          settings: {
+            centerPadding: '650px',
+            speed: 1000,
+            slidesToShow: 1,
+          }
+        },
+      ]
+    });
+  }
+
   if (window.innerWidth > 991){
     // video
     var video = $('.iframe').prop('src');
