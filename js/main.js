@@ -497,4 +497,8 @@
     });
   });
 
+  prostatilenToolPic.addEventListener('click', function(e){
+    if(e.target !== prostatilenToolImg) prostatilenToolPic.classList.toggle('open');
+  })
+
 })();
