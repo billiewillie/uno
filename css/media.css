@@ -1395,6 +1395,15 @@
     font-size: 16px;
   }
 
+  .case__next{
+    display: none;
+  }
+
+  .body__prostatilen .cases,
+  .body__prostatilen .footer{
+      display: block;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -2595,7 +2604,7 @@
     background: -webkit-linear-gradient(left, #ecf0f1 0%, #ecf0f1 70%, transparent 100%); 
     background: linear-gradient(to right, #ecf0f1 0%, #ecf0f1 70%, transparent 100%);
   }
-  
+
   .campaign .slider__citovir::after {
     background: -moz-linear-gradient(left, transparent 0%, #ecf0f1 30%, #ecf0f1 100%);
     background: -webkit-linear-gradient(left, transparent 0%, #ecf0f1 30%, #ecf0f1 100%); 

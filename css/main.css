@@ -4649,7 +4649,6 @@ p.subtitle.azbuka__subtitle{
 
 .prostatilen__tools{
     background-color: #fff;
-    padding-bottom: 30px;
 }
 
 .prostatilen__tools .container{
@@ -4675,6 +4674,10 @@ p.subtitle.azbuka__subtitle{
     border-bottom: 1px solid #8eb8db;
     padding-left: 100px;
     padding-right: 45px;
+}
+
+.prostatilen__tools .tool__item:last-child{
+    border-bottom: none;
 }
 
 .prostatilen__tools .tool__item h3{
@@ -4800,6 +4803,24 @@ p.subtitle.azbuka__subtitle{
     line-height: 0.4;
     padding-left: 10px;
     cursor: pointer;
+}
+
+.case__next{
+    background-color: #191919;
+    font-size: 12px;
+    padding: 45px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+}
+
+.case__next a{
+    color: #737373;
+}
+
+.body__prostatilen .cases,
+.body__prostatilen .footer{
+    display: none;
 }
 
 @keyframes burger-open-top {
