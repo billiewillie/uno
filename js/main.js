@@ -1,6 +1,34 @@
 (function(){
   'use strict';
 
+  // varibles
+  const search = document.querySelector('.item__search');
+  // const searchLink = document.querySelector('.contacts__item--link');
+  const inputSearch = document.querySelector('.form__search .input');
+  // const inputMenuSearch = document.querySelector('.form__search--menu .input');
+  const headerContentBottom = document.querySelector('.header__content--bottom');
+  // const menuForm = document.querySelector('.form__search--menu');
+  const svg = document.querySelector('.svg');
+  const polygon = document.querySelector('.polygon');
+  const mainFooter = document.querySelector('.main__footer');
+  const popup = document.querySelector('.popup');
+  const btnCoop = document.querySelector('.btn__coop');
+  const popupClose = document.querySelector('.popup__close');
+  const popupInner = document.querySelector('.popup__inner');
+  const popupBg = document.querySelector('.popup__bg');
+  const serviceItemTitle = Array.from(document.querySelectorAll('.service__item--title'));
+  const serviceItemListItem = Array.from(document.querySelectorAll('.service__item--list-item'));
+  const aboutTitles = Array.from(document.querySelectorAll('.about__title--item'));
+  const aboutText = Array.from(document.querySelectorAll('.about__text--item'));
+  const inputName = document.querySelector('.input__name');
+  const inputPhone = document.querySelector('.input__phone');
+  const inputEmail = document.querySelector('.input__email');
+  const userUrl = document.querySelector('.user_url');
+  const tabgroup = document.querySelector('.tabgroup');
+  const prostatilenToolLink = Array.from(document.querySelectorAll('.link.text__hidden'));
+  const prostatilenToolImg = document.querySelector('.prostatilen__tool--img');
+  const prostatilenToolPic = document.querySelector('.prostatilen__tool--pic');
+
   // // wow
   if($('.wow').length){
     new WOW().init();
@@ -150,8 +178,9 @@
         {
           breakpoint: 1440,
           settings: {
-            centerPadding: '450px',
+            centerPadding: '350px',
             slidesToShow: 1,
+            speed: 500,
           }
         },
         {
@@ -217,7 +246,6 @@
       ]
     });
   }
-  
 
   // year
   const currentTime = new Date();
@@ -226,32 +254,6 @@
   if(year){
     year.innerHTML = getYear;
   }
-  
-  
-  // varibles
-  const search = document.querySelector('.item__search');
-  // const searchLink = document.querySelector('.contacts__item--link');
-  const inputSearch = document.querySelector('.form__search .input');
-  // const inputMenuSearch = document.querySelector('.form__search--menu .input');
-  const headerContentBottom = document.querySelector('.header__content--bottom');
-  // const menuForm = document.querySelector('.form__search--menu');
-  const svg = document.querySelector('.svg');
-  const polygon = document.querySelector('.polygon');
-  const mainFooter = document.querySelector('.main__footer');
-  const popup = document.querySelector('.popup');
-  const btnCoop = document.querySelector('.btn__coop');
-  const popupClose = document.querySelector('.popup__close');
-  const popupInner = document.querySelector('.popup__inner');
-  const popupBg = document.querySelector('.popup__bg');
-  const serviceItemTitle = Array.from(document.querySelectorAll('.service__item--title'));
-  const serviceItemListItem = Array.from(document.querySelectorAll('.service__item--list-item'));
-  const aboutTitles = Array.from(document.querySelectorAll('.about__title--item'));
-  const aboutText = Array.from(document.querySelectorAll('.about__text--item'));
-  const inputName = document.querySelector('.input__name');
-  const inputPhone = document.querySelector('.input__phone');
-  const inputEmail = document.querySelector('.input__email');
-  const userUrl = document.querySelector('.user_url');
-  const tabgroup = document.querySelector('.tabgroup');
 
   // service page decorations
   function service(el1, name, content) {
@@ -262,6 +264,7 @@
       el1[i].append(el);
     }
   }
+
   if(serviceItemTitle) {
     service(serviceItemTitle, 'title__dot', '.');
   }
@@ -281,7 +284,6 @@
   }
   
   // first screen effect
-  
   if(document.querySelector('.main__index')) {
     const svgHeight = parseInt(getComputedStyle(svg).height);
     const svgWidth = parseInt(getComputedStyle(svg).width);
@@ -487,4 +489,12 @@
       var accordion = new Accordion($('.prostatilen__tools--list'), false);
     });
   }
+
+  prostatilenToolLink.forEach(function(e,i){
+    e.addEventListener('click', function(){
+      prostatilenToolPic.classList.toggle('open');
+      prostatilenToolImg.setAttribute('src', 'img/prostatilen_tool-'+(i+1)+'.jpg');
+    });
+  });
+
 })();

@@ -4760,6 +4760,46 @@ p.subtitle.azbuka__subtitle{
 
 .prostatilen__tools .text__hidden{
     display: none;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.prostatilen__tools .text__hidden:hover{
+    text-decoration: underline;
+}
+
+.prostatilen__tool--pic{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(37, 37, 37, 0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.prostatilen__tool--pic.open{
+    display: flex;
+}
+
+.prostatilen__tool--inner{
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+}
+
+.prostatilen__tool--inner .close{
+    color: #fff;
+    font-weight: 100;
+    font-family: 'SFUIDisplay-Light', sans-serif;
+    font-size: 30px;
+    line-height: 1;
+    align-self: flex-start;
+    line-height: 0.4;
+    padding-left: 10px;
+    cursor: pointer;
 }
 
 @keyframes burger-open-top {

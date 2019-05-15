@@ -1319,6 +1319,7 @@
   .prostatilen__tools{
     background-color: #67AEE6;
     padding-bottom: 65px;
+    position: relative;
   }
 
   .prostatilen__tools .title{
@@ -1352,7 +1353,9 @@
   .prostatilen__tools .tool__item h3::before{
     background-image: url(../img/icons/icon_prostatilen-9-white.svg);
     left: 0;
-    top: -30px;
+    top: -40px;
+    width: 64px;
+    height: 64px;
   }
 
   .prostatilen__tools .tool__item:nth-child(2) h3::before{
@@ -1377,10 +1380,18 @@
 
   .prostatilen__tools .tool__item h3{
     padding: 40px 0 30px;
+    font-size: 24px;
   }
 
   .prostatilen__tools .text__hidden {
     display: block;
+    margin-top: 20px;
+    color: #252525;
+    margin-left: 20px;
+  }
+
+  .prostatilen__tools .tool__hidden{
+    font-size: 16px;
   }
 
 }
