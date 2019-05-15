@@ -452,30 +452,39 @@
     }
   });
 
-  // $(function() {
-  //   var Accordion = function(el, multiple) {
-  //     this.el = el || {};
-  //     this.multiple = multiple || false;
+  if (window.innerWidth < 768) {
+    $(function() {
+      var Accordion = function(el, multiple) {
+        this.el = el || {};
+        this.multiple = multiple || false;
 
-  //     // Variables privadas
-  //     var links = this.el.find('.menu__title');
-  //     // Evento
-  //     links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-  //   }
+        // Variables privadas
+        var links = this.el.find('h3');
+        // Evento
+        links.on('click', 
+        {
+          el: this.el, 
+          multiple: this.multiple
+        }, 
+        this.dropdown)
+      }
 
-  //   Accordion.prototype.dropdown = function(e) {
-  //     var $el = e.data.el;
-  //       $this = $(this),
-  //       $next = $this.next();
+      Accordion.prototype.dropdown = function(e) {
+        var $el = e.data.el,
+          $this = $(this),
+          $next = $this.next();
 
-  //     $next.slideToggle('fast');
-  //     $this.parent().toggleClass('open');
+        console.log($this);
 
-  //     if (!e.data.multiple) {
-  //       $el.find('.submenu').not($next).slideUp().parent().removeClass('open');
-  //     };
-  //   } 
+        $next.slideToggle('fast');
+        $this.parent().toggleClass('open');
 
-  //   var accordion = new Accordion($('#accordion'), false);
-  // });
+        if (!e.data.multiple) {
+          $el.find('.tool__hidden').not($next).slideUp().parent().removeClass('open');
+        };
+      } 
+
+      var accordion = new Accordion($('.prostatilen__tools--list'), false);
+    });
+  }
 })();

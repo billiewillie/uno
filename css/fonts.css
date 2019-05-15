@@ -17,6 +17,15 @@
 }
 
 @font-face {
+  font-family: "SFUIDisplay-Regular";
+  font-display: auto;
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Regular.eot");
+  src: 
+  url("../fonts/SFUIDisplay/SFUIDisplay-Regular.woff") format("woff"),
+  url("../fonts/SFUIDisplay/SFUIDisplay-Regular.ttf") format("truetype")
+}
+
+@font-face {
   font-family: "SFUIDisplay-Light";
   font-display: auto;
   src: url("../fonts/SFUIDisplay/SFUIDisplay-Light.eot");

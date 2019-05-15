@@ -1316,6 +1316,73 @@
     padding-bottom: 70px;
   }
 
+  .prostatilen__tools{
+    background-color: #67AEE6;
+    padding-bottom: 65px;
+  }
+
+  .prostatilen__tools .title{
+    background-color: #67AEE6;
+    padding: 140px 0 110px; 
+  }
+
+  .prostatilen__tools .tools__list{
+    flex-direction: row;
+  }
+
+  .prostatilen__tools .tool__hidden{
+    display: block;
+  }
+
+  .prostatilen__tools .container {
+    padding: 0 10px;
+    max-width: 1040px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .prostatilen__tools .tool__item{
+    width: 33.33%;
+    border-bottom: none;
+    padding-left: 0;
+    padding-right: 30px;
+    margin-bottom: 50px;
+  }
+
+  .prostatilen__tools .tool__item h3::before{
+    background-image: url(../img/icons/icon_prostatilen-9-white.svg);
+    left: 0;
+    top: -30px;
+  }
+
+  .prostatilen__tools .tool__item:nth-child(2) h3::before{
+    background-image: url(../img/icons/icon_prostatilen-10-white.svg);
+}
+
+  .prostatilen__tools .tool__item:nth-child(3) h3::before{
+      background-image: url(../img/icons/icon_prostatilen-12-white.svg);
+  }
+
+  .prostatilen__tools .tool__item:nth-child(4) h3::before{
+      background-image: url(../img/icons/icon_prostatilen-11-white.svg);
+  }
+
+  .prostatilen__tools .tool__item:nth-child(5) h3::before{
+      background-image: url(../img/icons/icon_prostatilen-13-white.svg);
+  }
+
+  .prostatilen__tools .tool__item h3::after{
+    display: none;
+  }
+
+  .prostatilen__tools .tool__item h3{
+    padding: 40px 0 30px;
+  }
+
+  .prostatilen__tools .text__hidden {
+    display: block;
+  }
+
 }
 
 @media (max-width: 991px){
