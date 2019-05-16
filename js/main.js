@@ -428,12 +428,12 @@
       $('.bar').toggleClass('active');
       $('.hidden__menu').toggleClass('active');
       $('.bar .logo img').attr('src', 'img/logo_dark.svg');
-      $('body').css('height', '100vh');
+      $('body').css('overflow', 'hidden');
 
       if(!$burger.hasClass('active')) {
         $burger.addClass('closing');
         $('.bar .logo img').attr('src', 'img/logo.svg');
-        $('body').css('height', 'auto');
+        $('body').css('overflow', 'visible');
       }
 
       clickDelayTimer = setTimeout(function () {
