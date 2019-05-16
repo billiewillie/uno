@@ -95,10 +95,18 @@
     color: #737373;
   }
 
+  .main__footer--part:nth-child(3), 
+  .main__footer--part:nth-child(4) {
+    margin-bottom: 0px;
+  }
+
+  .main__footer--link:nth-child(1):hover::before{
+    background-image: url(../img/icons/icon_call-light.svg)
+  }
+
   .main__footer--part .logo{
     padding: 0;
     margin: 0;
-    align-items: flex-start;
   }
 
   .main__footer--part:nth-child(1),
@@ -110,6 +118,7 @@
   .main__footer--part:nth-child(3){
     order: 3;
   }
+
   .main__footer--part:nth-child(4){
     order: 4;
   }
@@ -129,9 +138,13 @@
   }
 
   .main__footer--link.footer__map::before{
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     background-image: url(../img/icons/icon_adress-grey.svg)
+  }
+
+  .main__footer--link.footer__map:hover::before{
+    background-image: url(../img/icons/icon_adress.svg)
   }
 
   .main__footer--link.footer__map{
@@ -1646,11 +1659,6 @@
   main .main__footer{
     font-size: 11px;
   }
- 
-  .main__footer--part:nth-child(1), 
-  .main__footer--part:nth-child(2){
-    padding-right: 40px;
-  }
 
   .contact__footer.main__footer--part:nth-child(1), 
   .contact__footer.main__footer--part:nth-child(2){
@@ -1699,6 +1707,15 @@
   .footer__bottom .main__footer--part{
     color: #737373;
     font-size: 13px;
+  }
+
+  .main__footer--part{
+    padding: 0 25px;
+  }
+
+  .main__footer--part:nth-child(1), 
+  .main__footer--part:nth-child(2){
+    padding-right: 25px;
   }
 
   .footer__bottom .main__footer--link:hover, 
@@ -2409,16 +2426,15 @@
     background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 10%, #67AEE6 100%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 10%, #67AEE6 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 10%, #67AEE6 100%);
-}
+  }
+
+  .main__footer--part .logo img {
+    max-height: 32px;
+  }
 
 }
 
 @media (min-width: 1440px) {
-
-  .main__footer--part:nth-child(1), 
-  .main__footer--part:nth-child(2){
-    padding-right: 60px;
-  }
 
   .main__footer--part:nth-child(1)::after, 
   .main__footer--part:nth-child(2)::after{
