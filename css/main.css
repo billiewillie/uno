@@ -2549,7 +2549,6 @@ p.subtitle.azbuka__subtitle{
 .case__slider--item.case__item--big:hover .case__top::before{
     background-color: rgba(0,0,0,0);
 }
-
 .case__slider--item.case__item--big .case__top{
     min-height: 100%;
     min-width: 100%;
