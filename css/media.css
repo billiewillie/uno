@@ -575,7 +575,7 @@
   }
 
   .geroi__block.geroi__block--bottom .container{
-    padding-right: 40%;
+    padding-right: 20%;
   }
 
   .geroi__block--bottom::after{
@@ -2634,7 +2634,7 @@
   }
 
   .geroi__about--part-item{
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .tools__item{
@@ -2669,6 +2669,12 @@
     background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 20%, #67AEE6 100%);
     background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 20%, #67AEE6 100%);
     background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 20%, #67AEE6 100%);
+  }
+
+  .body.body__rshf::after {
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 15%, rgba(255, 255,255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 15%, rgba(255, 255,255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 15%, rgba(255, 255,255, 1) 100%);
   }
 
 }
