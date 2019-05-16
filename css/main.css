@@ -2223,7 +2223,7 @@ p.subtitle.azbuka__subtitle{
     align-items: flex-end;
     padding: 20px;
     min-height: 200px;
-    transition: .2s;
+    transition: .4s;
     margin-top: 40px;
 }
 
@@ -2559,6 +2559,8 @@ p.subtitle.azbuka__subtitle{
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-family: "SFUIDisplay-Bold", sans-serif;
+    line-height: 1.2;
 }
 
 .case__content--text{
@@ -2571,6 +2573,7 @@ p.subtitle.azbuka__subtitle{
 
 .case__slider .case__content p{
     display: block;
+    font-family: "SFUIDisplay-Regular", sans-serif;
 }
 
 .geroi__made .case__content p{
