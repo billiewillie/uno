@@ -8,6 +8,15 @@
 }
 
 @font-face {
+  font-family: "SFUIDisplay-Bold";
+  font-display: auto;
+  src: url("../fonts/SFUIDisplay/SFUIDisplay-Bold.eot");
+  src: 
+  url("../fonts/SFUIDisplay/SFUIDisplay-Bold.woff") format("woff"),
+  url("../fonts/SFUIDisplay/SFUIDisplay-Bold.ttf") format("truetype")
+}
+
+@font-face {
   font-family: "SFUIDisplay-Medium";
   font-display: auto;
   src: url("../fonts/SFUIDisplay/SFUIDisplay-Medium.eot");

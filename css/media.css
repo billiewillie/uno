@@ -589,7 +589,7 @@
     justify-content: flex-end;
     bottom: 16px;
     left: 20px;
-    width: 50%;
+    width: 60%;
     align-items: flex-start;
     text-align: left;
     color: #fff;
@@ -598,7 +598,7 @@
   .case__content{
     display: flex;
     justify-content: flex-start;
-    padding: 30px 10px;
+    padding: 30px 20px;
     flex-direction: column;
     text-align: center;
   }
@@ -2186,7 +2186,7 @@
   }
 
   .case__big--title{
-    padding-right: 60%;
+    padding-right: 55%;
   }
 
   .ppoj__title--block{

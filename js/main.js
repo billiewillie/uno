@@ -490,15 +490,17 @@
     });
   }
 
+  if(prostatilenToolPic){
+    prostatilenToolPic.addEventListener('click', function(e){
+      if(e.target !== prostatilenToolImg) prostatilenToolPic.classList.toggle('open');
+    })
+  };
+
   prostatilenToolLink.forEach(function(e,i){
     e.addEventListener('click', function(){
       prostatilenToolPic.classList.toggle('open');
       prostatilenToolImg.setAttribute('src', 'img/prostatilen_tool-'+(i+1)+'.jpg');
     });
   });
-
-  prostatilenToolPic.addEventListener('click', function(e){
-    if(e.target !== prostatilenToolImg) prostatilenToolPic.classList.toggle('open');
-  })
 
 })();

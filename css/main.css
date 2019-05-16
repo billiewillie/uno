@@ -1054,6 +1054,7 @@ p.subtitle.azbuka__subtitle{
     height: 100%;
     overflow: hidden;
     z-index: -1;
+    opacity: 0;
 }
 
 .popup__inner {
@@ -1063,7 +1064,7 @@ p.subtitle.azbuka__subtitle{
     flex-direction: column;
     font-family: 'SFUIDisplay-Medium', sans-serif;
     left: 50%;
-    top: 120px;
+    top: 200px;
     transform: translateX(-50%);
 }
 
@@ -1240,6 +1241,7 @@ p.subtitle.azbuka__subtitle{
     background-color: rgba(137, 137, 137, .8);
     -webkit-animation: popup 1s;
     animation: popup 1s;
+    opacity: 1;
 }
 
 .rotate {
@@ -2261,11 +2263,11 @@ p.subtitle.azbuka__subtitle{
 
 .case__big--title .title{
     text-align: left;
-    letter-spacing: 0;
     font-size: 20px;
-    font-family: "SFUIDisplay-Medium";
+    font-family: "SFUIDisplay-Bold";
     line-height: 1.2;
     margin-bottom: 20px;
+    letter-spacing: 0.5px;
 }
 
 .case__detail{
@@ -2553,7 +2555,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__content--title{
-    font-size: 14px;
+    font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -3508,11 +3510,13 @@ p.subtitle.azbuka__subtitle{
 .case__item.case__item--big .case__content p,
 .case__item.case__item--big .case__content a{
     color: #fff;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
 }
 
 .case__item.case__item--small .case__content p,
 .case__item.case__item--small .case__content a{
     color: #fff;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
 }
 
 .case__item.case__item--small .case__content{
