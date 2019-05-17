@@ -2,6 +2,10 @@
   .md__hidden{
     display: none;
   }
+
+  .main__cases.index__cases{
+    display: block;
+  }
 }
 @media (min-width: 768px) {
 

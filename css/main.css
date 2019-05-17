@@ -2255,6 +2255,26 @@ p.subtitle.azbuka__subtitle{
     margin-top: 40px;
 }
 
+.index__cases .case__big--top{
+    background-image: url(../img/case_rshf-mobile.jpg);
+}
+
+.index__cases .case__top.case__novoorl {
+    background-image: url(../img/case-novoorl-mobile.jpg);
+}
+
+.index__cases .case__item.case__item--jjop .case__card {
+    background-image: url(../img/city-8-mobile.jpg);
+}
+
+.index__cases .case__item .case__geroi--web{
+    background-image: url(../img/case-supergeroi-mobile.jpg);
+}
+
+.index__cases .case__top.case__cytomed {
+    background-image: url(../img/case-cytomed-mobile.jpg);
+}
+
 .case__big--top::after{
     display: block;
     position: absolute;
@@ -4858,6 +4878,10 @@ p.subtitle.azbuka__subtitle{
 
 .body__prostatilen .cases,
 .body__prostatilen .footer{
+    display: none;
+}
+
+.index__cases{
     display: none;
 }
 

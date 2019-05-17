@@ -273,16 +273,6 @@
     service(serviceItemListItem, 'service__slash', '/');
   }
   
-  // search on mobile
-  if(search){
-    search.addEventListener('click', function(e){
-      e.preventDefault();
-      headerContentBottom.classList.toggle('show');
-      inputSearch.classList.toggle('show');
-      inputSearch.focus();
-    });
-  }
-  
   // first screen effect
   if(document.querySelector('.main__index')) {
     const svgHeight = parseInt(getComputedStyle(svg).height);
@@ -502,5 +492,9 @@
       prostatilenToolImg.setAttribute('src', 'img/prostatilen_tool-'+(i+1)+'.jpg');
     });
   });
+
+  window.addEventListener('scroll', function(){
+    document.querySelector('.index__cases').classList.add('main__cases');
+  })
 
 })();
