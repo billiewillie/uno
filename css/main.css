@@ -349,6 +349,10 @@ header .logo img {
     border-top: 2px solid #303030;
 }
 
+.header__case .menu{
+    border-top: 2px solid #bfbfbf;
+}
+
 .menu::before {
     position: absolute;
     display: block;
@@ -4313,8 +4317,8 @@ p.subtitle.azbuka__subtitle{
 }
 
 .burger-click-region {
-    width: 24px;
-    height: 16px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
     position: relative;
 }
@@ -4333,13 +4337,13 @@ p.subtitle.azbuka__subtitle{
 }
 
 .burger-menu-piece:nth-child(2) {
-    top: 8px;
+    top: 10px;
     opacity: 1;
     transition: transform 400ms ease-out, opacity 0ms linear 200ms;
 }
 
 .burger-menu-piece:nth-child(3) {
-    top: 16px;
+    top: 20px;
 }
 
 .active .burger-menu-piece:nth-child(1) {
@@ -4859,25 +4863,25 @@ p.subtitle.azbuka__subtitle{
 
 @keyframes burger-open-top {
     50% {
-        transform: translate3d(0, 8px, 0);
+        transform: translate3d(0, 10px, 0);
     } 100% {
-        transform: translate3d(0, 8px, 0) rotate(45deg);
+        transform: translate3d(0, 10px, 0) rotate(45deg);
     }
 }
 
 @keyframes burger-open-bot {
     50% {
-        transform: translate3d(0, -8px, 0);
+        transform: translate3d(0, -10px, 0);
     }100% {
-        transform: translate3d(0, -8px, 0) rotate(-45deg);
+        transform: translate3d(0, -10px, 0) rotate(-45deg);
     }
 }
 
 @keyframes burger-close-top {
     0% {
-        transform: translate3d(0, 8px, 0) rotate(45deg);
+        transform: translate3d(0, 10px, 0) rotate(45deg);
     }50% {
-        transform: translate3d(0, 8px, 0) rotate(0deg);
+        transform: translate3d(0, 10px, 0) rotate(0deg);
     }100% {
         transform: translate3d(0, 0, 0);
     }
@@ -4885,9 +4889,9 @@ p.subtitle.azbuka__subtitle{
 
 @keyframes burger-close-bot {
     0% {
-        transform: translate3d(0, -8px, 0) rotate(-45deg);
+        transform: translate3d(0, -10px, 0) rotate(-45deg);
     }50% {
-        transform: translate3d(0, -8px, 0) rotate(0deg);
+        transform: translate3d(0, -10px, 0) rotate(0deg);
     }100% {
         transform: translate3d(0, 0, 0);
     }
