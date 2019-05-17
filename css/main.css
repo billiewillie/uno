@@ -175,9 +175,9 @@ body.body__prostatilen{
     height: 100%;
     z-index: -1;
     background: #ec6408 url(../img/azbuka_bg.jpg);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 6%, #67AEE6 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
 }
 
 .body.body__rshf::after{
@@ -213,7 +213,7 @@ body.body__prostatilen{
 }
 
 .container {
-    padding: 0 10px;
+    padding: 0 20px;
     max-width: 1040px;
     width: 100%;
     margin: 0 auto;
@@ -297,6 +297,10 @@ form.form__search {
     margin: auto;
 }
 
+header .logo{
+    margin-bottom: 20px;
+}
+
 .logo img{
     max-height: 200px;
 }
@@ -310,7 +314,7 @@ form.form__search {
 }
 
 header .logo img {
-    width: 50%;
+    width: 61%;
 }
 
 .main__azbuka .logo img{
@@ -342,6 +346,7 @@ header .logo img {
     display: flex;
     padding: 10px 0;
     font-size: 0;
+    border-top: 2px solid #303030;
 }
 
 .menu::before {
@@ -351,8 +356,8 @@ header .logo img {
     height: 2px;
     width: 100%;
     background-color: #303030;
-    top: 0;
-    right: -10px;
+    top: -2px;
+    left: 100%;
 }
 
 .header__case .menu::before{
@@ -391,7 +396,7 @@ main.main{
     flex-direction: column;
     justify-content: flex-end;
     flex: auto;
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 main.main.ppoj__main{
@@ -797,9 +802,9 @@ h1.title {
     font-family: 'SFUIDisplay-Light', sans-serif;
     font-weight: 300;
     text-align: left;
-    font-size: 6vw;
+    font-size: 35px;
     letter-spacing: 3px;
-    line-height: 1.4;
+    line-height: 1.2;
     margin-bottom: 100px;
 }
 
@@ -2544,7 +2549,7 @@ p.subtitle.azbuka__subtitle{
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,.4);
-    
+
 }
 
 .case__slider--item.case__item--big:hover .case__top::before{
@@ -2575,7 +2580,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__content--title{
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
