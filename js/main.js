@@ -28,6 +28,7 @@
   const prostatilenToolLink = Array.from(document.querySelectorAll('.link.text__hidden'));
   const prostatilenToolImg = document.querySelector('.prostatilen__tool--img');
   const prostatilenToolPic = document.querySelector('.prostatilen__tool--pic');
+  const indexCases = document.querySelector('.index__cases');
 
   // // wow
   if($('.wow').length){
@@ -493,8 +494,10 @@
     });
   });
 
-  window.addEventListener('scroll', function(){
-    document.querySelector('.index__cases').classList.add('main__cases');
-  })
+  if(indexCases){
+    window.addEventListener('scroll', function(){
+      indexCases.classList.add('main__cases');
+    })
+  };
 
 })();
