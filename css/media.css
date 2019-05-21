@@ -1482,6 +1482,14 @@
     padding: 30px 0 0;
   }
 
+  body.body__ppoj{
+    background-position: 50% 0%;
+  }
+
+  .body.body__geroi{
+    background-position: 50% 0%;
+  }
+
 }
 
 @media (max-width: 991px){

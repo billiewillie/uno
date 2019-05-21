@@ -79,7 +79,7 @@ body.body__prostatilen{
 .body.body__geroi{
     background-image: url(../img/case-supergeroi.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 1%;
+    background-position: 50% .5%;
     background-size: 100% auto;
     position: relative;
 }
@@ -140,8 +140,8 @@ body.body__prostatilen{
     z-index: -1;
     background: #ec6408 url(../img/azbuka_bg.jpg);
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 2%,#217DDA 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.4) 0%, #217DDA 2%, #217DDA 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%,#217DDA 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.4) 0%, #217DDA 3%, #217DDA 100%);
 }
 
 .body.body__ppoj::after{
@@ -434,7 +434,7 @@ main.main.main__conf{
 }
 
 .geroi__iseland{
-    padding: 50px 0 0;
+    padding: 230px 0 0;
 }
 
 main.main.main__azbuka{
