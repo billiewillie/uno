@@ -1490,6 +1490,13 @@
     background-position: 50% 0%;
   }
 
+  .body.body__azbuka{
+    background-position: 50% 0%;
+  }
+  .azbuka__top{
+    padding-top: 0;
+  }
+
 }
 
 @media (max-width: 991px){

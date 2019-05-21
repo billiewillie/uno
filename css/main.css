@@ -71,7 +71,7 @@ body.body__prostatilen{
 .body.body__citovir{
     background-image: url(../img/citovir_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 1%;
+    background-position: 50% 0%;
     background-size: 100% auto;
     position: relative;
 }
@@ -90,6 +90,31 @@ body.body__prostatilen{
     background-position: 50% 1%;
     background-size: 100% auto;
     position: relative;
+}
+
+.body.body__rangers{
+    background-image: url(../img/rangers_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 1%;
+    background-size: 100% auto;
+    position: relative;
+}
+
+.body.body__rangers::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: #ec6408 url(../img/azbuka_bg.jpg);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 33%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 6%,#929397 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 6%, #929397 100%);
 }
 
 .body.body__azbuka::after{
@@ -210,6 +235,7 @@ body.body__prostatilen{
     -webkit-overflow-scrolling: touch;
     min-height: 100vh;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .container {
@@ -2047,7 +2073,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .azbuka__top{
-    padding-top: 50px;
+    padding-top: 230px;
     margin-bottom: 80px;
 }
 
@@ -2606,7 +2632,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .case__content--title{
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
