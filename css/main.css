@@ -45,7 +45,7 @@ body {
 body.body__ppoj{
     background-color: #f2f2f2;
     background-image: url(../img/city-8.jpg);
-    background-position: 50% 0;
+    background-position: 50% .5%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
@@ -54,7 +54,7 @@ body.body__ppoj{
 body.body__prostatilen{
     background-color: #f2f2f2;
     background-image: url(../img/prostatilen_bg.jpg);
-    background-position: 50% 0;
+    background-position: 50% 1%;
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
@@ -63,7 +63,7 @@ body.body__prostatilen{
 .body.body__azbuka{
     background-image: url(../img/azbuka_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 1%;
     background-size: 100% auto;
     position: relative;
 }
@@ -71,7 +71,7 @@ body.body__prostatilen{
 .body.body__citovir{
     background-image: url(../img/citovir_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 1%;
     background-size: 100% auto;
     position: relative;
 }
@@ -79,7 +79,7 @@ body.body__prostatilen{
 .body.body__geroi{
     background-image: url(../img/case-supergeroi.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 1%;
     background-size: 100% auto;
     position: relative;
 }
@@ -87,7 +87,7 @@ body.body__prostatilen{
 .body.body__rshf{
     background-image: url(../img/case_rshf.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 50% 1%;
     background-size: 100% auto;
     position: relative;
 }
@@ -157,9 +157,9 @@ body.body__prostatilen{
     height: 100%;
     z-index: -1;
     background: #ec6408 url(../img/azbuka_bg.jpg);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 6%, rgba(222, 194,148, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 4%, rgba(222, 194,148, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 4%, rgba(222, 194,148, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(222, 194,148, 1) 4%, rgba(222, 194,148, 1) 100%);
 }
 
 .body.body__prostatilen::after{
@@ -193,9 +193,9 @@ body.body__prostatilen{
     height: 100%;
     z-index: -1;
     background: #ec6408 url(../img/case_rshf.jpg);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 3%, rgba(255, 255,255, 1) 100%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 3%, rgba(255, 255,255, 1) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 3%, rgba(255, 255,255, 1) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 5%, rgba(255, 255,255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 5%, rgba(255, 255,255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, rgba(255, 255,255, 1) 5%, rgba(255, 255,255, 1) 100%);
 }
 
 .wrapper {
@@ -231,6 +231,7 @@ header.header.header__azbuka{
 
 .header.header__case{
     background-color: transparent;
+    display: none;
 }
 
 .header__content--top {
@@ -488,7 +489,7 @@ main.main.main__azbuka{
 }
 
 .ppoj__top{
-    padding: 60px 0;
+    padding: 230px 0 60px;
     position: relative;
     margin-bottom: 50px;
     text-align: center;
@@ -605,7 +606,8 @@ h1.title.ppoj__top--title{
 
 .jjop__logo{
     text-align: center;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
+    max-width: 200px;
 }
 
 .subtitle{
@@ -3593,7 +3595,7 @@ p.subtitle.azbuka__subtitle{
     background-repeat: no-repeat;
     background-position: 50% 100%;
     background-size: 110% auto;
-    padding: 50px 0 0;
+    padding: 230px 0 0;
 }
 
 .rshf__section:nth-child(2){

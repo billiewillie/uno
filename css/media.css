@@ -1458,6 +1458,30 @@
       display: block;
   }
 
+  .header.header__case{
+    display: block;
+  }
+
+  body.body__prostatilen{
+    background-position: 50% 0%;
+  }
+
+  .ppoj__top{
+    padding: 60px 0;
+  }
+
+  .jjop__logo{
+    max-width: inherit;
+  }
+
+  .body.body__rshf {
+    background-position: 50% 0%;
+  }
+
+  .rshf__section:nth-child(1){
+    padding: 30px 0 0;
+  }
+
 }
 
 @media (max-width: 991px){
