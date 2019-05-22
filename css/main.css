@@ -4993,8 +4993,32 @@ h1.rangers__title{
 
 .rangers__advantages .title{
     text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    margin-bottom: 40px;
 }
 
+.advantages__inner{
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages__inner--part .item{
+    background-color: #fff;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    padding: 25px 30px;
+    color: #252525;
+    font-size: 15px;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
+}
+
+.advantages__inner--part .item:last-child{
+    margin-bottom: 0px;
+}
 
 @keyframes burger-open-top {
     50% {
