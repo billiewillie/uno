@@ -9,6 +9,14 @@
 }
 @media (min-width: 768px) {
 
+  .body.body__rangers{
+    background-position: 50% 0;
+  }
+
+  .rangers__section{
+    padding: 50px 0 0;
+  }
+
   .text__hidden{
     display: inline-block;
   }
@@ -1017,6 +1025,28 @@
     padding: 70px;
   }
 
+  .rangers__auditory{
+    background-color: #A3a3a3;
+    font-size: 0;
+  }
+
+  .rangers__auditory .auditory__part .title{
+    padding: 60px 10px 20px;
+    font-size: 24px;
+  }
+
+  .rangers__auditory .auditory__part{
+    width: 100%;
+  }
+
+  .rangers__auditory .auditory__text{
+    text-align: center;
+    background-color: #3A3A3C;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 10px 60px;
+  }
+
   .campaign{
     padding: 100px 0;
   }
@@ -1136,7 +1166,7 @@
     font-size: 18px;
   }
 
-  .body__prostatilen .pic__block{
+  .pic__block{
     display: none;
   }
 
@@ -1495,6 +1525,21 @@
   }
   .azbuka__top{
     padding-top: 0;
+  }
+
+  .rangers__text{
+    background-color: #fff;
+    color: #3A3A3C;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .body.body__rangers::after {
+    background: #ec6408 url(../img/azbuka_bg.jpg);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 33%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 30%,#929397 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 30%, #929397 100%);
   }
 
 }

@@ -95,7 +95,7 @@ body.body__prostatilen{
 .body.body__rangers{
     background-image: url(../img/rangers_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% 4%;
+    background-position: 50% 3%;
     background-size: 100% auto;
     position: relative;
 }
@@ -4636,6 +4636,12 @@ p.subtitle.azbuka__subtitle{
     max-width: 720px;
 }
 
+.rangers__auditory .auditory__part{
+    padding: 0;
+    background-color: #fff;
+    color: #252525;
+}
+
 .prostatilen__auditory .auditory__part:nth-child(2){
     display: none;
 }
@@ -4649,7 +4655,18 @@ p.subtitle.azbuka__subtitle{
     padding: 45px 10px;
 }
 
-.prostatilen__auditory .auditory__text{
+.rangers__auditory .auditory__part .title{
+    background-color: #3A3A3C;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 45px 10px;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+}
+
+.prostatilen__auditory .auditory__text,
+.rangers__auditory .auditory__text{
     padding: 20px 10px;
     font-size: 15px;
     font-weight: 600;
@@ -4958,6 +4975,26 @@ h1.rangers__title{
     border: 1px solid rgba(255,255,255,.5);
     text-align: center;
 }
+
+.rangers__text{
+    color: #fff;
+    background-color: #929397;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 40px 0;
+    font-weight: 800;
+    font-family: 'SFUIDisplay-Medium', sans-serif;
+}
+
+.rangers__advantages{
+    padding: 40px 0;
+    background: linear-gradient(248.34deg, #78797E 25.02%, #98999D 35.69%, #CECFD1 49.48%, #A8A9AC 64.83%, #78797E 74.98%);
+}
+
+.rangers__advantages .title{
+    text-align: center;
+}
+
 
 @keyframes burger-open-top {
     50% {
