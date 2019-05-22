@@ -1604,6 +1604,23 @@
     font-family: 'SFUIDisplay-Heavy', sans-serif;
   }
 
+  .body__rangers .prostatilen__tasks .title{
+    background-color: transparent;
+  }
+
+  .body__rangers .prostatilen__tasks{
+    background: linear-gradient(233.25deg, #78797E 15.05%, #98999D 30.36%, #CECFD1 50.16%, #A8A9AC 72.19%, #78797E 86.76%);
+  }
+
+  .body__rangers .tasks__list::after{
+    background-image: url(../img/prostatilen_candle.png);
+  }
+
+  .body__rangers .tasks__content li:hover{
+    background-color: #fff;
+    color: #252525;
+  }
+
 }
 
 @media (max-width: 991px){

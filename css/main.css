@@ -4696,6 +4696,10 @@ p.subtitle.azbuka__subtitle{
     color: #252525;
 }
 
+.tasks__content li:last-child{
+    border-bottom: none;
+}
+
 .prostatilen__stages{
     background-color: #ecf0f1;
     padding: 0px 0 30px;
@@ -5018,6 +5022,10 @@ h1.rangers__title{
 
 .advantages__inner--part .item:last-child{
     margin-bottom: 0px;
+}
+
+.body__rangers .prostatilen__tasks .title{
+    background-color: #3A3A3C;
 }
 
 @keyframes burger-open-top {
