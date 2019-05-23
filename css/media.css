@@ -1484,7 +1484,9 @@
   }
 
   .body__prostatilen .cases,
-  .body__prostatilen .footer{
+  .body__prostatilen .footer,
+  .body__rangers .cases,
+  .body__rangers .footer{
       display: block;
   }
 
@@ -1570,7 +1572,7 @@
   }
 
   .rangers__section{
-    padding: 300px 0 0;
+    padding: 280px 0 0;
   }
 
   h1.title.rangers__title{

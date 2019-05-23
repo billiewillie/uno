@@ -4951,6 +4951,8 @@ p.subtitle.azbuka__subtitle{
     color: #737373;
 }
 
+.body__rangers .cases,
+.body__rangers .footer,
 .body__prostatilen .cases,
 .body__prostatilen .footer{
     display: none;
