@@ -1528,18 +1528,20 @@
   }
 
   .rangers__text{
-    background-color: #fff;
+    background-color: #ecf0f1;
     color: #3A3A3C;
     font-size: 24px;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    padding: 100px 0;
   }
 
   .body.body__rangers::after {
     background: #ec6408 url(../img/azbuka_bg.jpg);
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 30%,#929397 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 30%, #929397 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 12%,#929397 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 12%, #929397 100%);
   }
 
   .rangers__advantages{
@@ -1598,10 +1600,6 @@
     border: 1px solid #929397;
     background-color: #929397;
     color: #fff;
-  }
-
-  .rangers__text{
-    font-family: 'SFUIDisplay-Heavy', sans-serif;
   }
 
   .body__rangers .prostatilen__tasks .title{
@@ -2603,8 +2601,46 @@
   .body.body__rangers::after {
     background: #ec6408 url(../img/azbuka_bg.jpg);
     background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 20%,#929397 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 20%, #929397 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #929397 16%,#929397 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #929397 16%, #929397 100%);
+  }
+
+  .rangers__video .video__cover {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 102%;
+    height: 102%;
+    top: -1%;
+    left: -1%;
+    z-index: 1;
+    border-radius: 20px;
+    background-image: url(../img/rangers_video.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .rangers__video .play {
+    content: '';
+    position: absolute;
+    display: block;
+    cursor: pointer;
+    background: no-repeat center / contain;
+    background-image: url(../img/icons/icon_play-white.svg);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: none;
+    background-size: 50%;
+    background-position: 60% 50%;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 2;
   }
 
 }
