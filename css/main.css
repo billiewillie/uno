@@ -5049,6 +5049,22 @@ h1.rangers__title{
     min-height: 200px;
 }
 
+.index__cases .case__item.case__item--small .case__content {
+    position: absolute;
+    bottom: 0;
+    justify-content: flex-end;
+}
+
+.index__cases .case.case__big {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.index__cases .case.case__big .case__big--title {
+    position: absolute;
+    bottom: 15px;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);
