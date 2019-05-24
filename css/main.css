@@ -5075,7 +5075,7 @@ h1.rangers__title{
 
 @keyframes burger-open-bot {
     50% {
-        transform:  translate3d(0, -10px, 0);
+        transform: translate3d(0, -10px, 0);
     }100% {
         transform: translate3d(0, -10px, 0) rotate(-45deg);
     }
