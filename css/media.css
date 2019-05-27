@@ -2308,16 +2308,27 @@
     margin: auto;
     right: -45px;
     left: inherit;
-  }
-
-  .about__title--item::after{
-    right: 0px;
-    bottom: 0;
+    width: 17px;
+    height: 17px;
   }
 
   .about__title--item.active::after{
-    right: -50px;
+    right: -50px !important;
     bottom: 0;
+    width: 28px;
+    height: 28px;
+  }
+
+  .about__title--item:nth-child(1)::after {
+    right: -45px;
+    margin: auto;
+    left: inherit;
+  }
+
+  .about__title--item:nth-child(3)::after {
+    right: -45px;
+    margin: auto;
+    left: inherit;
   }
 
   .about__text{
