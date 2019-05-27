@@ -1492,6 +1492,8 @@
     display: none;
   }
 
+  .body__geroi .cases,
+  .body__geroi .footer,
   .body__prostatilen .cases,
   .body__prostatilen .footer,
   .body__rangers .cases,
@@ -2386,6 +2388,10 @@
     display: flex;
   }
 
+  .geroi__block--advs{
+    display: block;
+  }
+
   .geroi__how--title{
     border-bottom: none;
     text-align: left;
@@ -2520,6 +2526,8 @@
 
   .geroi__about--part:nth-child(2){
     width: 38%;
+    display: flex;
+    flex-direction: column;
   }
 
   .rshf__timeline--1{
