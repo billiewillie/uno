@@ -2929,7 +2929,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .geroi__item:nth-child(1)::before{
-    background-image: url(../img/icons/icon_geroi-1.svg);
+    background-image: url(../img/icons/icon_geroi-1-1.svg);
 }
 
 .rangers__list .geroi__item:nth-child(1)::before{
@@ -2937,7 +2937,7 @@ p.subtitle.azbuka__subtitle{
 }
 
 .geroi__item:nth-child(2)::before{
-    background-image: url(../img/icons/icon_geroi-2.svg);
+    background-image: url(../img/icons/icon_geroi-2-2.svg);
 }
 
 .rangers__list .geroi__item:nth-child(2)::before{
@@ -2945,27 +2945,27 @@ p.subtitle.azbuka__subtitle{
 }
 
 .geroi__item:nth-child(3)::before{
-    background-image: url(../img/icons/icon_geroi-3.svg);
+    background-image: url(../img/icons/icon_geroi-3-3.svg);
 }
 
 .geroi__item:nth-child(4)::before{
-    background-image: url(../img/icons/icon_geroi-4.svg);
+    background-image: url(../img/icons/icon_geroi-4-4.svg);
 }
 
 .geroi__item:nth-child(5)::before{
-    background-image: url(../img/icons/icon_geroi-5.svg);
+    background-image: url(../img/icons/icon_geroi-5-5.svg);
 }
 
 .geroi__item:nth-child(6)::before{
-    background-image: url(../img/icons/icon_geroi-6.svg);
+    background-image: url(../img/icons/icon_geroi-6-6.svg);
 }
 
 .geroi__item:nth-child(7)::before{
-    background-image: url(../img/icons/icon_geroi-7.svg);
+    background-image: url(../img/icons/icon_geroi-7-7.svg);
 }
 
 .geroi__item:nth-child(8)::before{
-    background-image: url(../img/icons/icon_geroi-8.svg);
+    background-image: url(../img/icons/icon_geroi-8-8.svg);
 }
 
 .geroi__item::after{

@@ -470,8 +470,6 @@
           $this = $(this),
           $next = $this.next();
 
-        console.log($this);
-
         $next.slideToggle('fast');
         $this.parent().toggleClass('open');
 
