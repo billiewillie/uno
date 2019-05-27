@@ -4979,12 +4979,20 @@ p.subtitle.azbuka__subtitle{
     color: #737373;
 }
 
+.body__prostatilen .cases,
+.body__prostatilen .footer,
+.body__ppoj .cases,
+.body__ppoj .footer,
+.body__citovir .cases,
+.body__citovir .footer,
+.body__rshf .cases,
+.body__rshf .footer,
 .body__geroi .cases,
 .body__geroi .footer,
 .body__rangers .cases,
 .body__rangers .footer,
 .body__prostatilen .cases,
-.body__prostatilen .footer{
+.body__prostatilen .footer {
     display: none;
 }
 
