@@ -481,6 +481,10 @@
     padding: 80px 0;
   }
 
+  .body__geroi .geroi__iseland{
+    padding: 80px 0 0;
+  }
+
   .case__big--top{
     min-height: 300px;
     justify-content: flex-end;
@@ -605,6 +609,11 @@
 
   .about__title--item{
     padding: 15px 10px 40px 15px;
+    font-size: 24px;
+  }
+
+  .body__geroi .about__title--item{
+    padding: 15px 10px;
     font-size: 24px;
   }
 
@@ -2284,9 +2293,13 @@
     width: auto;
   }
 
-  .about__title--item{
-    padding: 30px 20px 75px;
+  .body__geroi .about__title--item{
+    padding: 52px 20px 52px;
     width: 250px;
+  }
+
+  .body__geroi .about__title--item::before {
+    border-radius: 20px;
   }
 
   .about__title--item::after{
@@ -2295,6 +2308,11 @@
     margin: auto;
     right: -45px;
     left: inherit;
+  }
+
+  .about__title--item::after{
+    right: 0px;
+    bottom: 0;
   }
 
   .about__title--item.active::after{
