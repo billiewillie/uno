@@ -2677,6 +2677,10 @@
       background-image: url(../img/icons/icon_geroi-8.svg);
   }
 
+  .geroi__list .pic{
+    display: none;
+  }
+
 }
 
 @media (min-width: 1440px) {
