@@ -2891,6 +2891,26 @@ p.subtitle.azbuka__subtitle{
     font-size: 12px;
 }
 
+.geroi__item:nth-child(4),
+.geroi__item:nth-child(3){
+    margin-bottom: 250px;
+    position: relative;
+}
+
+.geroi__item:nth-child(4) .pic{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 130%;
+    right: 60%;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/flamingo.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 .rangers__list .geroi__item{
     width: 48%;
     position: relative;

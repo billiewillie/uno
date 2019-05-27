@@ -2706,7 +2706,12 @@
       background-image: url(../img/icons/icon_geroi-8.svg);
   }
 
-  .geroi__list .pic{
+  .geroi__item:nth-child(4),
+  .geroi__item:nth-child(3){
+      margin-bottom: 35px;
+  }
+
+  .geroi__item:nth-child(4) .pic{
     display: none;
   }
 
