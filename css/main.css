@@ -5065,6 +5065,11 @@ h1.rangers__title{
     bottom: 15px;
 }
 
+.geroi__list .pic{
+    width: 100%;
+    text-align: center;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);
