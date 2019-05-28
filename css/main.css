@@ -200,9 +200,9 @@ body.body__prostatilen{
     height: 100%;
     z-index: -1;
     background: #ec6408 url(../img/azbuka_bg.jpg);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 4%, #67AEE6 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 5%, #67AEE6 100%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, .5) 0%, #67AEE6 5%, #67AEE6 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, .5) 0%, #67AEE6 5%, #67AEE6 100%);
 }
 
 .body.body__rshf::after{
@@ -933,7 +933,6 @@ p.subtitle.azbuka__subtitle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid rgba(236, 240, 241, .6);
     background-image: url(../img/icons/icon_touch-white.svg);
     background-position: 50% 50%;
     background-size: 50%;
@@ -941,8 +940,7 @@ p.subtitle.azbuka__subtitle {
 }
 
 .body__citovir .azbuka__digits--icon{
-    border: 1px solid #3175BE;
-    background-image: url(../img/icons/icon_citovir-11.svg);
+    background-image: url(../img/icons/icon_citovir-1-1.svg);
 }
 
 .body__citovir .azbuka__digits--item{
@@ -951,15 +949,15 @@ p.subtitle.azbuka__subtitle {
 }
 
 .body__citovir .azbuka__digits--item:nth-child(2) .azbuka__digits--icon{
-    background-image: url(../img/icons/icon_citovir-14.svg);
+    background-image: url(../img/icons/icon_citovir-2-2.svg);
 }
 
 .body__citovir .azbuka__digits--item:nth-child(3) .azbuka__digits--icon{
-    background-image: url(../img/icons/icon_citovir-12.svg);
+    background-image: url(../img/icons/icon_citovir-3-3.svg);
 }
 
 .body__citovir .azbuka__digits--item:nth-child(4) .azbuka__digits--icon{
-    background-image: url(../img/icons/icon_citovir-13.svg);
+    background-image: url(../img/icons/icon_rshf-1-1.svg);
 }
 
 .azbuka__digits--item:last-child .azbuka__digits--icon{
@@ -4484,7 +4482,7 @@ p.subtitle.azbuka__subtitle {
 }
 
 .campaign{
-    background-color: #ecf0f1;
+    background-color: #fff;
     color: #252525;
     padding: 30px 0;
     text-align: center;
@@ -4814,6 +4812,7 @@ p.subtitle.azbuka__subtitle {
     border-bottom: 1px solid #8eb8db;
     padding-left: 100px;
     padding-right: 45px;
+    text-align: left;
 }
 
 .prostatilen__tools .tool__item:last-child{

@@ -2180,6 +2180,23 @@
   .azbuka__digits--icon{
     width: 90px;
     height: 90px;
+    border: 1px solid #3175BE;
+  }
+
+  .body__citovir .azbuka__digits--icon {
+    background-image: url(../img/icons/icon_citovir-11.svg);
+  }
+
+  .body__citovir .azbuka__digits--item:nth-child(2) .azbuka__digits--icon{
+    background-image: url(../img/icons/icon_citovir-14.svg);
+  }
+
+  .body__citovir .azbuka__digits--item:nth-child(3) .azbuka__digits--icon{
+      background-image: url(../img/icons/icon_citovir-12.svg);
+  }
+
+  .body__citovir .azbuka__digits--item:nth-child(4) .azbuka__digits--icon{
+      background-image: url(../img/icons/icon_citovir-13.svg);
   }
 
   .azbuka__digits--title{
