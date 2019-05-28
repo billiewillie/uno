@@ -1711,6 +1711,16 @@
     z-index: -1;
   }
 
+  .tasks {
+    padding: 140px 0 0;
+    height: 890px;
+    overflow: hidden;
+    background: #f6b865;
+    background: -moz-linear-gradient(left, #f6b865 0%, #f6b865 50%, #ffdf96 100%);
+    background: -webkit-linear-gradient(left, #f6b865 0%,#f6b865 50%,#ffdf96 100%);
+    background: linear-gradient(to right, #f6b865 0%,#f6b865 50%,#ffdf96 100%);
+  }
+
 }
 
 @media (max-width: 991px){
