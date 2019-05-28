@@ -71,7 +71,7 @@ body.body__prostatilen{
 .body.body__citovir{
     background-image: url(../img/citovir_bg.jpg);
     background-repeat: no-repeat;
-    background-position: 50% .5%;
+    background-position: 50% 0%;
     background-size: 100% auto;
     position: relative;
 }
@@ -2085,6 +2085,7 @@ p.subtitle.azbuka__subtitle {
 .target__list{
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .target__item{
@@ -2099,6 +2100,10 @@ p.subtitle.azbuka__subtitle {
 .body__citovir .target__item{
     color: #252525;
     box-shadow: none;
+    font-size: 15px;
+    text-align: left;
+    border: none;
+    background-color: #fff;
 }
 
 .target__item:last-child{
@@ -4248,22 +4253,6 @@ p.subtitle.azbuka__subtitle {
     align-items: center;
 }
 
-.tasks .list::before{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1920px;
-    height: 933px;
-    background-image: url(../img/citovir_bg-2.jpg);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
 .tasks .item{
     font-size: 16px;
     color: #252525;
@@ -4354,7 +4343,7 @@ p.subtitle.azbuka__subtitle {
 }
 
 .hidden__menu--call{
-    background-image: url(../img/icons/icon_call.svg);
+    background-image: url(../img/icons/icon_call-dark.svg);
 }
 
 .hidden__menu--email{
@@ -5120,6 +5109,21 @@ h1.rangers__title{
 .geroi__soc--link{
     color: #fff;
     font-family: 'SFUIDisplay-Regular', sans-serif;
+}
+
+.azbuka__targets{
+    background-color: #E9EDF6;
+    font-size: 0;
+    padding-top: 50px;
+}
+
+.azbuka__targets h3.title{
+    text-align: center;
+    font-size: 20px;
+    color: #0047D0;
+    text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    margin-bottom: 30px;
 }
 
 @keyframes burger-open-top {

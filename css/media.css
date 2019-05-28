@@ -1062,6 +1062,7 @@
 
   .campaign{
     padding: 100px 0;
+    background-color: #ecf0f1 ;
   }
 
   .campaign h2{
@@ -1670,6 +1671,40 @@
     width: 572px;
     height: 174px;
     background-image: url(../img/tools_title.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .azbuka__targets {
+    background-color: inherit;
+  }
+
+  .azbuka__targets .boy{
+    display: none;
+  }
+
+  .azbuka__targets h3.title{
+    font-size: 40px;
+  }
+
+  .body__citovir .target__item{
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 18px;
+  }
+
+  .tasks .list::before{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1920px;
+    height: 933px;
+    background-image: url(../img/citovir_bg-2.jpg);
     background-position: 50% 50%;
     background-size: contain;
     background-repeat: no-repeat;
@@ -3016,9 +3051,9 @@
 
   .body.body__citovir::after{
     background: rgba(255, 203, 19);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%,rgba(255, 203, 19) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 20%, rgba(255, 203, 19) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 18%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 18%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 18%, rgba(255, 203, 19) 100%);
   }
 
   .campaign .slider__citovir::before {
