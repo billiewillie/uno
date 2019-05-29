@@ -2716,9 +2716,9 @@
 
   .body.body__citovir::after{
     background: rgba(255, 203, 19);
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%,rgba(255, 203, 19) 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 12%, rgba(255, 203, 19) 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 11%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 11%,rgba(255, 203, 19) 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, rgba(255, 203, 19) 11%, rgba(255, 203, 19) 100%);
   }
 
   .team__one{
