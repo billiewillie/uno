@@ -612,7 +612,7 @@ main.main.main__azbuka{
 .ppoj__top.ppoj__block--opinion .container::after{
     background-image: url(../img/ppoj_top-4.png);
     z-index: 0;
-    bottom: -50px;
+    bottom: -60px;
     right: 0;
     left: 40%;
     top: inherit;
@@ -1639,8 +1639,10 @@ p.subtitle.azbuka__subtitle {
     margin-bottom: 0;
 }
 
-.ppoj__block--opinion .ppoj__top--text{
+.ppoj__block--opinion .ppoj__top--text {
     margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
 }
 
 .ppoj__flashmob .ppoj__text{
@@ -1651,7 +1653,7 @@ p.subtitle.azbuka__subtitle {
     padding: 0 35px;
 }
 
-.slide{
+.slide {
     border-radius: 10px;
     background-size: cover;
     background-position: 50% 50%;
@@ -1685,7 +1687,7 @@ p.subtitle.azbuka__subtitle {
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 10px;
-    background: #fd455f; /* Old browsers */
+    background: #fd455f;
     background: -moz-linear-gradient(top, rgba(253, 69, 95, .3), #fd455f 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(253, 69, 95, .3), #fd455f 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(253, 69, 95, .3), #fd455f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
