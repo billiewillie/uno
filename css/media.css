@@ -2107,6 +2107,12 @@
   h1.title.ppoj__top--title{
     margin-bottom: 50px;
     font-size: 40px;
+    color: #fff;
+  }
+
+  .jjop__subtitle.subtitle,
+  .ppoj__top:nth-child(1) .ppoj__top--text{
+    color: #fff;
   }
 
   .ppoj__link{
@@ -2304,32 +2310,6 @@
   .stat__support--text{
     font-size: 24px;
   }
-
-  /* .case__row--top:nth-child(1) .case__slider--item:nth-child(1),
-  .case__row--top:nth-child(1) .case__slider--item:nth-child(3){
-    width: 23%;
-    order: 1;
-  }
-
-  .case__row--top:nth-child(1) .case__slider--item:nth-child(2){
-    order: 2;
-    width: 48%;
-    margin-right: 3%;
-  }
-
-  .case__row--top:nth-child(3) .case__slider--item:nth-child(1){
-    width: 49%;
-    margin-right: 2%;
-  }
-
-  .case__row--top:nth-child(3) .case__slider--item:nth-child(2),
-  .case__row--top:nth-child(3) .case__slider--item:nth-child(3){
-    width: 23.5%;
-  }
-
-  .case__row--top:nth-child(3) .case__slider--item:nth-child(2){
-    margin-right: 2%;
-  } */
 
   .team__box{
     width: 250px;
@@ -2857,6 +2837,30 @@
 
   .geroi__list--rshf .geroi__item:nth-child(4)::before{
       background-image: url(../img/icons/icon_rshf-4.svg);
+  }
+
+  .stats__item::before{
+    border: 1px solid #5F4A4A;
+  }
+
+  .stats__item:nth-child(1)::before{
+    background-image: url(../img/icons/icon_stats-1.svg);
+  }
+
+  .stats__item:nth-child(2)::before{
+      background-image: url(../img/icons/icon_stats-2.svg);
+  }
+
+  .stats__item:nth-child(3)::before{
+      background-image: url(../img/icons/icon_stats-3.svg);
+  }
+
+  .stats__item:nth-child(4)::before{
+      background-image: url(../img/icons/icon_stats-4.svg);
+  }
+
+  .stats__item:nth-child(5)::before{
+      background-image: url(../img/icons/icon_stats-5.svg);
   }
 
 }

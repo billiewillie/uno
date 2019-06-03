@@ -515,7 +515,7 @@ main.main.main__azbuka{
 }
 
 .ppoj__top{
-    padding: 230px 0 60px;
+    padding: 0px 0 60px;
     position: relative;
     margin-bottom: 50px;
     text-align: center;
@@ -609,7 +609,7 @@ main.main.main__azbuka{
     background-color: #F8F2E9;
 }
 
-.ppoj__top.ppoj__block--opinion .container::after{
+.ppoj__top.ppoj__block--opinion .container::after {
     background-image: url(../img/ppoj_top-4.png);
     z-index: 0;
     bottom: -60px;
@@ -623,11 +623,12 @@ main.main.main__azbuka{
     display: none;
 }
 
-h1.title.ppoj__top--title{
+h1.ppoj__top--title{
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 1.4;
-    margin-bottom: 30px;
+    padding: 60px 0 0;
+    color: #5F4A4A;
 }
 
 .jjop__logo{
@@ -646,6 +647,7 @@ h1.title.ppoj__top--title{
 .jjop__subtitle.subtitle{
     font-family: 'SFUIDisplay-Medium', sans-serif; 
     text-transform: none;
+    color: #5F4A4A;
 }
 
 .main__content .subtitle{
@@ -694,6 +696,7 @@ h1.title.ppoj__top--title{
 
 .ppoj__top:nth-child(1) .ppoj__top--text{
     font-family: 'SFUIDisplay-Light', sans-serif; 
+    color: #5F4A4A;
 }
 
 .ppoj__block--consult .ppoj__top--text{
@@ -3524,6 +3527,7 @@ p.subtitle.azbuka__subtitle {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .stats__item{
@@ -3545,7 +3549,6 @@ p.subtitle.azbuka__subtitle {
     border-radius: 50%;
     width: 90px;
     height: 90px;
-    border: 1px solid #5F4A4A;
     background-position: 50% 50%;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -3556,23 +3559,23 @@ p.subtitle.azbuka__subtitle {
 }
 
 .stats__item:nth-child(1)::before{
-    background-image: url(../img/icons/icon_stats-1.svg);
+    background-image: url(../img/icons/icon_jjop-1.svg);
 }
 
 .stats__item:nth-child(2)::before{
-    background-image: url(../img/icons/icon_stats-2.svg);
+    background-image: url(../img/icons/icon_jjop-2.svg);
 }
 
 .stats__item:nth-child(3)::before{
-    background-image: url(../img/icons/icon_stats-3.svg);
+    background-image: url(../img/icons/icon_jjop-3.svg);
 }
 
 .stats__item:nth-child(4)::before{
-    background-image: url(../img/icons/icon_stats-4.svg);
+    background-image: url(../img/icons/icon_jjop-4.svg);
 }
 
 .stats__item:nth-child(5)::before{
-    background-image: url(../img/icons/icon_stats-5.svg);
+    background-image: url(../img/icons/icon_jjop-5.svg);
 }
 
 .body__prostatilen .stats__item:nth-child(1)::before{
