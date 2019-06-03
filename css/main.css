@@ -515,7 +515,7 @@ main.main.main__azbuka{
 }
 
 .ppoj__top{
-    padding: 0px 0 60px;
+    padding: 0;
     position: relative;
     margin-bottom: 50px;
     text-align: center;
@@ -524,11 +524,13 @@ main.main.main__azbuka{
 .ppoj__top:nth-child(1){
     color: #fff;
     margin-bottom: 0;
+    padding-top: 250px;
 }
 
 .ppoj__top.ppoj__block--right{
     margin-bottom: 0;
-    background-color: #DEC294;
+    background-color: #F8F2E9;
+    padding-bottom: 0;
 }
 
 .ppoj__title--block h1.title.ppoj__top--title{
@@ -571,7 +573,7 @@ main.main.main__azbuka{
     background-size: auto 100%;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: .2;
+    opacity: 0;
 }
 
 .ppoj__top.ppoj__flashmob .container::after{
@@ -627,8 +629,24 @@ h1.ppoj__top--title{
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 1.4;
-    padding: 60px 0 0;
+    padding: 0;
     color: #5F4A4A;
+    width: 100%;
+}
+
+.ppoj__top:nth-child(1) h1.ppoj__top--title{
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-top: 0;
+}
+
+.ppoj__top.ppoj__block--right .ppoj__top--title{
+    background-color: #5F4A4A;   
+    color: #fff;
+    padding: 40px 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .jjop__logo{
@@ -1552,26 +1570,37 @@ p.subtitle.azbuka__subtitle {
 .ppoj__title--block .ppoj__top--title.title{
     margin-bottom: 0;
 }
-
+ 
 .ppoj__list{
     position: relative;
-    margin-bottom: 65px;
-    padding-bottom: 10px;
 }
 
 .ppoj__list--item{
     font-size: 16px;
-    padding: 20px 10px 20px 35px;
+    padding: 35px 0;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 0px;
     transition: .2s;
     text-align: left;
-    color: rgba(95, 74, 74, 1);
+    color: #252525;
+    border-bottom: 1px solid rgba(95, 74, 74, 0.5);
+}
+
+.ppoj__list--item:last-child{
+    border-bottom: none;
 }
 
 .ppoj__text{
     padding: 0 10px 0 0;
     text-align: left;
+}
+
+.body__ppoj .ppoj__text{
+    padding: 30px 0;
+}
+
+.body__ppoj .ppoj__text p{
+    margin-bottom: 0;
 }
 
 .ppoj__text p{
@@ -3534,7 +3563,7 @@ p.subtitle.azbuka__subtitle {
     width: 50%;
     margin-bottom: 70px;
     padding: 0 10px;
-    padding-top: 110px;
+    padding-top: 40px;
     position: relative;
 }
 
@@ -3546,11 +3575,10 @@ p.subtitle.azbuka__subtitle {
     right: 0;
     left: 0;
     margin: auto;
-    border-radius: 50%;
-    width: 90px;
-    height: 90px;
+    width: 25px;
+    height: 25px;
     background-position: 50% 50%;
-    background-size: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
@@ -5137,6 +5165,11 @@ h1.rangers__title{
     text-transform: uppercase;
     font-family: 'SFUIDisplay-Heavy', sans-serif;
     margin-bottom: 30px;
+}
+
+.ppoj__top--title-block{
+    padding: 50px 0;
+    text-align: center;
 }
 
 @keyframes burger-open-top {
