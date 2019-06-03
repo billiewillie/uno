@@ -559,7 +559,7 @@ main.main.main__azbuka{
     background-size: auto 100%;
     background-repeat: no-repeat;
     z-index: -1;
-    opacity: .2;
+    opacity: 0;
 }
 
 .ppoj__top.ppoj__block--right .container::after{
