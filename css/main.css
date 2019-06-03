@@ -5201,6 +5201,10 @@ h1.rangers__title{
     padding: 30px 0;
 }
 
+.ppoj__top.ppoj__block--opinion .ppoj__top--title .container::after{
+    display: none;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);

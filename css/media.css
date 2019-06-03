@@ -1527,6 +1527,11 @@
     padding: 60px 0;
   }
 
+  .ppoj__block--opinion{
+    padding: 0;
+    background-color: rgba(222, 194,148, 1);
+  }
+
   .jjop__logo{
     max-width: inherit;
   }
@@ -1550,6 +1555,7 @@
   .body.body__azbuka{
     background-position: 50% 0%;
   }
+
   .azbuka__top{
     padding-top: 0;
   }
@@ -2052,13 +2058,19 @@
     padding: 100px 0;
   }
 
+  .ppoj__block--opinion{
+    padding: 0;
+  }
+
   .ppoj__top.ppoj__block--consult .container{
     padding-left: 50%;
     padding-right: 10px;
   }
 
-  .ppoj__block--opinion .title{
+  .ppoj__block--opinion h1.ppoj__top--title.title{
     text-align: left;
+    background-color:rgba(222, 194,148, 1);
+    margin-bottom: 0;
   }
 
   .ppoj__top.ppoj__block--consult {
@@ -2565,12 +2577,16 @@
     padding: 70px 0;
   }
   .stats__item {
-      padding: 110px 20px 0;
+    padding: 110px 20px 0;
   }
 
   .ppoj__top.ppoj__block--opinion .container {
     padding-right: 30%;
     text-align: left;
+  }
+
+  .ppoj__top.ppoj__block--opinion .ppoj__top--title .container{
+    padding: 0 20px;
   }
 
   .ppoj__block--link::after{
