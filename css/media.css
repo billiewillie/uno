@@ -2065,9 +2065,16 @@
     text-align: left;
   }
 
-  .ppoj__top.ppoj__block--consult .title,
   .ppoj__top.ppoj__flashmob .title{
     text-align: left;
+    color: #5F4A4A;
+  }
+
+  .ppoj__top.ppoj__block--consult .title{
+    text-align: left;
+    background-color: #fff;
+    color: #252525;
+    padding-left: 50%;
   }
 
   .ppoj__top:nth-child(1){
@@ -2893,6 +2900,10 @@
 
   .ppoj__text .container{
     flex-direction: column;
+  }
+
+  .body__ppoj .ppoj__text{
+    background-color: rgba(222, 194,148, 1);
   }
 
   .body__ppoj .ppoj__text p{

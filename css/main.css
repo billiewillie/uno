@@ -603,12 +603,19 @@ main.main.main__azbuka{
     background-size: auto 100%;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: .2;
+    opacity: 0;
 }
 
 .ppoj__top.ppoj__block--consult{
-    text-align: right;
-    background-color: #F8F2E9;
+    text-align: left;
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.ppoj__top.ppoj__block--consult .pic__block{
+    text-align: center;
 }
 
 .ppoj__top.ppoj__block--opinion .container::after {
@@ -718,8 +725,8 @@ h1.ppoj__top--title{
 }
 
 .ppoj__block--consult .ppoj__top--text{
-    font-size: 18px;
-    color: #5F4A4A;
+    font-size: 15px;
+    color: #252525;
     margin-bottom: 10px;
 }
 
@@ -1597,6 +1604,7 @@ p.subtitle.azbuka__subtitle {
 
 .body__ppoj .ppoj__text{
     padding: 30px 0;
+    background-color: #fff;
 }
 
 .body__ppoj .ppoj__text p{
@@ -5170,6 +5178,13 @@ h1.rangers__title{
 .ppoj__top--title-block{
     padding: 50px 0;
     text-align: center;
+}
+
+.ppoj__block--consult .title{
+    background-color: rgba(222, 194,148, 1);
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 30px 20px;
 }
 
 @keyframes burger-open-top {
