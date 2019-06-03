@@ -2053,7 +2053,7 @@
   }
 
   .ppoj__top.ppoj__block--consult .container{
-    padding-left: 30%;
+    padding-left: 50%;
     padding-right: 10px;
   }
 
@@ -2063,18 +2063,19 @@
 
   .ppoj__top.ppoj__block--consult {
     text-align: left;
+    background-color: #f8f2e9;
+    padding: 100px 0;
   }
 
   .ppoj__top.ppoj__flashmob .title{
     text-align: left;
-    color: #5F4A4A;
   }
 
   .ppoj__top.ppoj__block--consult .title{
     text-align: left;
-    background-color: #fff;
-    color: #252525;
-    padding-left: 50%;
+    background-color: #f8f2e9;
+    color: #5F4A4A;
+    margin-bottom: 0;
   }
 
   .ppoj__top:nth-child(1){
@@ -2153,7 +2154,7 @@
   }
 
   .ppoj__block--consult .ppoj__top--text{
-    margin-bottom: 45px;
+    margin-bottom: 25px;
   }
 
   .ppoj__top.ppoj__block--consult .container::after{

@@ -606,6 +606,10 @@ main.main.main__azbuka{
     opacity: 0;
 }
 
+.ppoj__block--consult .title .container::after{
+    display: none;
+}
+
 .ppoj__top.ppoj__block--consult{
     text-align: left;
     background-color: #fff;
@@ -5184,7 +5188,7 @@ h1.rangers__title{
     background-color: rgba(222, 194,148, 1);
     font-size: 20px;
     letter-spacing: 1px;
-    padding: 30px 20px;
+    padding: 30px 0;
 }
 
 @keyframes burger-open-top {
