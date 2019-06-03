@@ -1679,8 +1679,18 @@ p.subtitle.azbuka__subtitle {
 }
 
 .ppoj__block--opinion{
-    background-color: #DEC294;
+    background-color: #F8F2E9;
     margin-bottom: 0;
+    text-align: left;
+}
+
+.ppoj__block--opinion .title{
+    background-color: #5F4A4A;
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+    padding: 30px 0;
+    letter-spacing: 1px;
 }
 
 .ppoj__block--opinion .ppoj__top--text {
