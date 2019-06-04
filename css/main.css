@@ -1640,12 +1640,13 @@ p.subtitle.azbuka__subtitle {
 .ppoj__block--link:hover{
     display: inline-block;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 10px;
     color: #252525;
     padding-right: 30px;
     margin-right: 8px;
     position: relative;
     z-index: 1;
+    width: 100%;
 }
 
 .ppoj__block--link::after{
@@ -1676,6 +1677,7 @@ p.subtitle.azbuka__subtitle {
 .ppoj__block--link>*{
     display: inline-block;
     vertical-align: middle;
+    color: #5F4A4A;
 }
 
 .ppoj__block--opinion{
@@ -1862,38 +1864,20 @@ p.subtitle.azbuka__subtitle {
 
 .visit__text{
     position: relative;
-    padding-right: 30%;
-}
-
-.visit__text::after{
-    display: block;
-    position: absolute;
-    content: '';
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-image: url(../img/icons/icon_touch.svg);
-    background-position: 50% 50%;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    border: 1px solid #A38A64;
-}
-
-.visits__block{
-    text-align: right;
 }
 
 .visit__text{
     margin-bottom: 40px;
 }
 
+.visits__block{
+    font-size: 10px;
+}
+
 .visit__digit{
     font-size: 36px;
     display: block;
+    font-family: "SFUIDisplay-Heavy", sans-serif;
 }
 
 .ppoj__result--content{
@@ -5229,6 +5213,12 @@ h1.rangers__title{
 .ppoj__top.ppoj__flashmob{
     padding: 0 0 50px;
     margin-bottom: 0;
+}
+
+.ppoj__block--site-number{
+    font-size: 32px;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
+    display: block;
 }
 
 @keyframes burger-open-top {
