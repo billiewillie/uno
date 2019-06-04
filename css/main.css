@@ -587,7 +587,7 @@ main.main.main__azbuka{
     background-size: auto 100%;
     background-repeat: no-repeat;
     z-index: 0;
-    opacity: .2;
+    opacity: 0;
 }
 
 .ppoj__top.ppoj__block--consult .container::after{
@@ -1721,6 +1721,7 @@ p.subtitle.azbuka__subtitle {
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
+    box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .slide:hover{
@@ -3658,7 +3659,7 @@ p.subtitle.azbuka__subtitle {
 }
 
 .ppoj__top.ppoj__flashmob{
-    background-color: #F8F2E9;
+    background-color: #fff;
 }
 
 .video__wrap {
@@ -5219,7 +5220,8 @@ h1.rangers__title{
 }
 
 .ppoj__top.ppoj__flashmob{
-    padding: 0;
+    padding: 0 0 50px;
+    margin-bottom: 0;
 }
 
 @keyframes burger-open-top {

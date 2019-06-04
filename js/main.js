@@ -42,7 +42,7 @@
   // slider
   if($('.slider').length){
     $('.slider').slick({
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 300,
       responsive: [
@@ -298,7 +298,6 @@
   
     function showScreen () {
       setInterval(func, 1);
-      // mainFooter.classList.add('show');
     }
     
     setTimeout(function(){
