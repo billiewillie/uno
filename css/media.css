@@ -2291,7 +2291,7 @@
   .azbuka__digits--icon{
     width: 90px;
     height: 90px;
-    border: 1px solid #3175BE;
+    border: 1px solid #fff;
   }
 
   .body__citovir .azbuka__digits--icon {
@@ -2954,6 +2954,34 @@
 
   .body__ppoj .ppoj__text{
     background-color: rgba(222, 194,148, 1);
+  }
+
+  .visit__text{
+    min-height: 66px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .ppoj__block--soc{
+    padding: 0;
+    margin: 0;
+  }
+
+  .ppoj__result--youtube p{
+    margin-bottom: 10px;
+  }
+
+  .visits__block{
+    font-size: 16px;
+  }
+
+  .ppoj__top.ppoj__result h1.title{
+    color: #5F4A4A;
+    font-size: 40px;
+  }
+
+  .ppoj__top.ppoj__result{
+    padding: 75px 0;
   }
 
 }
