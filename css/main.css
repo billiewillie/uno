@@ -5206,6 +5206,22 @@ h1.rangers__title{
     display: none;
 }
 
+.ppoj__top.ppoj__flashmob h1.title .container::after{
+    display: none;
+}
+
+.ppoj__top.ppoj__flashmob h1.title{
+    letter-spacing: 1px;
+    font-size: 24px;
+    padding: 30px 0;
+    background-color: #DEC294;
+    margin-bottom: 0;
+}
+
+.ppoj__top.ppoj__flashmob{
+    padding: 0;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);
