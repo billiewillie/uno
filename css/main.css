@@ -1831,6 +1831,12 @@ p.subtitle.azbuka__subtitle {
 .ppoj__top.ppoj__result{
     background-color: #DEC294;
     margin-bottom: 0;
+    padding: 30px 0;
+}
+
+.ppoj__top.ppoj__result h1.title{
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 .ppoj__result--content>div{
@@ -1838,7 +1844,7 @@ p.subtitle.azbuka__subtitle {
     box-shadow: 0px 24px 59px rgba(163, 138, 100, 0.8);
     border: 1px solid #A38A64;
     padding: 20px;
-    font-size: 24px;
+    font-size: 21px;
 }
 
 .ppoj__result--youtube{
@@ -1892,6 +1898,7 @@ p.subtitle.azbuka__subtitle {
 
 .ppoj__result--content{
     margin-bottom: 30px;
+    text-align: left;
 }
 
 .ppoj__link.ppoj__result--link{
