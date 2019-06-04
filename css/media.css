@@ -2059,7 +2059,11 @@
   }
 
   .ppoj__block--opinion{
-    padding: 0;
+    padding: 100px 0;
+  }
+
+  .ppoj__block--opinion .ppoj__top--text{
+    font-size: 18px;
   }
 
   .ppoj__top.ppoj__block--consult .container{
@@ -2561,7 +2565,7 @@
     min-height: 350px;
   }
 
-  .geroi__iseland{
+  .geroi__iseland {
     padding: 100px 0 0;
   }
 
@@ -2581,12 +2585,8 @@
   }
 
   .ppoj__top.ppoj__block--opinion .container {
-    padding-right: 30%;
+    padding-right: 40%;
     text-align: left;
-  }
-
-  .ppoj__top.ppoj__block--opinion .ppoj__top--title .container{
-    padding: 0 20px;
   }
 
   .ppoj__block--link::after{
