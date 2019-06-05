@@ -2129,6 +2129,10 @@ p.subtitle.azbuka__subtitle {
     padding-top: 230px;
 }
 
+.azbuka__digits--text{
+    text-transform: uppercase;
+}
+
 .target__list{
     display: flex;
     flex-direction: column;
