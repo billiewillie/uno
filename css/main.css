@@ -483,6 +483,7 @@ main.main.main__azbuka{
 .breadcrumbs.azbuka__breadcrumbs{
     justify-content: center;
     margin-bottom: 50px;
+    opacity: .3;
 }
 
 .breadcrumb__item{
@@ -965,10 +966,14 @@ p.subtitle.azbuka__subtitle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-image: url(../img/icons/icon_touch-white.svg);
+    background-image: url(../img/icons/icon_azbuka-1.svg);
     background-position: 50% 50%;
-    background-size: 50%;
+    background-size: 90%;
     background-repeat: no-repeat;
+}
+
+.azbuka__digits--item:last-child .azbuka__digits--icon{
+    background-image: url(../img/icons/icon_azbuka-2.svg);
 }
 
 .body__citovir .azbuka__digits--icon{
@@ -990,10 +995,6 @@ p.subtitle.azbuka__subtitle {
 
 .body__citovir .azbuka__digits--item:nth-child(4) .azbuka__digits--icon{
     background-image: url(../img/icons/icon_rshf-1-1.svg);
-}
-
-.azbuka__digits--item:last-child .azbuka__digits--icon{
-    background-image: url(../img/icons/icon_views.svg);
 }
 
 .azbuka__digits--title{
@@ -5163,7 +5164,6 @@ h1.rangers__title{
 }
 
 .azbuka__targets{
-    background-color: #E9EDF6;
     font-size: 0;
     padding-top: 50px;
 }
