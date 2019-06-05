@@ -5227,6 +5227,27 @@ h1.rangers__title{
     display: block;
 }
 
+.azbuka__block{
+    display: flex;
+    flex-direction: column;
+}
+
+.tv__item.tv__item--text{
+    background-color: #fff;
+    padding: 45px 0;
+    width: 100%;
+}
+
+.azbuka__block-title{
+    background-color: #ecf0f1;
+    color: #DE1F26;
+    padding: 90px 0;
+}
+
+.azbuka__block-title p{
+    margin-bottom: 0;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);

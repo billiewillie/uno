@@ -2280,12 +2280,15 @@
   .azbuka__digits--item{
     padding-top: 120px;
     max-width: 300px;
-    margin-bottom: 130px;
   }
 
   .body__citovir .azbuka__digits--item{
     max-width: inherit;
     width: 34%;
+  }
+
+  .azbuka__block-title p.title{
+    margin-bottom: 0;
   }
 
   .azbuka__digits--icon{
