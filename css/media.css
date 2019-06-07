@@ -2333,6 +2333,7 @@
 
   .tv__item--text{
     width: 70%;
+    order: 2;
   }
 
   .azbuka__challenge {
