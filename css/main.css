@@ -2179,7 +2179,7 @@ p.subtitle.azbuka__subtitle {
 
 .azbuka__tv{
     background-color: #ECF0F1;
-    padding: 30px 0;
+    padding: 0;
 }
 
 .azbuka__tv .container{
@@ -5246,6 +5246,13 @@ h1.rangers__title{
 
 .azbuka__block-title p{
     margin-bottom: 0;
+}
+
+.azbuka__tv h2.title{
+    padding: 40px 0;
+    background-color: #EC6408;
+    font-size: 20px;
+    letter-spacing: 1px;
 }
 
 @keyframes burger-open-top {
