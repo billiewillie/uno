@@ -5257,6 +5257,8 @@ h1.rangers__title{
     background-color: #EC6408;
     font-size: 20px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'SFUIDisplay-Heavy', sans-serif;
 }
 
 .azbuka__tv .list{
@@ -5267,6 +5269,7 @@ h1.rangers__title{
 .azbuka__tv .list__item{
     padding: 35px 0;
     border-bottom: 1px solid rgba(236, 100, 8, 0.5);
+    transition: .2s;
 }
 
 .azbuka__tv .list__item:last-child{

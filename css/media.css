@@ -418,7 +418,7 @@
   }
 
   .azbuka__tv{
-    padding: 100px 0;
+    padding: 20px 0;
     background-color: transparent;
   }
 
@@ -429,18 +429,66 @@
   .tv__list{
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
     max-width: 1000px;
     align-items: center;
-    margin-bottom: 50px;  
+    margin-bottom: 50px;
+  }
+
+  .azbuka__tv .list{
+    width: 50%;
+    padding-right: 40px;
+    border-right: 1px dashed #fff;
+  }
+
+  .azbuka__tv .list__item{
+    border: 1px solid #fff;
+    border-radius: 15px;
+    padding: 20px 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .azbuka__tv .list__item::after{
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: -48px;
+    margin: auto;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .2s;
+  }
+
+  .azbuka__tv .list__item:last-child{
+    border: 1px solid #fff;
+    margin-bottom: 0;
+  }
+
+  .azbuka__tv .list__item:hover{
+    background-color: #fff;
+    color: #DE1F26;
+  }
+
+  .azbuka__tv .list__item:hover::after{
+    width: 27px;
+    height: 27px;
+    right: -55px;
   }
 
   .tv__item--pic{
-    width: 35%;
+    width: 50%;
   }
 
   .azbuka__tv h2.title{
     background-color: transparent;
+    font-size: 40px;
   }
 
   .tv__item--text{
@@ -450,13 +498,15 @@
   }
 
   .tv__item.tv__item--text{
-    width: 70%;
     order: 2;
     background-color: transparent;
+    color: #fff;
   }
 
   .tv__item--text p{
     margin-bottom: 50px;
+    color: #fff;
+    font-size: 18px;
   }
 
   .tv__note{
@@ -2339,7 +2389,7 @@
   }
 
   .tv__item--pic{
-    width: 30%;
+    width: 50%;
   }
 
   .azbuka__challenge {
