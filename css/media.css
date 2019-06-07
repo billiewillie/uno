@@ -419,6 +419,7 @@
 
   .azbuka__tv{
     padding: 100px 0;
+    background-color: transparent;
   }
 
   .azbuka__tv .container{
@@ -438,10 +439,20 @@
     width: 35%;
   }
 
+  .azbuka__tv h2.title{
+    background-color: transparent;
+  }
+
   .tv__item--text{
     width: 65%;
     padding-left: 70px;
     font-size: 16px;
+  }
+
+  .tv__item.tv__item--text{
+    width: 70%;
+    order: 2;
+    background-color: transparent;
   }
 
   .tv__item--text p{
@@ -455,9 +466,9 @@
 
   .body.body__azbuka::after{
     background: #ec6408 url(../img/azbuka_bg.jpg);;
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%,#ec6408 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%, #ec6408 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #DE1F26 33%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%, #DE1F26 50%, #DE1F26 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 12%, #DE1F26 50%, #DE1F26 100%);
   }
 
   .body.body__geroi::after {
@@ -2329,11 +2340,6 @@
 
   .tv__item--pic{
     width: 30%;
-  }
-
-  .tv__item--text{
-    width: 70%;
-    order: 2;
   }
 
   .azbuka__challenge {
