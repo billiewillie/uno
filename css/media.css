@@ -1827,16 +1827,20 @@
     padding-left: 400px;
   }
 
+  .azbuka__coloring p{
+    font-size: 18px;
+  }
+
   .azbuka__coloring a {
     display: block;
     position: absolute;
     content: '';
-    bottom: -100px;
+    bottom: -50px;
     left: 0;
     width: 388px;
-    height: 200%;
+    height: 150%;
     background-image: url(../img/azbuka_dom.png);
-    background-position: 0% 50%;
+    background-position: 0% 100%;
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -3080,8 +3084,13 @@
       background-image: url(../img/icons/icon_views.svg);
   }
 
+  .azbuka__coloring{
+    padding: 180px 0;
+  }
+
   .azbuka__coloring a {
-    height: 230%;
+    height: 190%;
+    bottom: -100px;
   }
 
 }
