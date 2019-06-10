@@ -2231,6 +2231,8 @@ p.subtitle.azbuka__subtitle {
 
 .azbuka__challenge{
     padding: 30px 0;
+    background-color: #EC6408;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
 }
 
 .azbuka__challenge .container{
@@ -2249,6 +2251,7 @@ p.subtitle.azbuka__subtitle {
     text-transform: uppercase;
     max-width: 850px;
     margin: 0 auto;
+    font-family: 'SFUIDisplay-Regular', sans-serif;
 }
 
 .challenge__text--big span{
@@ -2257,9 +2260,10 @@ p.subtitle.azbuka__subtitle {
 
 .challenge__links{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
     margin-bottom: 50px;
 }
 
@@ -2267,13 +2271,25 @@ p.subtitle.azbuka__subtitle {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    padding: 30px 20px 50px;
+    width: 100%;
     background-color: #FE9148;
     border-radius: 15px;
-    border: 1px solid #ECF0F1;
     box-shadow: 0px 52px 85px rgba(0, 0, 0, 0.0873528);
     position: relative;
+    min-height: 133px;
+    background-image: url(../img/screenshot_vk.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 75px;
+}
+
+.challenge__item:nth-child(2){
+    background-image: url(../img/screenshot_fb.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
 }
 
 .challenge__item::after{
@@ -2301,15 +2317,10 @@ p.subtitle.azbuka__subtitle {
     background-size: 60%;
 }
 
-.challenge__item:nth-child(1){
-    margin-right: 5%;
-}
-
 .challenge__pic{
     display: block;
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -5005,6 +5016,8 @@ p.subtitle.azbuka__subtitle {
     color: #737373;
 }
 
+.body__azbuka .cases,
+.body__azbuka .footer,
 .body__prostatilen .cases,
 .body__prostatilen .footer,
 .body__ppoj .cases,
