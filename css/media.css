@@ -1556,6 +1556,8 @@
     display: none;
   }
 
+  .body__azbuka .cases,
+  .body__azbuka .footer,
   .body__prostatilen .cases,
   .body__prostatilen .footer,
   .body__ppoj .cases,
@@ -3090,12 +3092,12 @@
   }
 
   .azbuka__coloring{
-    padding: 180px 0;
+    padding: 110px 0;
   }
 
   .azbuka__coloring a {
     height: 190%;
-    bottom: -100px;
+    bottom: -80px;
   }
 
 }
@@ -3200,7 +3202,7 @@
   }
 
   .azbuka__tv {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 
   .body.body__azbuka::after{
