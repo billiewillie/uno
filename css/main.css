@@ -2274,7 +2274,7 @@ p.subtitle.azbuka__subtitle {
     width: 100%;
     background-color: #FE9148;
     border-radius: 15px;
-    box-shadow: 0px 52px 85px rgba(0, 0, 0, 0.0873528);
+    box-shadow: 0px 0px 10px rgba(77, 77, 77, 0.4);
     position: relative;
     min-height: 133px;
     background-image: url(../img/screenshot_vk.jpg);
@@ -2312,9 +2312,9 @@ p.subtitle.azbuka__subtitle {
 }
 
 .challenge__item:nth-child(2)::after{
-    background-image: url(../img/icons/icon_ok.svg);
-    background-color: #fff;
-    background-size: 60%;
+    background-image: url(../img/icons/icon_fb.svg);
+    background-color: #3E5C9A;
+    background-size: 25%;
 }
 
 .challenge__pic{

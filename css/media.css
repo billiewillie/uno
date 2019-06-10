@@ -533,10 +533,6 @@
     height: 240px;
   }
 
-  .challenge__item{
-    padding: 35px 20px 75; 
-  }
-
   .challenge__item::after{
     width: 70px;
     height: 70px;
@@ -1845,6 +1841,18 @@
     background-repeat: no-repeat;
   }
 
+  .challenge__links{
+    margin-bottom: 90px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .challenge__item{
+    margin-bottom: 0;
+    width: 47%;
+    min-height: 158px;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -2428,9 +2436,6 @@
     font-size: 18px;
   }
 
-  .challenge__links{
-    margin-bottom: 90px;
-  }
   .challenge__text--big{
     font-size: 18px;
   }
