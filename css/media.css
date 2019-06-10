@@ -3200,9 +3200,9 @@
 
   .body.body__azbuka::after{
     background: #ec6408 url(../img/azbuka_bg.jpg);;
-    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 33%);
-    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%,#ec6408 100%);
-    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 23%, #ec6408 100%);
+    background: -moz-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #DE1F26 33%);
+    background: -webkit-linear-gradient(top, rgba(33, 33, 33, 0.5) 0%, #ec6408 25%, #DE1F26 50%, #DE1F26 100%);
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0.5) 0%, #ec6408 25%, #DE1F26 50%, #DE1F26 100%);
   }
 
   .title.case__big--top::after{
