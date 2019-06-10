@@ -4142,7 +4142,7 @@ p.subtitle.azbuka__subtitle {
 .body__citovir .breadcrumb__item{
     color: #3175BE;
     border: 1px solid #3175BE;
-    opacity: .5;
+    opacity: 1;
 }
 
 .citovir__advantage{

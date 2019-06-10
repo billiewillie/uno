@@ -2395,6 +2395,10 @@
     border: 1px solid #fff;
   }
 
+  .body__citovir .azbuka__digits--icon{
+    border: 1px solid #0047D0;
+  }
+
   .body__citovir .azbuka__digits--icon {
     background-image: url(../img/icons/icon_citovir-11.svg);
   }
