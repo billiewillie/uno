@@ -968,7 +968,7 @@ p.subtitle.azbuka__subtitle {
     border-radius: 50%;
     background-image: url(../img/icons/icon_azbuka-1.svg);
     background-position: 50% 50%;
-    background-size: 90%;
+    background-size: 50%;
     background-repeat: no-repeat;
 }
 
@@ -4731,7 +4731,7 @@ p.subtitle.azbuka__subtitle {
 
 .prostatilen__auditory .auditory__text,
 .rangers__auditory .auditory__text{
-    padding: 20px 10px;
+    padding: 40px 10px;
     font-size: 15px;
     font-weight: 600;
     text-align: left;
@@ -5186,6 +5186,7 @@ h1.rangers__title{
 .azbuka__targets{
     font-size: 0;
     padding-top: 50px;
+    background-color: #E9EDF6;
 }
 
 .azbuka__targets .container{
