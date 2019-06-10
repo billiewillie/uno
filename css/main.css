@@ -5276,6 +5276,22 @@ h1.rangers__title{
     border-bottom: none;
 }
 
+.azbuka__coloring{
+    background-color: #ECF0F1;
+    padding: 40px 0;
+}
+
+.azbuka__coloring p{
+    color: #252525;
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 13px;
+}
+
+.azbuka__coloring p:last-of-type{
+    margin-bottom: 0;
+}
+
 @keyframes burger-open-top {
     50% {
         transform: translate3d(0, 10px, 0);

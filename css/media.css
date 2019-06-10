@@ -1818,6 +1818,29 @@
     background-color: #F8F2E9;
   }
 
+  .azbuka__coloring{
+    padding: 100px 0;
+  }
+
+  .azbuka__coloring .content {
+    position: relative;
+    padding-left: 400px;
+  }
+
+  .azbuka__coloring a {
+    display: block;
+    position: absolute;
+    content: '';
+    bottom: -100px;
+    left: 0;
+    width: 388px;
+    height: 200%;
+    background-image: url(../img/azbuka_dom.png);
+    background-position: 0% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
 }
 
 @media (max-width: 991px){
@@ -3055,6 +3078,10 @@
 
   .azbuka__digits--item:last-child .azbuka__digits--icon{
       background-image: url(../img/icons/icon_views.svg);
+  }
+
+  .azbuka__coloring a {
+    height: 230%;
   }
 
 }
