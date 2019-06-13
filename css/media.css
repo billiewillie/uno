@@ -3066,6 +3066,10 @@
     display: flex;
   }
 
+  .ppoj__block--soc .ppoj__block--link{
+    width: auto;
+  }
+
   .ppoj__result--youtube p{
     margin-bottom: 10px;
   }
