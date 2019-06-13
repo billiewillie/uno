@@ -3063,6 +3063,7 @@
   .ppoj__block--soc{
     padding: 0;
     margin: 0;
+    display: flex;
   }
 
   .ppoj__result--youtube p{
