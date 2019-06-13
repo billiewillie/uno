@@ -44,5 +44,4 @@ if($name === '' || $phone === '' || $email === '' || $url != '') {
 } elseif($mail->send()) {
     echo 'ok';
 }
-
 ?>

@@ -3114,7 +3114,7 @@
 @media (min-width: 1440px) {
 
   .main__footer--part:nth-child(1)::after, 
-  .main__footer--part:nth-child(2)::after {
+  .main__footer--part:nth-child(2)::after{
     right: 50px;
     height: 58px;
   }
