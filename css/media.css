@@ -3387,3 +3387,9 @@
     z-index: 1;
   }
 }
+
+@media all and (-ms-high-contrast:none){
+  main.main{
+    min-height: 83vh;
+  }
+}
