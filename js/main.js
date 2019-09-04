@@ -30,6 +30,24 @@
   const prostatilenToolPic = document.querySelector('.prostatilen__tool--pic');
   const indexCases = document.querySelector('.index__cases');
 
+  $(document).ready(function() {
+    $("form").submit(function() { //Change
+      var th = $(this);
+      $.ajax({
+        type: "POST",
+        url: "./mail.php", //Change
+        data: th.serialize()
+      }).done(function() {
+        alert("Спасибо! Мы с вами скоро свяжемся.");
+        setTimeout(function() {
+          // Done Functions
+          th.trigger("reset");
+        }, 1000);
+      });
+      return false;
+    });
+  });
+
   // // wow
   if($('.wow').length){
     new WOW().init();
@@ -305,77 +323,6 @@
     }, 1000);
     
   }
-
-  //popup
-  if(popup){
-    function getPopup(el) {
-      el.addEventListener('click', function(e){
-        e.preventDefault();
-        popup.classList.toggle('show');
-        popupInner.classList.toggle('show');
-        setTimeout(function(){
-          popupBg.classList.toggle('turn');
-        }, 1000);
-      });
-    }
-
-    // email
-    $('.form__popup').on('submit', function(e){
-      e.preventDefault();
-      let fd = new FormData(this);
-      let th = $(this);
-      $.ajax({
-        url: 'mail.php',
-        type: 'POST',
-        contentType: false, 
-        processData: false, 
-        data: fd,
-        success: function(msg){
-          if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '') {
-            if(msg === 'ok'){
-              th.trigger('reset');
-              $('.popup__title').text('Cпасибо! Мы скоро c вами свяжемся');
-              setTimeout(function(){
-                popupBg.classList.toggle('turn');
-                popup.classList.toggle('show');
-                popupInner.classList.toggle('show');
-                $('.popup__title').text('напишите нам');
-              }, 2000);
-            }
-          } else {
-            alert('Заполните все поля пожалуйста!');
-          }
-        }
-      })
-    });
-  
-    
-    getPopup(btnCoop);
-    getPopup(popupClose);
-  }
-
-  $('.contacts__form').on('submit', function(e){
-    e.preventDefault();
-    let fd = new FormData(this);
-    let th = $(this);
-    $.ajax({
-      url: 'mail.php',
-      type: 'POST',
-      contentType: false, 
-      processData: false, 
-      data: fd,
-      success: function(msg){
-        if(inputName.value != '' && inputPhone.value != '' && inputEmail.value != '' && userUrl.value === '') {
-          if(msg === 'ok'){
-            th.trigger('reset');
-            $('.contact__block--form .title').text('Cпасибо! Мы скоро c вами свяжемся');
-          }
-        } else {
-          alert('Заполните все поля пожалуйста!');
-        }
-      }
-    })
-  });
 
   if(tabgroup){
     $('.tabgroup > div').hide();

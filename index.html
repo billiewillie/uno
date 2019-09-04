@@ -278,21 +278,21 @@
           <a href='' class="popup__close"></a>
         </div>
         <p class="popup__title">напишите нам</p>
-        <form action="" class="form__popup" method="POST">
+        <form class="form__popup">
+          <input type="hidden" name="project_name" value="uno-agency">
+          <input type="hidden" name="admin_email" value="citomedinfo@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка с формы сайта Uno-agency">
           <div class="form__field">
-            <input type="text" class="input input__name" name='user_name' placeholder="Ваше имя" autocomplete="off">
+            <input type="text" class="input input__name" name='имя' placeholder="Ваше имя" autocomplete="off" required>
           </div>
           <div class="form__field">
-            <input type="text" class="input input__phone" name='user_phone' placeholder="Ваш телефон" autocomplete="off">
-          </div>
-          <div class="form__field antispam">
-              <input type="text" name="url" class="input user_url" placeholder="Leave this empty">
-            </div>
-          <div class="form__field">
-            <input type="text" class="input input__email" name='user_email' placeholder="Ваш email" autocomplete="off">
+            <input type="text" class="input input__phone" name='телефон' placeholder="Ваш телефон" autocomplete="off" required>
           </div>
           <div class="form__field">
-            <button class='submit' type="submit">Отправить</button>
+            <input type="text" class="input input__email" name='email' placeholder="Ваш email" autocomplete="off" required>
+          </div>
+          <div class="form__field">
+            <button class='submit'>Отправить</button>
           </div>
         </form>
       </div>
