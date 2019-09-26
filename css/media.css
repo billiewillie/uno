@@ -2580,7 +2580,6 @@
   .about__text{
     padding-top: 0;
     padding: 0 40px;
-    overflow-x: hidden;
     max-height: 420px;
     transition: .2s;
     position: relative;
@@ -2602,24 +2601,27 @@
 
   .about__text--item{
     line-height: 1.8;
+    overflow-x: hidden;
+    max-height: 420px;
+    padding-right: 20px;
   }
 
-  .about__text::-webkit-scrollbar {
+  .about__text--item::-webkit-scrollbar {
     width: 7px;
   }
 
   /* Track */
-  .about__text::-webkit-scrollbar-track {
+  .about__text--item::-webkit-scrollbar-track {
     background: rgb(155,161,171); 
   }
 
   /* Handle */
-  .about__text::-webkit-scrollbar-thumb {
+  .about__text--item::-webkit-scrollbar-thumb {
     background: #4B596F; 
   }
 
   /* Handle on hover */
-  .about__text::-webkit-scrollbar-thumb:hover {
+  .about__text--item::-webkit-scrollbar-thumb:hover {
     background: #4B596F; 
   }
 

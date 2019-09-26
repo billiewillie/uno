@@ -42,6 +42,10 @@ body {
     background-size: contain;
 }
 
+.ymaps-2-1-74-balloon.ymaps-2-1-74-balloon_layout_normal.ymaps-2-1-74-balloon_to_top.ymaps-2-1-74-i-custom-scroll{
+    display: none;
+}
+
 body.body__ppoj{
     background-color: #f2f2f2;
     background-image: url(../img/city-8.jpg);
